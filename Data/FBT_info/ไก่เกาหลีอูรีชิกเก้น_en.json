@@ -1,0 +1,270 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "15",
+            "short_name" : "15",
+            "types" : [ "subpremise" ]
+         },
+         {
+            "long_name" : "7",
+            "short_name" : "7",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Lat Krabang Road",
+            "short_name" : "Lat Krabang Rd",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Khwaeng Lat Krabang",
+            "short_name" : "Khwaeng Lat Krabang",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Khet Lat Krabang",
+            "short_name" : "Khet Lat Krabang",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Krung Thep Maha Nakhon",
+            "short_name" : "Krung Thep Maha Nakhon",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Thailand",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "15 \u003cspan class=\"street-address\"\u003e7 Lat Krabang Rd\u003c/span\u003e, \u003cspan class=\"extended-address\"\u003eKhwaeng Lat Krabang\u003c/span\u003e, \u003cspan class=\"locality\"\u003eKhet Lat Krabang\u003c/span\u003e, \u003cspan class=\"region\"\u003eKrung Thep Maha Nakhon\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eThailand\u003c/span\u003e",
+      "formatted_address" : "15 7 Lat Krabang Rd, Khwaeng Lat Krabang, Khet Lat Krabang, Krung Thep Maha Nakhon 10520, Thailand",
+      "formatted_phone_number" : "089 777 6082",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.7220672,
+            "lng" : 100.7804952
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7233819802915,
+               "lng" : 100.7818453302915
+            },
+            "southwest" : {
+               "lat" : 13.7206840197085,
+               "lng" : 100.7791473697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "international_phone_number" : "+66 89 777 6082",
+      "name" : "ไก่เกาหลี อูรี ชิกเก้นท์ 우리 치킨 สาขา ลาดกระบัง",
+      "opening_hours" : {
+         "open_now" : true,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 0,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 0,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 6,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 6,
+                  "time" : "1100"
+               }
+            }
+         ],
+         "weekday_text" : [
+            "Monday: 11:00 AM – 10:00 PM",
+            "Tuesday: 11:00 AM – 10:00 PM",
+            "Wednesday: 11:00 AM – 10:00 PM",
+            "Thursday: 11:00 AM – 10:00 PM",
+            "Friday: 11:00 AM – 10:00 PM",
+            "Saturday: 11:00 AM – 10:00 PM",
+            "Sunday: 11:00 AM – 10:00 PM"
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 2268,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA5AkboB4WIoSs6EQUhbCFS_erllBxPltkIxh8woesdLKEdtl3Se0kZG27YzCxb6EC_5M3NyRZNTfIGuZ0QdyDITeJwfubC5T1xFFR8DCNpdiQhLibAhQ55a2ZEwpPDgR7EhBwMUeLO0Cu_ZGoLZ0UbZukGhT5UfjDGsl1rahP5shZrZsgISpBvQ",
+            "width" : 4032
+         },
+         {
+            "height" : 2268,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAANRg888ZP5MbqhlcapGfiXp7RWDz7xvB0XC974fI4FHy1NvDVxUBVwyO0xUq-xYA_tzYjapOCRdN0O22gKlkRJKgiBiiuKyF9a6GZGhYqta00LeeMzySWnyIx43IXLMWHEhBAhR9vtljtsvrrw2BvdJD1GhTFDIh9AGgoXE210LX2AqtQbgLwyA",
+            "width" : 4032
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAWp7ENl9GzueBEEIfvfG-PJ-1wia2IiVnia0JtRNpBsl0FAuPX-XpOLBQxWB3LCKj1lRuEIze2WgYtAtmVfU50uOInQcengnJx-cV51NIEEVNSPmP49gbM3i4XczPRKoFEhC_1yzeoEsYyqRwtz2kSaZVGhRsZzgf6nLGXq_O-uXgBytUCLwsvg",
+            "width" : 2268
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103982018244730442290/photos\"\u003eIt&#39;s ME stm.\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAOEZPaxvv--YuD9ozVwnuxjto31FlEircuFwsoVaAtV5q_ZHwJnYjtXgVlQEUOS8TVnVWtwRvG7RfNaoaBDEfTj0sGDtcnCR2tNhSwnWuQ8OnIqXRFQ1mz4LUENNLFDFOEhAULeQFvT9RRuNQftadnzReGhT8aY8tVWoWBaN5VvX4Fx4Cp7AZeA",
+            "width" : 4032
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAPJ4X9WAfSrWrFR5vDyIMTzGxfjVyKA4a1dr2uEv2NfWBiA5yScgmZc3QJI7WVGoehkMYtzzvvpcf_eXj89hSgn3l85ef7Ty3In0uCVUZsrQE6g28uI93KKglmIFELfoJEhBYd5K49ZahTYJT1Q9h1awYGhSXR1nmUCJQiZz2btM57ApFVg-_7Q",
+            "width" : 2268
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116482862617675794512/photos\"\u003ePair patchara\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAviAJr6PLAOuxFEW08qaAoe8n7uZqboJdXhu3VQyFm-ZkTylBY0vmSxC1EcsbqPwVfEYygupy66lAdQSiqoSVZh2Q1JIfumFjhHNTscpd_D99rRlYIQndLH9aiAxb-aZ_EhBP5_t1VwAjpgX-sYGcVchAGhTcYHbtz9UGA2HY6OLRN9iI_77vGg",
+            "width" : 4032
+         },
+         {
+            "height" : 2268,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAn8xlLsoIBw9Zk914nD77bS2suwCzPD05jl9PPIw88Ge7W-tJFkyIzteZB12QLxF3wgfNTGUF5fld2D48KSifvV-fn-0FJRqrlORo8BzAawiogLOYBTwTixs9r9gXnwkdEhCZYaQj0VEGlTexfHPERZliGhS48EyP5zYtYAmbMUApX4cqKzUMdQ",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103982018244730442290/photos\"\u003eIt&#39;s ME stm.\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAohUFoVn_1jlZTeV-mdyM7DJmL6C6gt1WQCYfUnRnmRvas4cII0jILIvXALMByHSt6DOTbYkgFllF_DmaxmZxSRHguWy-XBMAWzMQ-pSIDfkGvZHPCrywSHalreTUxmogEhC3EieLencQ9Yq2EJlZLAP8GhTBffjfjPtUt78hgC4KsqTbIJJ-Tw",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103982018244730442290/photos\"\u003eIt&#39;s ME stm.\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAZO1NoYIY1V0U3PfZzR1--sduKrc0aEvwPJVxps4IRCQmgGDobyj5-m32d6ivXbbulv3H-4rShbVhZz_WMPTuSgbwTWxDaa1O0uh1wQ5A3LUFYy_IxTtAhM2vlwW0A33iEhAjb_wqyAni3B8Am2ct7uA3GhSeFQ5vspsGzqeLKyAu6Aim8f2UNA",
+            "width" : 4032
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAR7ky6JmAhddlnkMKhYwGjaD4Pc3q2DB2aSSLvjwRURgNd2OCkkc0Yt112qAAHLOH_t2U4oB2fphJiAh7n7X_V7p2ldauZZVXhuw_SA1QqWZr1iVFQV_3QW5vAWb809M4EhDd6-XwbdAN5RFv4JhdKb_pGhQER4s_Uwdd-T3dsIEbJlgYoXmwOA",
+            "width" : 2268
+         }
+      ],
+      "place_id" : "ChIJvU8_wT5nHTERhO_fCevRNbM",
+      "plus_code" : {
+         "compound_code" : "PQCJ+R5 Bangkok, Thailand",
+         "global_code" : "7P52PQCJ+R5"
+      },
+      "rating" : 3.7,
+      "reviews" : [
+         {
+            "author_name" : "Ruji Peera",
+            "author_url" : "https://www.google.com/maps/contrib/104160413783378571373/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh3.ggpht.com/-NM-rP1eBibs/AAAAAAAAAAI/AAAAAAAAAAA/JNOfdzL8-K4/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "a month ago",
+            "text" : "ร้านเปิดใหม่ในลาดกระบังเป็นไก่ทอดสไตล์เกาหลีมี 2 รสรสเค็มและรสเผ็ดพร้อมอาหารเกาหลีหลายอย่าง ราคาไม่แพงนะครับ รสชาติอร่อย มีทั้งเซ็ตเล็ก กลางและใหญ่",
+            "time" : 1566043734
+         },
+         {
+            "author_name" : "Pair patchara",
+            "author_url" : "https://www.google.com/maps/contrib/116482862617675794512/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh4.ggpht.com/-Ukbdmhg8mpE/AAAAAAAAAAI/AAAAAAAAAAA/3JA5TegyPTg/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 3,
+            "relative_time_description" : "a month ago",
+            "text" : "อร่อยใช้ได้ เสียดายไก่ทอดแป้งเยอะไปนิด ส่วนชอบหมูย่างเกาหลี น้ำจิ้มโคชูจังเด็ดมากเข้าปากคนไทยสุดๆ \nผักให้เยอะดีชอบบบ",
+            "time" : 1567312961
+         }
+      ],
+      "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=12913458313967955844",
+      "user_ratings_total" : 3,
+      "utc_offset" : 420,
+      "vicinity" : "15, 7 Lat Krabang Road, Lat Krabang",
+      "website" : "https://facebook.com/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99-%E0%B9%84%E0%B8%81%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B5-%E0%B8%AD%E0%B8%B9%E0%B8%A3%E0%B8%B5-%E0%B8%8A%E0%B8%B4%E0%B8%81%E0%B9%80%E0%B8%81%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C-%EC%9A%B0%EB%A6%AC-%EC%B9%98%ED%82%A8-%E0%B8%AA%E0%B8%B2%E0%B8%82%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87-2313844735506134/"
+   },
+   "status" : "OK"
+}

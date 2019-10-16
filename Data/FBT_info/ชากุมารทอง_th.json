@@ -1,0 +1,169 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "แขวง ลาดกระบัง",
+            "short_name" : "แขวง ลาดกระบัง",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "เขต ลาดกระบัง",
+            "short_name" : "เขต ลาดกระบัง",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "กรุงเทพมหานคร",
+            "short_name" : "กรุงเทพมหานคร",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "ประเทศไทย",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"extended-address\"\u003eแขวง ลาดกระบัง\u003c/span\u003e \u003cspan class=\"locality\"\u003eเขต ลาดกระบัง\u003c/span\u003e \u003cspan class=\"region\"\u003eกรุงเทพมหานคร\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e \u003cspan class=\"country-name\"\u003eประเทศไทย\u003c/span\u003e",
+      "formatted_address" : "แขวง ลาดกระบัง เขต ลาดกระบัง กรุงเทพมหานคร 10520 ประเทศไทย",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.723102,
+            "lng" : 100.7804381
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7244430302915,
+               "lng" : 100.7816609302915
+            },
+            "southwest" : {
+               "lat" : 13.7217450697085,
+               "lng" : 100.7789629697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+      "name" : "ชา กุมารทอง",
+      "opening_hours" : {
+         "open_now" : true,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "2000"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "1000"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "2000"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "1000"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "2000"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "1000"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "2000"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "1000"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "2000"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "1000"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 6,
+                  "time" : "2000"
+               },
+               "open" : {
+                  "day" : 6,
+                  "time" : "1000"
+               }
+            }
+         ],
+         "weekday_text" : [
+            "วันจันทร์: 10:00–20:00",
+            "วันอังคาร: 10:00–20:00",
+            "วันพุธ: 10:00–20:00",
+            "วันพฤหัสบดี: 10:00–20:00",
+            "วันศุกร์: 10:00–20:00",
+            "วันเสาร์: 10:00–20:00",
+            "วันอาทิตย์: ปิดทำการ"
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104416527267272205662/photos\"\u003eSirirak Fueangngoen\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRZAAAABCAIhN09qNYByRcHXhdd5R32HluTsc1gB7G00x0lFjCmqPjfeOAtBEtj1qjNSpvpgPs8rx03jC46_2HcXPH90Sg4waYjK4wsHkR5YeVFcpKzC9TJDgHFXZoqYzxe8VpVEhCSO1Yo1y3UShH_oyxaR8tyGhSWALKBTaR7xgOUSMsrQiM8HdJE-g",
+            "width" : 4032
+         }
+      ],
+      "place_id" : "ChIJUeJ_KMtnHTERwQfkeifq1yI",
+      "plus_code" : {
+         "compound_code" : "PQFJ+65 กรุงเทพมหานคร ไทย",
+         "global_code" : "7P52PQFJ+65"
+      },
+      "rating" : 5,
+      "reviews" : [
+         {
+            "author_name" : "Lockanics",
+            "author_url" : "https://www.google.com/maps/contrib/106636929936414614610/reviews",
+            "profile_photo_url" : "https://lh5.ggpht.com/-18PTTdPuM2w/AAAAAAAAAAI/AAAAAAAAAAA/vpL2jIRj3Fc/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "11 เดือนที่แล้ว",
+            "text" : "",
+            "time" : 1540274944
+         },
+         {
+            "author_name" : "Dj'Bas Studio",
+            "author_url" : "https://www.google.com/maps/contrib/105868903726559153531/reviews",
+            "profile_photo_url" : "https://lh3.ggpht.com/-6IRuXBt0s4g/AAAAAAAAAAI/AAAAAAAAAAA/EKsI7eJJm1I/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "ปีที่แล้ว",
+            "text" : "",
+            "time" : 1522131237
+         }
+      ],
+      "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=2510732772568729537",
+      "user_ratings_total" : 2,
+      "utc_offset" : 420,
+      "vicinity" : "แขวง ลาดกระบัง เขต ลาดกระบัง",
+      "website" : "https://m.facebook.com/Chakoumarthong/?tsid=0.7207339612845186&source=result"
+   },
+   "status" : "OK"
+}

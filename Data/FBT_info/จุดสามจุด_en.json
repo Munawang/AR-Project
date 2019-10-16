@@ -1,0 +1,210 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "57",
+            "short_name" : "57",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Thanon Chalong Krung",
+            "short_name" : "Thanon Chalong Krung",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Khwaeng Lat Krabang",
+            "short_name" : "Khwaeng Lat Krabang",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Khet Lat Krabang",
+            "short_name" : "Khet Lat Krabang",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Krung Thep Maha Nakhon",
+            "short_name" : "Krung Thep Maha Nakhon",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Thailand",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003e57 Thanon Chalong Krung\u003c/span\u003e, \u003cspan class=\"extended-address\"\u003eKhwaeng Lat Krabang\u003c/span\u003e, \u003cspan class=\"locality\"\u003eKhet Lat Krabang\u003c/span\u003e, \u003cspan class=\"region\"\u003eKrung Thep Maha Nakhon\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eThailand\u003c/span\u003e",
+      "formatted_address" : "57 Thanon Chalong Krung, Khwaeng Lat Krabang, Khet Lat Krabang, Krung Thep Maha Nakhon 10520, Thailand",
+      "formatted_phone_number" : "099 227 0074",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.7228193,
+            "lng" : 100.7801028
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7241714302915,
+               "lng" : 100.7815019802915
+            },
+            "southwest" : {
+               "lat" : 13.7214734697085,
+               "lng" : 100.7788040197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+      "international_phone_number" : "+66 99 227 0074",
+      "name" : "Three Dots",
+      "photos" : [
+         {
+            "height" : 2160,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108495882055967256193/photos\"\u003eworapong thepsatit\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAe5tBlmxu4Jn3I5-tpZKuHpCFOJcbvyQJxAbpW4nMiw8vmpnF17S23c4Ej9hNo-HQF4cwWjsV_0tyn2AjwQI8ERQNfhpPyoClN6v7AkoTlnixRgAi6m_xu7J4DmOHkLXQEhCBylneI4MhvMXE0ZX7NfqCGhRPKbd5rGR3wbvdwcvvpsbTLunVyw",
+            "width" : 2160
+         },
+         {
+            "height" : 1280,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113138179223406052027/photos\"\u003eSirinun Mamadusen\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAJcnyaNEGkBe74xiwnE3A1aOKEVl07U_POxaJRF_54FaIAN685Sj8T7ROJlhENEJybeMVufv-XJOIAYdOpsQLJjZDlZG9gmOkPqdzVWfeyaXcrIGae6gn2SiIVi54VGgUEhDEVOTeYjq-9SjL2Br-sgXFGhQ5rKTg1qm2okKh9gxLU1OCwHrwrA",
+            "width" : 720
+         },
+         {
+            "height" : 2160,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108495882055967256193/photos\"\u003eworapong thepsatit\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAMzkcBGtUo5kTVsBNLmzOZb303pavCBlCYqipbjS_zBbZlouFK9Ft8xQU97pnxj1xuYB5GNON-jQj71ykjqGYvQqGrg_LpSNoSh8Ad-8zzsFPmamrh2-Js26-gZjaovyDEhBqLHC9_kUnEv0JVLI5XLe3GhQWNNA9wAFF_wBLyFn9EJeKqJHyOQ",
+            "width" : 2160
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105619051736557909839/photos\"\u003eชัชเตอร์ ครับผม\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAALMg07gDuYqtgK6rn9WI01KSWE7YM-nfKrcFLyhIWWCCZ8mVvVkfeyFEm1iyHbk_dIx2Z2XZN12K9DNCsnVFuHXgx4TJL7fD6W3l__NGwXYoGwe2favAE0NctoJaV4EE_EhAwiMWL-O0syGSE53doPcqtGhSKTg7zW5RMmpdCMtOJb-wHzVdU1Q",
+            "width" : 1960
+         },
+         {
+            "height" : 2160,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108495882055967256193/photos\"\u003eworapong thepsatit\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAkZ0WmbBfz0tjSN9R-m8Fd2TsbOz-JBdM9w8tfnGC_OJYfQAsK4IxKUTXU5I1NGlTGJ8SIZA9h0lKceUyYADIFKWvy1E-DUPlv0qYjfvCf_XgE5cCQOntcn6t6rs4oFcpEhDDncIlFIhr0pZbx5PH0V6FGhTgd56brJXZJD2Q7kQ2wjGYQ254Mg",
+            "width" : 2160
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114622778231929725114/photos\"\u003epongsakorn khemanitthathai\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAPJWaKe1W1wk1akb4B71OqwO8FYyRzrpJtxKYWPY3sigwy_UsbgyWsB0LjmgvKDdv_4AnuhKbxI01cQh0Zw7PmggDF5lNUFDkrTXRXmAKo-mTEPy_asmtREDioZilkCbqEhD-So3IS---upgAbUCQUj9RGhTUzSqQ7ud9bq59D5PM_Ckon4I5yg",
+            "width" : 2268
+         },
+         {
+            "height" : 1920,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115230839904179487100/photos\"\u003ejas per\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAASbeVY7SFo9q_22uAd0AgIoO_y8eyIm3M5xoGB9NF4skgZTDGM0D7zwTxjn1xVphT4iwNR9ZR-KGd26N1PLGYk5QDsgD_ZXsDjrAVwnfoE-DChQophjJjhXZaRH9xH7KNEhCZVUB9WiQI0xM2nNADjfjdGhRVW0O2SEu8ZnPK4izB4Reo-gUkuQ",
+            "width" : 2560
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114622778231929725114/photos\"\u003epongsakorn khemanitthathai\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAnGRgBK1frD-omZURLqWhydhLIJDSwXOay71jFexVqarMLoSDTT0wJteanULbVImBmMrjcmJrG5FvxyMsGNLo9VsYtMHt3d_iJGcjcwU8cFhro6tIcM6X01cUOAf5Se_2EhDf2g2ZhxIvJIUaEWa5SMRtGhQbmvHh9mVitEy3g0E8LhG6cT8q0Q",
+            "width" : 2268
+         },
+         {
+            "height" : 1920,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115230839904179487100/photos\"\u003ejas per\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA3YWrzpGn7TbUsrHNiaw3ykxvFqv3yO0FupmoNn2vdKajDbBTu4XCCa4frBn0-r1ynPa0ae-XwIk9BLg1Q3UoOzWPqbi2axp-0mISqql3cGn8Ib-S9Dwyft-7GqvDDKDVEhB7-QgoPQyOz-XtCM3_yUwVGhQi0QUFrMLFYPRnhYtwiV_G0OF86g",
+            "width" : 2560
+         },
+         {
+            "height" : 1920,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114706963158041940964/photos\"\u003eสกลวรรษ แก้วกุศลวิวัฒน์\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAGU9LI4yldSt1r9DKG1cE0E6cjFzVW2KcRA4KPjyZkgTy9n8wM-_AsukdgoRzAJYOuUqAyMTXaVBBhrY5gj4g2TK9BO4HMjtVaqu6uG5d-bAESndPitdSuFwSEDS0yAPQEhA3vtifSMMOB0pjSXzBSxdcGhTVHO9Y6CA1hyz0SCa7UI9mVRbnAg",
+            "width" : 1080
+         }
+      ],
+      "place_id" : "ChIJZUfZ2MpnHTERrnF47S7FCeg",
+      "plus_code" : {
+         "compound_code" : "PQFJ+42 Bangkok, Thailand",
+         "global_code" : "7P52PQFJ+42"
+      },
+      "rating" : 3.8,
+      "reviews" : [
+         {
+            "author_name" : "PUAOY KANIK",
+            "author_url" : "https://www.google.com/maps/contrib/109062634549961186818/reviews",
+            "language" : "en",
+            "profile_photo_url" : "https://lh5.ggpht.com/-CnIBXUdsNlA/AAAAAAAAAAI/AAAAAAAAAAA/xGw7JQ8dCF4/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "10 months ago",
+            "text" : "So good",
+            "time" : 1545156589
+         },
+         {
+            "author_name" : "Suteeta Poo",
+            "author_url" : "https://www.google.com/maps/contrib/112054313173605547355/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh3.ggpht.com/-dZQIoM62CGw/AAAAAAAAAAI/AAAAAAAAAAA/sB602_QtNoA/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 4,
+            "relative_time_description" : "2 months ago",
+            "text" : "ของหวานที่นี่น่าทาน อร่อย",
+            "time" : 1563404634
+         },
+         {
+            "author_name" : "ชวิศา อินทสร",
+            "author_url" : "https://www.google.com/maps/contrib/103438577948665081751/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh5.ggpht.com/-tubDoYz7uBA/AAAAAAAAAAI/AAAAAAAAAAA/QLevYov4xYQ/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 3,
+            "relative_time_description" : "3 months ago",
+            "text" : "หวานไปนะ",
+            "time" : 1561380707
+         },
+         {
+            "author_name" : "copper kenkom",
+            "author_url" : "https://www.google.com/maps/contrib/118131629720703431512/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh5.ggpht.com/-1igYSxtXb7s/AAAAAAAAAAI/AAAAAAAAAAA/qUw1ft03YJs/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "10 months ago",
+            "text" : "ขนมขนมอร่อย รอไม่นาน พนักงานดี",
+            "time" : 1543219141
+         },
+         {
+            "author_name" : "jas per",
+            "author_url" : "https://www.google.com/maps/contrib/115230839904179487100/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh6.ggpht.com/-RhqT6NlcAw0/AAAAAAAAAAI/AAAAAAAAAAA/ce_3HtD-id0/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "4 months ago",
+            "text" : "อลังมาก",
+            "time" : 1558235897
+         }
+      ],
+      "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=16720111896932938158",
+      "user_ratings_total" : 25,
+      "utc_offset" : 420,
+      "vicinity" : "57 Thanon Chalong Krung, Lat Krabang"
+   },
+   "status" : "OK"
+}
