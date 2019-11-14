@@ -1,0 +1,294 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "13/9",
+            "short_name" : "13/9",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "ฉลอง กรุง 1 แยก 3",
+            "short_name" : "ฉลอง กรุง 1 แยก 3",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "แขวง ลาดกระบัง",
+            "short_name" : "แขวง ลาดกระบัง",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "เขต ลาดกระบัง",
+            "short_name" : "เขต ลาดกระบัง",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "กรุงเทพมหานคร",
+            "short_name" : "กรุงเทพมหานคร",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "ประเทศไทย",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "13/9, \u003cspan class=\"street-address\"\u003e13/9 ฉลอง กรุง 1 แยก 3\u003c/span\u003e, \u003cspan class=\"extended-address\"\u003eแขวง ลาดกระบัง\u003c/span\u003e \u003cspan class=\"locality\"\u003eเขต ลาดกระบัง\u003c/span\u003e \u003cspan class=\"region\"\u003eกรุงเทพมหานคร\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e \u003cspan class=\"country-name\"\u003eประเทศไทย\u003c/span\u003e",
+      "formatted_address" : "13/9, 13/9 ฉลอง กรุง 1 แยก 3, แขวง ลาดกระบัง เขต ลาดกระบัง กรุงเทพมหานคร 10520 ประเทศไทย",
+      "formatted_phone_number" : "099 919 8125",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.7273834,
+            "lng" : 100.7694829
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7287344802915,
+               "lng" : 100.7710366302915
+            },
+            "southwest" : {
+               "lat" : 13.7260365197085,
+               "lng" : 100.7683386697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "international_phone_number" : "+66 99 919 8125",
+      "name" : "ญาแฝดข้าวมันไก่ ซ.เกกี4",
+      "opening_hours" : {
+         "open_now" : false,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "0000"
+               },
+               "open" : {
+                  "day" : 0,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "0330"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "0330"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "0330"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "0330"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 6,
+                  "time" : "0330"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "1800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 0,
+                  "time" : "0330"
+               },
+               "open" : {
+                  "day" : 6,
+                  "time" : "1800"
+               }
+            }
+         ],
+         "weekday_text" : [
+            "วันจันทร์: 18:00–3:30",
+            "วันอังคาร: 18:00–3:30",
+            "วันพุธ: 18:00–3:30",
+            "วันพฤหัสบดี: 18:00–3:30",
+            "วันศุกร์: 18:00–3:30",
+            "วันเสาร์: 18:00–3:30",
+            "วันอาทิตย์: 18:00–0:00"
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 2988,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116384425343946114597/photos\"\u003eThisawat Thongsawangjaeng\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAo9pLyQUQwJfFQ1j3qVan_ARMT79NGGt8rHOk1jWeOLicAA6Un_vrh0dutZpkvl_LCQJRss2pv5FFOcRYha1lIilOZbGn1-qEfKz5eusZuBWp3RgCk3facgLLS1ULDkoeEhA2OjAXsBBvSfbkOAqghwjbGhSkZ9nsKKJ5xuIl2cu1KspoFwyV4Q",
+            "width" : 5312
+         },
+         {
+            "height" : 1836,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108227423226912846647/photos\"\u003eGu Hasegawa\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAg6SVRU-8JPXcj0MdJLT8lf0JuR429wXzaXl8_VkUURBabO1_wsDx468PKeQwX2zQgHr68l0qqB76P-6MGuL6eIUHmuJPOw-2kdWEP32M014aq6-zYWyNH7lrGW_Rr4HtEhDWihegbZpt5Hy3QuqjSCLJGhRyi4pu8xhN6fvPSrrTr6IIUxKEJw",
+            "width" : 3264
+         },
+         {
+            "height" : 1536,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106746738819154556323/photos\"\u003eแก้มแก้ม lovelove Gamgam\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA-DnsrtJNmTZ3-LvrMiNjEh8xXTwDjGJ1hCIEAa5ic9grf7Pf495-Vgxl9gS422z7mp-xtUdKjcgOTNvd9-mc7epDOE9MYfl3NYRFaY_ogz1J4p9njk8CeD3Kp8LimJehEhDu0yEM4cOZsw7V0T52xCAXGhSmMM2xPI3ehLEH3jfVfUcm5lGzEw",
+            "width" : 1536
+         },
+         {
+            "height" : 1440,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106746738819154556323/photos\"\u003eแก้มแก้ม lovelove Gamgam\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAvjABaXxMjeXQBQBxiwV0ITIAdwsaOIwcyfjHb5nGWi7OguQIlt1gECBJwJhPYNJ0qQfglCB8gNOMnniADmMcEiUPlGwlUzuVpa25Sk0zzmQy2cGNXfj0odPjIcvN1OAcEhBNgdFf14leB5YiI4joJ-x5GhTUI6hD27KbMj5J7kHo6RCgrRM5IA",
+            "width" : 1440
+         },
+         {
+            "height" : 2268,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114527488126691129508/photos\"\u003eOnimusha2007\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA6vMumplTGQMFgSDSy0IYfDqGcyo6Vfdz3MatmjPPoWppxOkk_OtTrcZFyGYN4AxOu-1xWo5B4WNXJwciBl877iiSZ4TccrlDiF2-AoWMvm_COF0bYZ_B-XTmNVo6IxbeEhBDG-_NmHcRBaeCVMNEDdP3GhQ8Wwexr_IPdOGSy6vM4M7o5FsTmg",
+            "width" : 4032
+         },
+         {
+            "height" : 1440,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106746738819154556323/photos\"\u003eแก้มแก้ม lovelove Gamgam\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAODXNJ2ueQ7vyzkdcUi2d6B7IPx0-2GBIWSkyX-lZZ0PXhMm2r5yA8-DmgBanA4YVPL1vMNFNwO9aYlzOI0Cd3QLsS5EjNV2oaVIw5TKaNdz3X2fF4FjHeoHPm3aFD6dyEhCf-TXFLwKQKwUwP4nzdLU0GhT6RY3s6nrZhCNm0JcIFCaDOC2aIQ",
+            "width" : 1440
+         },
+         {
+            "height" : 2268,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114527488126691129508/photos\"\u003eOnimusha2007\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAtduTrdJJBX0QWvk6sXIzYE2Otzj8T9lUmDT4nzGsOt77j7PGglN9gzIvVJZRaVewwOv4jQN-XEwY1wD0cLdl1qWm-hmCO3KpZKx5bGVjvx_kBAXIl-dSsCqhRvHFNdozEhCb2-w0uZuiU0LMr8ubzUX6GhQtISiaB7Fjzuot3l3aUP4Mr-71aw",
+            "width" : 4032
+         },
+         {
+            "height" : 4160,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/111274919453349922609/photos\"\u003eParatakorn Sinto\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAALEfqnWzBltg9cm45hEm0oJ8_GaDz4Y3o2s402BlrAw3nVOQ4mZfibIB5U2HXauaX3FDvCHkS5vhbsqIl59KOuljYIWwEFsxUrnCIeXdkbXqzwzQKKCntH8JaTCMyf2ZmEhAc8XKLIoFyuDkFFTTrGBthGhQ_EwFrGRiyLu9c8ZBEWGSoT6M6FQ",
+            "width" : 2336
+         },
+         {
+            "height" : 2268,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114527488126691129508/photos\"\u003eOnimusha2007\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAE2qUVohmUMNzaJPrIPYC9XSCQR_N5MLsjomBAm_AHdHRSbVv50J3cKAkyoax2DFxMtbMIEcYleAo-OD6DIiWLsAsu2S2kIJagsH1nveEcxHq3bIP2aMyA37bG7_auCBpEhBeQcVnC-suP6sf09eqVd8NGhRb94vkD9DOx63YgfWjuCMdKHEq2A",
+            "width" : 4032
+         },
+         {
+            "height" : 1440,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106746738819154556323/photos\"\u003eแก้มแก้ม lovelove Gamgam\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAEbSnmw7TddWmrAJ8dUfJ5WaqAstrBZ1G9-KVlwe2iRt_LQ8LT8PuS_4y2SUe6jTTVAU5iM4_bHMwBAL59yD3a6s-De3_9EXXaYs_AJK_3VVcHgaREGkOormEEftjbHUcEhCzwTXNy-WueuzZe8Txq-hvGhQCULNkWdrG1WGrxrNsuzwySrurOw",
+            "width" : 1440
+         }
+      ],
+      "place_id" : "ChIJF1_kVkxmHTERJleYgeoaq_w",
+      "plus_code" : {
+         "compound_code" : "PQG9+XQ กรุงเทพมหานคร ไทย",
+         "global_code" : "7P52PQG9+XQ"
+      },
+      "rating" : 4.199999999999999,
+      "reviews" : [
+         {
+            "author_name" : "Areeya Khamsee",
+            "author_url" : "https://www.google.com/maps/contrib/111314425731042511164/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh5.ggpht.com/-maBK5uCe7dc/AAAAAAAAAAI/AAAAAAAAAAA/W2jtnjD2PmA/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "7 เดือนที่แล้ว",
+            "text" : "ให้เยอะ อร่อย เปิดดึกเหมาะกับคนกินดึก",
+            "time" : 1551730385
+         },
+         {
+            "author_name" : "NAMCHOK PHADUNGNANONT",
+            "author_url" : "https://www.google.com/maps/contrib/117341572927190250028/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh5.ggpht.com/-OZpUmzErh_U/AAAAAAAAAAI/AAAAAAAAAAA/EoNO3wO0Pho/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "เดือนที่แล้ว",
+            "text" : "อร่อย ข้าวบึ้ม",
+            "time" : 1566996690
+         },
+         {
+            "author_name" : "ZEE Studio",
+            "author_url" : "https://www.google.com/maps/contrib/100902732429023852484/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh6.ggpht.com/-xhxVSDL2_gc/AAAAAAAAAAI/AAAAAAAAAAA/vOMa-WJ9hMI/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating" : 3,
+            "relative_time_description" : "เดือนที่แล้ว",
+            "text" : "อร่อยดี",
+            "time" : 1567866371
+         },
+         {
+            "author_name" : "ชวิศา อินทสร",
+            "author_url" : "https://www.google.com/maps/contrib/103438577948665081751/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh5.ggpht.com/-tubDoYz7uBA/AAAAAAAAAAI/AAAAAAAAAAA/QLevYov4xYQ/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 4,
+            "relative_time_description" : "3 เดือนที่แล้ว",
+            "text" : "ข้าวเยอะ อร่อย",
+            "time" : 1561381483
+         },
+         {
+            "author_name" : "สักการียา ตะฮาวัน",
+            "author_url" : "https://www.google.com/maps/contrib/104869217929897134770/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh4.ggpht.com/-BZqof3YnjfU/AAAAAAAAAAI/AAAAAAAAAAA/kKrVmPpxK6k/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+            "rating" : 2,
+            "relative_time_description" : "9 เดือนที่แล้ว",
+            "text" : "ไม่มีหะลาลป่าว",
+            "time" : 1547582306
+         }
+      ],
+      "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=18206675513074276134",
+      "user_ratings_total" : 26,
+      "utc_offset" : 420,
+      "vicinity" : "13/9, 13/9 ฉลอง กรุง 1 แยก 3, แขวง ลาดกระบัง, เขต ลาดกระบัง"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,255 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "ซอย เกกีงาม 2",
+            "short_name" : "ซอย เกกีงาม 2",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "แขวง ลาดกระบัง",
+            "short_name" : "แขวง ลาดกระบัง",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "เขตลาดกระบัง",
+            "short_name" : "เขตลาดกระบัง",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "กรุงเทพมหานคร",
+            "short_name" : "กรุงเทพมหานคร",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "ประเทศไทย",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eซอย เกกีงาม 2\u003c/span\u003e \u003cspan class=\"extended-address\"\u003eแขวง ลาดกระบัง\u003c/span\u003e \u003cspan class=\"locality\"\u003eเขตลาดกระบัง\u003c/span\u003e \u003cspan class=\"region\"\u003eกรุงเทพมหานคร\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e \u003cspan class=\"country-name\"\u003eประเทศไทย\u003c/span\u003e",
+      "formatted_address" : "ซอย เกกีงาม 2 แขวง ลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 10520 ประเทศไทย",
+      "formatted_phone_number" : "086 405 7792",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.7277267,
+            "lng" : 100.7702708
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7290756302915,
+               "lng" : 100.7716055802915
+            },
+            "southwest" : {
+               "lat" : 13.7263776697085,
+               "lng" : 100.7689076197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "international_phone_number" : "+66 86 405 7792",
+      "name" : "Shogun ลาดกระบัง",
+      "opening_hours" : {
+         "open_now" : false,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 0,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 0,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 6,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 6,
+                  "time" : "1100"
+               }
+            }
+         ],
+         "weekday_text" : [
+            "วันจันทร์: 11:00–22:00",
+            "วันอังคาร: 11:00–22:00",
+            "วันพุธ: 11:00–22:00",
+            "วันพฤหัสบดี: 11:00–22:00",
+            "วันศุกร์: 11:00–22:00",
+            "วันเสาร์: 11:00–22:00",
+            "วันอาทิตย์: 11:00–22:00"
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 2976,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101307888683755540636/photos\"\u003eMasaru\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAj3vwScVdfa3YRqnGtEi0V5Jw6dC-2FC_sl87TSdv1SYAZ46HfB8lZlcZ6OZ-qYWQl5AyrQirTH52m0Pm136i2JRqZf2L1iJ6fUVdB1pNIS_n9Z6TCda8EPMR38I6545DEhAAOytB89G1SBaOPtCO0jxdGhS1O9igT_rSxmSKCOf733fdvNWZKg",
+            "width" : 3968
+         },
+         {
+            "height" : 2976,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101307888683755540636/photos\"\u003eMasaru\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAALXKJzrjgrthfvEesn_SgoQnzvID9FnoHJOLhgXtQiVq0XnpXkWu03LtoThlDCSV4xw_s_q65hW65YvGYc8Whyh_zvVyTdOvbjwet-lFQay-rl5mCVmuPzwhh2apkTebSEhBzLcOeutzR7pCvMaewHjO9GhR2992dAcysg12RJRduresEdzhF1w",
+            "width" : 3968
+         },
+         {
+            "height" : 960,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/102905684385511211837/photos\"\u003eKobchai Buarod\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAagdx6uUmYQ0qu1kYmvPU-ZY7c-E-5wj7HZ58eEoPL8OH420yieRunuj-0HVCzAuJpp9fsQPCeLle65HB5_RG2tAa3WU0mqscmPoSd2Jp7vq1GtmYj3PpjwsyM3n9Lx34EhDw8THdzUXMA30Dtovi7BlzGhSTXcLknDpntKoVtDE8f7dpcQEEQQ",
+            "width" : 679
+         },
+         {
+            "height" : 2976,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101307888683755540636/photos\"\u003eMasaru\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAVLyTyMzN1dy2SQejRO2Q9_o9jG9urRqAf-zkxQHiRf52zAex8w274BOwghjRUHZU-xUIHwuApG7lVc2IuLHPF2AKs08xsRaVirTpww13i7aULybmtVZ4I22S_ANtV5HoEhBVQUNZvnF5tZhFEuJGS0T9GhTSuWh6JAyoxlGvHaGH5qxYwHSEkQ",
+            "width" : 3968
+         },
+         {
+            "height" : 2976,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101307888683755540636/photos\"\u003eMasaru\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA1fMRqx3Vp_YhGRZPP7v7IBs_73nB7BTQdF0LkNhXUKrSNoyY0F571bu4eLQI_XhO1frgnj4uULe7Si-UjnGsaXZHytPWdoSQBcfidJ066kUtSjajiW3Vg_NsIXHIOcDREhD0gpn1KYddIi2RKfqNbrt-GhSMJ_mfhYE4b7dygHON1-JJ7PuWOg",
+            "width" : 3968
+         },
+         {
+            "height" : 2976,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101307888683755540636/photos\"\u003eMasaru\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA7iY4f2K5qLh_Mx06IN2oTSMRXI72hjei3JDCoyQXcBlpDB2oT8AzWw1CowHQcBhZ5w3VCscYjS3bgy0dBf0JtOI56Ngg2BebCXJOnTfVKqeuV5Qv-mRq9DWjpFqQ1gJcEhB8nvvLiHHwAMcOOhU5YXyjGhRNaHL4rguesBzH0o1JDOEMw6OztA",
+            "width" : 3968
+         }
+      ],
+      "place_id" : "ChIJOXLhY8pnHTERmatuQIMK2ec",
+      "plus_code" : {
+         "compound_code" : "PQHC+34 กรุงเทพมหานคร ไทย",
+         "global_code" : "7P52PQHC+34"
+      },
+      "rating" : 4.4,
+      "reviews" : [
+         {
+            "author_name" : "Masaru .",
+            "author_url" : "https://www.google.com/maps/contrib/101307888683755540636/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh6.ggpht.com/-XvpqOk18rYY/AAAAAAAAAAI/AAAAAAAAAAA/Mo0Z1JLnuDQ/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "3 เดือนที่แล้ว",
+            "text" : "📌ร้านนี้อร่อยดีครับ มีให้เลือก 3 ชุด 3 ราคา\nชุด 199  บาทจะมีปลาดอลลี่เพิ่มด้วยในราคานี้ ชุด 259 บาทจะเพิ่มอาหารพวกกุ้ง เกี้ยวกุ้ง เนื้อกุ้งไรเงี้ยอ้ะครับ 4-5 อย่าง\nชุด 359 บาท น้ะครับอันนี้ลืมว่ามีไรบ้าง \n+เครื่องดื่มRefill 29 บาทครับจะเอาหรือไม่เอากะได้ ก็จะมีชาเขียวและน้ำผลไม้\nถ้าคุณไม่เอารีฟิวก็จะมีน้ำดื่ม,โออิชิ,เปปซี่(ขวดเล็ก),เปปซี่(ขวดใหญ่)ขายในราคา 15,15,15,40 ตามลำดับ\nอ้อ..เกือบลืม สำหรับปลาดอลลี่,เนื้อกุ้ง,เกี้ยวกุ้งพวกนี้จะไม่มีวางให้ตัก แต่เราต้องบอกพนักงานให้ตักให้น้ะครับ\n#ที่สำคัญที่ผมประทับใจที่สุดคือ ทุกครั้งที่คุณกินเสร็จ ทางร้านจะถามถึงสิ่งที่ลูกค้าต้องการให้ปรับปรุง อันนี้มันแสดงถึงความใส่ใจที่มีให้ลูกค้าและพร้อมที่จะปรับปรุงการให้บริการให้ดีขึ้นอย่างสม่ำเสมอ ล่าสุดผมบอกไปว่าน้ำจิ้มซีฟู้ดมันเค็มไป เค้าก็รับทราบ",
+            "time" : 1564922870
+         },
+         {
+            "author_name" : "abhishek aheer",
+            "author_url" : "https://www.google.com/maps/contrib/116006820185095041899/reviews",
+            "language" : "en",
+            "profile_photo_url" : "https://lh3.ggpht.com/-cO-qs8lKqRg/AAAAAAAAAAI/AAAAAAAAAAA/ZzGtRnyFFCo/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 3,
+            "relative_time_description" : "2 เดือนที่แล้ว",
+            "text" : "good but not best",
+            "time" : 1567612767
+         },
+         {
+            "author_name" : "ณัฐวุฒิ แสงคำมา",
+            "author_url" : "https://www.google.com/maps/contrib/118363166511386717686/reviews",
+            "profile_photo_url" : "https://lh3.ggpht.com/-1sS-xcfF2cw/AAAAAAAAAAI/AAAAAAAAAAA/XkUW1cGmFRg/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "เดือนที่แล้ว",
+            "text" : "",
+            "time" : 1570119398
+         },
+         {
+            "author_name" : "Popz Auitragool",
+            "author_url" : "https://www.google.com/maps/contrib/110553125770772237213/reviews",
+            "profile_photo_url" : "https://lh6.ggpht.com/-UJHZRUO2jMw/AAAAAAAAAAI/AAAAAAAAAAA/n96nWoE9uB8/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "4 เดือนที่แล้ว",
+            "text" : "",
+            "time" : 1563072668
+         },
+         {
+            "author_name" : "Kanchana Wanatarat",
+            "author_url" : "https://www.google.com/maps/contrib/103882490159165540883/reviews",
+            "profile_photo_url" : "https://lh4.ggpht.com/-ymc-L_NiKqU/AAAAAAAAAAI/AAAAAAAAAAA/EKyF-BPxANg/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 4,
+            "relative_time_description" : "เดือนที่แล้ว",
+            "text" : "",
+            "time" : 1570861542
+         }
+      ],
+      "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=16706395851545553817",
+      "user_ratings_total" : 5,
+      "utc_offset" : 420,
+      "vicinity" : "ซอย เกกีงาม 2 แขวง ลาดกระบัง เขตลาดกระบัง",
+      "website" : "https://www.facebook.com/Shogun-%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87-524943694707244/"
+   },
+   "status" : "OK"
+}

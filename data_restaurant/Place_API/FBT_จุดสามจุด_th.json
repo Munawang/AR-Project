@@ -1,0 +1,210 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "57",
+            "short_name" : "57",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "ถนน ฉลองกรุง",
+            "short_name" : "ถนน ฉลองกรุง",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "แขวง ลาดกระบัง",
+            "short_name" : "แขวง ลาดกระบัง",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "เขต ลาดกระบัง",
+            "short_name" : "เขต ลาดกระบัง",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "กรุงเทพมหานคร",
+            "short_name" : "กรุงเทพมหานคร",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "ประเทศไทย",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003e57 ถนน ฉลองกรุง\u003c/span\u003e \u003cspan class=\"extended-address\"\u003eแขวง ลาดกระบัง\u003c/span\u003e \u003cspan class=\"locality\"\u003eเขต ลาดกระบัง\u003c/span\u003e \u003cspan class=\"region\"\u003eกรุงเทพมหานคร\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e \u003cspan class=\"country-name\"\u003eประเทศไทย\u003c/span\u003e",
+      "formatted_address" : "57 ถนน ฉลองกรุง แขวง ลาดกระบัง เขต ลาดกระบัง กรุงเทพมหานคร 10520 ประเทศไทย",
+      "formatted_phone_number" : "099 227 0074",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.7228193,
+            "lng" : 100.7801028
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7241714302915,
+               "lng" : 100.7815019802915
+            },
+            "southwest" : {
+               "lat" : 13.7214734697085,
+               "lng" : 100.7788040197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+      "international_phone_number" : "+66 99 227 0074",
+      "name" : "จุดสามจุด",
+      "photos" : [
+         {
+            "height" : 2160,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108495882055967256193/photos\"\u003eworapong thepsatit\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAABBZ07_RlOhko6flRtkvkyHIzBTHmEf59f7RPS9hNwmh3qojVAGk58hEf54w01_rWKiaMSf7OYc8SKQb9OW7ZV9kgC-bDKvAU7eVtok74bZ8xH3wLs4DziR-h38bFYBXLEhCvMjLqt46LgtAZ8JbKqbesGhQPo4bZkUpaEDuOSAS3M7jCK5O2Vg",
+            "width" : 2160
+         },
+         {
+            "height" : 1280,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113138179223406052027/photos\"\u003eSirinun Mamadusen\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA-W8xkynFw48w4E_jEVEDRpFjYiL53i3xMpG078oyzS-bsUBnxQ405utg0Pg55U7PgSwJkAWn8Dh5aOdvxLtjG36lt0wZ9Aj-ta3TFdLURcL-9Sp_Mpi1_H9H19MCyFVfEhCGM2rHLY1-3fquz2aFcfWhGhRUZl3vG6nltUR5EzP0zpGNEHL3pw",
+            "width" : 720
+         },
+         {
+            "height" : 2160,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108495882055967256193/photos\"\u003eworapong thepsatit\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAKjq9fSwMdscSfqRBPOfZHVgLg5LN4PC5XHdXMfrlYyi2SF0UCzsDBWm21zeIgmQsc_olAD8W8Ml5RUGglmcm6nA_NQ07y40bs33X2ohhbljyajyi5XgccQaxNzbBWfuaEhBr-74D4Oum76o4w1gKCwREGhSU2E9pcM_2JMLQkpw2o4AzVmcMVA",
+            "width" : 2160
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105619051736557909839/photos\"\u003eชัชเตอร์ ครับผม\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA84h3HPzghvZg1v39UkQLACY6451Cwp2nlbydLuooFWKd7AqZaStHBqrDPD-xS2Jg6j4I6iodnqUF2ed70BYEbbrLSII48UVEnyeVeP5_18y7wIQ0ne4qGpLik72xz9exEhBIx9b4n_MHSgwzGY5a5veFGhRH8h7GPtJFdH20Sp55Cqt6Yu7Ljg",
+            "width" : 1960
+         },
+         {
+            "height" : 2160,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108495882055967256193/photos\"\u003eworapong thepsatit\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAZshR_hmMIRG2H1hau7DntXCC0zQZBWJoQyAFeDMAgI75ZlN0gEUydmBWmgTPr63G0l-TsEnyOr2ocWtb5zzkGxpYc-VlnAJdqBVLKPwdUQQf_ieayIY-Wxrm33zID0TYEhAwzZq8V3P8XarvAsw4Q2AlGhTnL9Jqj-7Ivw3d9Xw6KDIbZQjVDg",
+            "width" : 2160
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114622778231929725114/photos\"\u003epongsakorn khemanitthathai\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAfNUuoMwRABxG648mSivZ3D8hqxNiBMvJrg_c0S8DneZou9I4SZnSGqkMxZb4XlzhlsrZVgr2Qtr5tX-1Ner-RX9EqGCsUTLYE8LpuDfQYZxtDXtwYU0JsVgg6F3OI0d5EhC8yOwaWrDgYuCHpYG_FAqoGhTie90u1xEk3z7vmAOFC5_viJEU5A",
+            "width" : 2268
+         },
+         {
+            "height" : 1920,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115230839904179487100/photos\"\u003ejas per\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAsyDNodimA82Sskc4sxqMJV_TJ4KSN8o9SYQbosoJhKG7Hvhy0toLwxoLSzMciYSsQiDVmy1dXjhyyMoK5YzpXahYfpJ3IJ3ttZwBN7uX7P_S78MUo8PEB2TOdR1wfGuWEhAhZs_bugT30glM31YumZbhGhR_TsVDZVftllyIcFzeUdm76a0y6g",
+            "width" : 2560
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114622778231929725114/photos\"\u003epongsakorn khemanitthathai\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAADr3DQIcToOC77Hdo4yIutHU3mtHKWRKZMvVUvEXQ7RB-Nh7yv-_2e2Q10a4qS4FiIkSNlWMKfdQQ9_8WMMUuDvRCXPFFTOgD5HXi0K1SXooH9MOg_FVVpLIOIaO1bYXfEhCLPNHiLQs0EQ_LqVTjC2ZLGhTc1yjywwdzKk4jVCebSPjPN66jXg",
+            "width" : 2268
+         },
+         {
+            "height" : 1920,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115230839904179487100/photos\"\u003ejas per\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAeKULf1C1vKT2EFPqPmBi59LDKoMJUrX8YghIkoJMdkdenDm1eUwMHI4DSUUxxL3F9klM3vdZaj28LYpaUFqGEFVS7Ml9CyW7v9uiAehEITktLBYtCS_Qks_EwDEpt2yYEhADV07noE8rm4wj0Zy5m9R4GhT9QUiAur0S99R_I-1vHUPSBxmGVA",
+            "width" : 2560
+         },
+         {
+            "height" : 1920,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114706963158041940964/photos\"\u003eสกลวรรษ แก้วกุศลวิวัฒน์\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAaph7nY7luj8yXLmYj58gQO3qcsc68zXz31LQPsTZDN_pVUod-K9CSHf7kMPZgMo-eay8y5HUb1CcpNzSoAxXCO3bHbYbukPZooPXHeczXJ4xhp6q3KiRWyopr5ia-3STEhA6P39Bge59uNDbgyTfO428GhRhkVusziNa0lVYTxGjQyH9mRPSSw",
+            "width" : 1080
+         }
+      ],
+      "place_id" : "ChIJZUfZ2MpnHTERrnF47S7FCeg",
+      "plus_code" : {
+         "compound_code" : "PQFJ+42 กรุงเทพมหานคร ไทย",
+         "global_code" : "7P52PQFJ+42"
+      },
+      "rating" : 3.8,
+      "reviews" : [
+         {
+            "author_name" : "Suteeta Poo",
+            "author_url" : "https://www.google.com/maps/contrib/112054313173605547355/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh3.ggpht.com/-dZQIoM62CGw/AAAAAAAAAAI/AAAAAAAAAAA/sB602_QtNoA/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 4,
+            "relative_time_description" : "3 เดือนที่แล้ว",
+            "text" : "ของหวานที่นี่น่าทาน อร่อย",
+            "time" : 1563404634
+         },
+         {
+            "author_name" : "ชวิศา อินทสร",
+            "author_url" : "https://www.google.com/maps/contrib/103438577948665081751/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh5.ggpht.com/-tubDoYz7uBA/AAAAAAAAAAI/AAAAAAAAAAA/QLevYov4xYQ/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 3,
+            "relative_time_description" : "3 เดือนที่แล้ว",
+            "text" : "หวานไปนะ",
+            "time" : 1561380707
+         },
+         {
+            "author_name" : "copper kenkom",
+            "author_url" : "https://www.google.com/maps/contrib/118131629720703431512/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh5.ggpht.com/-1igYSxtXb7s/AAAAAAAAAAI/AAAAAAAAAAA/qUw1ft03YJs/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "10 เดือนที่แล้ว",
+            "text" : "ขนมขนมอร่อย รอไม่นาน พนักงานดี",
+            "time" : 1543219141
+         },
+         {
+            "author_name" : "jas per",
+            "author_url" : "https://www.google.com/maps/contrib/115230839904179487100/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh6.ggpht.com/-RhqT6NlcAw0/AAAAAAAAAAI/AAAAAAAAAAA/ce_3HtD-id0/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "5 เดือนที่แล้ว",
+            "text" : "อลังมาก",
+            "time" : 1558235897
+         },
+         {
+            "author_name" : "pongsakorn khemanitthathai",
+            "author_url" : "https://www.google.com/maps/contrib/114622778231929725114/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh3.ggpht.com/-z5nP-35mkuY/AAAAAAAAAAI/AAAAAAAAAAA/aFIb1xf9fbk/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+            "rating" : 4,
+            "relative_time_description" : "ปีที่แล้ว",
+            "text" : "ของหวานอร่อยดี มีที่นั่งเยอะ มากินชิวๆกับเพื่อนๆหรือคนที่รู้ใจได้",
+            "time" : 1527764177
+         }
+      ],
+      "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=16720111896932938158",
+      "user_ratings_total" : 25,
+      "utc_offset" : 420,
+      "vicinity" : "57 ถนน ฉลองกรุง แขวง ลาดกระบัง เขต ลาดกระบัง"
+   },
+   "status" : "OK"
+}

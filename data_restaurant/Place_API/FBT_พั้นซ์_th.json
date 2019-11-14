@@ -1,0 +1,289 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "ถนน ลาดกระบัง",
+            "short_name" : "ถนน ลาดกระบัง",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "แขวง ลาดกระบัง",
+            "short_name" : "แขวง ลาดกระบัง",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "เขต ลาดกระบัง",
+            "short_name" : "เขต ลาดกระบัง",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "กรุงเทพมหานคร",
+            "short_name" : "กรุงเทพมหานคร",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "ประเทศไทย",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eถนน ลาดกระบัง\u003c/span\u003e \u003cspan class=\"extended-address\"\u003eแขวง ลาดกระบัง\u003c/span\u003e \u003cspan class=\"locality\"\u003eเขต ลาดกระบัง\u003c/span\u003e \u003cspan class=\"region\"\u003eกรุงเทพมหานคร\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e \u003cspan class=\"country-name\"\u003eประเทศไทย\u003c/span\u003e",
+      "formatted_address" : "ถนน ลาดกระบัง แขวง ลาดกระบัง เขต ลาดกระบัง กรุงเทพมหานคร 10520 ประเทศไทย",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.7216955,
+            "lng" : 100.780325
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7230432302915,
+               "lng" : 100.7816302302915
+            },
+            "southwest" : {
+               "lat" : 13.7203452697085,
+               "lng" : 100.7789322697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "name" : "พั้น~ซ์",
+      "opening_hours" : {
+         "open_now" : true,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 0,
+                  "time" : "2100"
+               },
+               "open" : {
+                  "day" : 0,
+                  "time" : "1600"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "2100"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "2100"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "2100"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "2100"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "2100"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 6,
+                  "time" : "2100"
+               },
+               "open" : {
+                  "day" : 6,
+                  "time" : "1100"
+               }
+            }
+         ],
+         "weekday_text" : [
+            "วันจันทร์: 11:00–21:00",
+            "วันอังคาร: 11:00–21:00",
+            "วันพุธ: 11:00–21:00",
+            "วันพฤหัสบดี: 11:00–21:00",
+            "วันศุกร์: 11:00–21:00",
+            "วันเสาร์: 11:00–21:00",
+            "วันอาทิตย์: 16:00–21:00"
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 1678,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116261727555350971963/photos\"\u003eร้านอาหารพั้นซ์\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAMo9myyLWZmAMe9raT8C8K8p19hYk9aBParCPpoPm_6ZagM8YR89z76yVmfhqIegECaa7od-pEVqwsP9MYjgdUIj37B0wZw0WCw97BLx7F85xr1pedFWMlKgq0ummeEZaEhAYOM4hQI4otkT_t-TCLeOnGhQLddoC7boFKoLCd8yhO2k1NlXC4w",
+            "width" : 2643
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/118354422183040665070/photos\"\u003eJun\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAyEzUPAp4hZHQBtSZLLbOXw5iYGCuRzMVBeIJJak1jQ2b0cTIHZ3CRuyfijX1Iz41xXStE17XquvAniNG6khtM2Q698OCOD2VlDcInQO-g3DtC5YaTld5IZuPSfoXXavDEhAvfqttm6ZMBK7ezOSZDIDBGhSiHLuOqqsEJy-yYOvI8xeXWc36yQ",
+            "width" : 4032
+         },
+         {
+            "height" : 2448,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114926366286529802296/photos\"\u003eAui United\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAxAih2OgwN6FSjEW9c4obtsC3VO4xNR-wWDOv11FZLMC0Wf8vHh3zgYaL5w9vLQVqdyVVuofaQXVnGdOrzOlQa5_MzeqX5pT7xMJ2uJlcVszQQFRyIkSmVkNkIg9nIEkSEhD9pwvKzHZe5G2NcTQlHuQTGhQV8qdRkSomKzvDH4r8CLAZKIMMQQ",
+            "width" : 3264
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113840598465602325925/photos\"\u003eJoe Soui\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAVUsDkMAWLgsMCBoCvX-5zcIQAtYa2MmBOlLqu_HJLtqIS0NZjBmv2454z9FGX4q4YgwSiHEB1BoDIOW3iJZj3JxaDc-X22B_yidgcRZrI-1fbjLpMp3jTfdBmWyFACLUEhCCVh3nq98M1sIOOPGskjRNGhRj65YkbepqXS55qJ9jvsR66KicGQ",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101325407106503898149/photos\"\u003eChonnavee Sampavamana\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA_DrU6AIsK7WZBFvlvcBkvxppCdYAxWL-kbzMLsAEUsUuH2wfgzvjo4NBFeBjvrS1EeeBJ13EGwuG_s8_zswY76zT9tg9LGtuYnqpXJOLLBMVdwKE30ZYkPnbRs0J3MusEhCrI1jzqz_c0AU9pVEn7hQZGhSxHgE9ZCSFodJlxhZdER8sy7a7rw",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113840598465602325925/photos\"\u003eJoe Soui\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAr1BlVUWxq9yxvYVsDJdgDTz2Q1qZnmyE4vtKAcPLbcQJhnQqKEBOcBN1X_smEYhnJ6buSHdt2Nt_TLpoN3cDdU-Nlrqlv9fgQP0dEDxyl9pVIpgfklC4y70MXOjtdyR0EhD6GChP9Hs1okTYAiwhjTttGhSGqqQZZiiFIibBH8kG3ggGTRtSHg",
+            "width" : 4032
+         },
+         {
+            "height" : 930,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108466039497973296897/photos\"\u003eAnn Thikhamporn\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA34CN5H9ykVzbzacqL_aojW8Bl4umfLqEZOVU9JLnWMZ4bE58-lFpxEhKW-GwJBNNbFKgaws5ipsoZ9FHvSXe_OBged9msyetsBUgH22e-mMgUFnQK86H-d4_GrLQz4NnEhCO2cQMdvt3oJBsu6xqh1Z1GhTW2_p5ehbK2EJHbAKcp3VaYHpcKQ",
+            "width" : 740
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/112178572458564581101/photos\"\u003eNelson Jiang\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAx5bINRHM_erWXt7nhnM8l4whX4jlfkhQNureyFlGuj2zwipgjLud3rXBqUQsCfM3x-OovIlY2y9jL3pFS2JYs1DQEhWfD9KeNvCBYdfPScCKKAyrmq6F80dWVclCpx-UEhAiVnbcuiGhxouMxSEIow1CGhQco5J_yQqAblNooezHAci1CsV8og",
+            "width" : 4032
+         },
+         {
+            "height" : 2448,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114926366286529802296/photos\"\u003eAui United\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA6KmT8wJzBP9IuFb-VCfbz7dk3nMhAopx91C4yuXJ1BgFk9N8VOStne4yMK9InVx7XxOjWxQ8ZCmeU1j9FKGzenyUWG6OI_ZR_M8e7Y-fWwD3-I6S2H-cyf19BT36KM2GEhCe96BXQXiFp_a4Aun2DW_uGhRJ0CP8_R6XjUp-gOZHYiDY1c_4EA",
+            "width" : 3264
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108675781422974489095/photos\"\u003ePattarapon Anantavichian\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAi3igUyqsLH8dYUOfolUDTyfwp6ksfLqpI0cweJsjxbkie_1nbRxsYQ9yYyJlJKRK37Uc-XN8VrYhulV_TDwgM21E9XWM7gCjEYOsLmGvXkiwFwftx9MNNT_n_87FrLh5EhCPZyrE9UDcZN41Mb-qWW9eGhSGVezsnDv5zP2CYJsVO2_y7BUtGQ",
+            "width" : 3024
+         }
+      ],
+      "place_id" : "ChIJTaRJHctnHTERf0YvU1cQdqU",
+      "plus_code" : {
+         "compound_code" : "PQCJ+M4 กรุงเทพมหานคร ไทย",
+         "global_code" : "7P52PQCJ+M4"
+      },
+      "price_level" : 2,
+      "rating" : 4.3,
+      "reviews" : [
+         {
+            "author_name" : "วรัท ตรีภูริเดช",
+            "author_url" : "https://www.google.com/maps/contrib/112551639976657848490/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh6.ggpht.com/-9tfzxFkiLYU/AAAAAAAAAAI/AAAAAAAAAAA/poWpGqu7JHk/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating" : 4,
+            "relative_time_description" : "เดือนที่แล้ว",
+            "text" : "ร้านเก่าแก่ อยู่มานาน ไปกินเอาบรรยากาศ สำหรับศิษย์เก่าลาดกระบังรุ่นเก่า",
+            "time" : 1566701978
+         },
+         {
+            "author_name" : "รังษิยา ศรีสุข",
+            "author_url" : "https://www.google.com/maps/contrib/115903985206935800444/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh5.ggpht.com/-X5AAabelzZw/AAAAAAAAAAI/AAAAAAAAAAA/4eST4MZpWxw/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "เดือนที่แล้ว",
+            "text" : "อาหารอร่อยและบันญกาศดีมากเลยค่ะ",
+            "time" : 1567713744
+         },
+         {
+            "author_name" : "Panyapat Srisawat 11",
+            "author_url" : "https://www.google.com/maps/contrib/118328880926898798443/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh5.ggpht.com/-DH7LS4X-zQA/AAAAAAAAAAI/AAAAAAAAAAA/xVawt6kbJNU/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+            "rating" : 4,
+            "relative_time_description" : "เดือนที่แล้ว",
+            "text" : "อาหารอร่อยถูกปาก เหมาะกับการรวมตัว อร่อยย😊😊😊",
+            "time" : 1567916979
+         },
+         {
+            "author_name" : "น้ำทิพย์ ปทีปพลีผล",
+            "author_url" : "https://www.google.com/maps/contrib/111605602497236512980/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh4.ggpht.com/-SpV_K-3YzYA/AAAAAAAAAAI/AAAAAAAAAAA/kS1HdHZ1Cb8/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+            "rating" : 4,
+            "relative_time_description" : "2 เดือนที่แล้ว",
+            "text" : "มีห้องจัดเลี้ยงส่วนตัว ขาหมูทอดอร่อยค่ะ",
+            "time" : 1564365182
+         },
+         {
+            "author_name" : "ว่าที่ร.ต.พงษญากร ลิมตโสภณ",
+            "author_url" : "https://www.google.com/maps/contrib/109238281141343673113/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh4.ggpht.com/-I1nnOP3aet8/AAAAAAAAAAI/AAAAAAAAAAA/q4gnVB-J9RY/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "2 เดือนที่แล้ว",
+            "text" : "อาหารอร่อยราคาถูก แอร์เย็น จอดรถสะดวก",
+            "time" : 1566196756
+         }
+      ],
+      "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=11922735030753773183",
+      "user_ratings_total" : 280,
+      "utc_offset" : 420,
+      "vicinity" : "ถนน ลาดกระบัง เขต ลาดกระบัง",
+      "website" : "https://thai-restaurant-907.business.site/"
+   },
+   "status" : "OK"
+}

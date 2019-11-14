@@ -1,0 +1,20 @@
+﻿+FourSquare 10 
+-Wongnai 6
+-OpenRice 5
++เว็บของร้านอาหาร 2
+-เว็บพะยูน 1
+-เว็บ travel thaiza 1
+-เว็บตามสั่ง 2
++บล็อกลูกพระจอมพากิน 2
+-เส้นทางเศรษฐีออนไลน์ 1
+-eatladkrabang 2
+-เว็บ eatguide 5
+-เว็บ mthai 1
+-เว็บ gotogether 1
+ส่วนหนึ่งจากบทความ:
+- จาก Wongnai (มือเก๋า 2 / กินแหลก 4)
++ จาก a day 1
+- จาก RyoiiReview 2
+- จาก Salehere 1
+- จาก eatguide (ตะลุย 13 อร่อย) 1
+- จาก creditonhand 1 (ตะลุยกิน 13 ร้าน)
