@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="showdetail.css">
+  <title>Detail of Restaurant</title>
+</head>
+<body>
+
+  <!-- Button trigger modal -->
+  <div class="btn_detail">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong"> Lamoon ละมุน </button></div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <img id="icon_cat" src="pic/coffee-cup.png">
+            <div id="grid_header" class="row">
+              <div class="col-sm-6">
+                <h4 class="modal-title" id="name_restaurant">Lamoon ละมุน</h4>
+              </div>
+              <div class="col-sm-6" id="header_bt">
+               <div class="t_rating">            
+                <img class="t_star" src="pic/get_star.png">
+                <img class="t_star" src="pic/get_star.png">
+                <img class="t_star" src="pic/get_star.png">
+                <img class="t_star" src="pic/get_star.png">
+                <img class="t_star" src="pic/nopoint.png">
+              </div>
+              <h6 class="total_rating">4.0</h6>
+            </div>
+          </div>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="container">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true">Info</a>
+                <a class="nav-item nav-link" id="nav-reviews-tab" data-toggle="tab" href="#nav-reviews" role="tab" aria-controls="nav-reviews" aria-selected="false">Reviews</a>
+                <a class="nav-item nav-link" id="nav-picture-tab" data-toggle="tab" href="#nav-picture" role="tab" aria-controls="nav-picture" aria-selected="false">Picture</a>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+                <div id="grid_continfo" class="row">
+                  <div class="card cont_box">
+                    <div class="card-body">
+                      <h6>Restaurant Category: </h6>
+                      <p class="cont_cat">bakery</p>
+                    </div>
+                  </div>
+                  <div class="card cont_box">
+                    <div class="card-body">
+                      <h6>Contact: </h6><p id="cont_phone">086 882 0234</p>
+                      <button id="tel_btn" type="button" class="btn btn-primary btn-lg btn-block">Call Now</button>
+                    </div>
+                  </div>
+                  <div class="card cont_box">
+                    <div class="card-body">
+                      <h6>Opening-Hours: </h6>
+                      <p class="cont_hour">วันจันทร์: ปิดทำการ<br>
+                        วันอังคาร: 10:00–20:00<br>
+                        วันพุธ: 10:00–20:00<br>
+                        วันพฤหัสบดี: 10:00–20:00<br>
+                        วันศุกร์: 10:00–20:00<br>
+                        วันเสาร์: 10:00–20:00<br>
+                      วันอาทิตย์: 10:00–20:00</p>
+                    </div>
+                  </div>
+                  <div class="card cont_box">
+                    <div class="card-body">
+                      <h6>Additional Source: </h6><br>
+                      <button type="button" class="btn btn-primary other_web">Wongnai</button>
+                      <button type="button" class="btn btn-primary other_web">OpenRice</button>
+                      <button type="button" class="btn btn-primary other_web">Eatguide</button>
+                      <button type="button" class="btn btn-primary other_web">Facebook</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-reviews" role="tabpanel" aria-labelledby="reviews-tab">
+
+                <div class="card cont_box">
+                  <div class="container">
+                    <div class="review_pic">
+                      <img src="https://via.placeholder.com/100">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="col-sm-6 grid_rating">
+                     <div class="u_rating">            
+                      <img class="u_star" src="pic/get_star.png">
+                      <img class="u_star" src="pic/get_star.png">
+                      <img class="u_star" src="pic/get_star.png">
+                      <img class="u_star" src="pic/get_star.png">
+                      <img class="u_star" src="pic/nopoint.png">
+                    </div>
+                    <p class="user_rating">4.0</p>
+                  </div>
+                  <p class="cont_review">Review 1 : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
+              </div>
+
+              <div class="card cont_box">
+                <div class="container">
+                  <div class="review_pic">
+                    <img src="https://via.placeholder.com/100">
+                    <img src="https://via.placeholder.com/100">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="col-sm-6 grid_rating">
+                   <div class="u_rating">            
+                    <img class="u_star" src="pic/get_star.png">
+                    <img class="u_star" src="pic/get_star.png">
+                    <img class="u_star" src="pic/get_star.png">
+                    <img class="u_star" src="pic/get_star.png">
+                    <img class="u_star" src="pic/nopoint.png">
+                  </div>
+                  <p class="user_rating">4.0</p>
+                </div>
+                <p class="cont_review">Review 2 : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+              </div>
+            </div>
+          </div>
+            <div class="tab-pane fade" id="nav-picture" role="tabpanel" aria-labelledby="picture-tab">
+              <div class="container">
+                <div class="fade_textbox">
+                  <img class="res_pic" src="https://via.placeholder.com/200x150">
+                  <div class="cont_img">
+                    <p>Picture by Google Map</p>
+                  </div>
+                </div>
+                <div class="fade_textbox">
+                  <img class="res_pic" src="https://via.placeholder.com/200x150">
+                  <div class="cont_img">
+                    <p>Picture by Google Map</p>
+                  </div>
+                </div>
+                <div class="fade_textbox">
+                  <img class="res_pic" src="https://via.placeholder.com/200x150">
+                  <div class="cont_img">
+                    <p>Picture by Google Map</p>
+                  </div>
+                </div>
+                <div class="fade_textbox">
+                  <img class="res_pic" src="https://via.placeholder.com/200x150">
+                  <div class="cont_img">
+                    <p>Picture by Google Map</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>        
+      </div>
+
+      <div class="modal-footer">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

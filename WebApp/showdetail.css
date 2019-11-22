@@ -1,0 +1,101 @@
+div.btn_detail{
+  position: absolute;
+  top: 252px;
+  right: 120px;
+}
+
+#icon_cat{
+  width: 20%;
+  height: 20%;
+  margin: auto;
+}
+
+#name_restaurant{
+  margin-left: auto;
+}
+
+.t_star{
+  display: inline-block;
+  width: 15%;
+  padding-bottom: 8px;
+}
+
+#grid_header{
+  margin: auto;
+}
+
+.t_rating{
+  display: inline-block;
+  width: 80%;
+}
+
+.total_rating{
+  display: inline-block;
+  margin-bottom: 0px;
+  font-size: 1.15rem;
+}
+
+#header_bt{
+  margin-top:5px;
+}
+
+.cont_box{
+  width: 100%;
+  margin-top: 10px;
+}
+.other_web{
+  margin-top: 10px;
+}
+
+#tel_btn{
+  font-size: 1rem;
+  padding: 5px;
+}
+
+#cont_phone{
+  display: inline-block;
+}
+
+.review_pic{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.res_pic{
+  margin-top: 10px;
+}
+.grid_rating{
+  margin-top:5px;
+}
+.u_rating{
+  display: inline-block;
+  width: 65%;
+}
+.u_star{
+  display: inline-block;
+  width: 15%;
+  padding-bottom: 8px;
+}
+.user_rating{
+  display: inline-block;
+  margin-bottom: 0px;
+  font-size: 1rem;
+}
+.fade_textbox {
+  position: relative;
+  max-width: 200px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.fade_textbox .cont_img {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  text-align: center;
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  font-size: x-small;
+  height: 15%;
+}
+
