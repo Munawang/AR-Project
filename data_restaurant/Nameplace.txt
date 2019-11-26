@@ -1,0 +1,68 @@
+FBT_Shabu party_en.json
+FBT_Shabu party_th.json
+FBT_จินตภัทร_en.json
+FBT_จินตภัทร_th.json
+FBT_จุดสามจุด_en.json
+FBT_จุดสามจุด_th.json
+FBT_ชากุมารทอง_en.json
+FBT_ชากุมารทอง_th.json
+FBT_บ้านข้าวซอย_en.json
+FBT_บ้านข้าวซอย_th.json
+FBT_พั้นซ์_en.json
+FBT_พั้นซ์_th.json
+FBT_ร้านโคม_en.json
+FBT_ร้านโคม_th.json
+FBT_ละมุน_en.json
+FBT_ละมุน_th.json
+FBT_สุขใจเตี๋ยวไข่ต้มยำ_en.json
+FBT_สุขใจเตี๋ยวไข่ต้มยำ_th.json
+FBT_แมวกินปลา_en.json
+FBT_แมวกินปลา_th.json
+FBT_ไก่เกาหลี อูรี ชิกเก้น_en.json
+FBT_ไก่เกาหลี อูรี ชิกเก้น_th.json
+Jinda_BKK Grill_en.json
+Jinda_BKK Grill_th.json
+Jinda_Coffee Today_en.json
+Jinda_Coffee Today_th.json
+Jinda_Ice Feeling_en.json
+Jinda_Ice Feeling_th.json
+Jinda_ครัวฅนเมือง_en.json
+Jinda_ครัวฅนเมือง_th.json
+Jinda_ครัวป้าเจ๊ก_en.json
+Jinda_ครัวป้าเจ๊ก_th.json
+Jinda_พาสต้าโฮม_en.json
+Jinda_พาสต้าโฮม_th.json
+Jinda_สุกี้ดารา_en.json
+Jinda_สุกี้ดารา_th.json
+Jinda_อาฮ่า_en.json
+Jinda_อาฮ่า_th.json
+Jinda_เกี๊ยวกุ้งจินดา_en.json
+Jinda_เกี๊ยวกุ้งจินดา_th.json
+Jinda_ไอศครีมไข่แข็ง_en.json
+Jinda_ไอศครีมไข่แข็ง_th.json
+Keki_A&P ไก่ยำแซ่บ_en.json
+Keki_A&P ไก่ยำแซ่บ_th.json
+Keki_Dairy Delivery KMITL_en.json
+Keki_Dairy Delivery KMITL_th.json
+Keki_Kinnii_en.json
+Keki_Kinnii_th.json
+Keki_STEAK TECHNO สเต็ก เทคโนฯ_en.json
+Keki_STEAK TECHNO สเต็ก เทคโนฯ_th.json
+Keki_shogun ลาดกระบัง_en.json
+Keki_shogun ลาดกระบัง_th.json
+Keki_ฅน 8 หน้า SUSHI BAR & RESTAURANT_en.json
+Keki_ฅน 8 หน้า SUSHI BAR & RESTAURANT_th.json
+Keki_ชาชักโกอิน_en.json
+Keki_ชาชักโกอิน_th.json
+Keki_ญาแฝด_en.json
+Keki_ญาแฝด_th.json
+Keki_มุมสบาย_en.json
+Keki_มุมสบาย_th.json
+Keki_วัวล้วนๆไม่มีควายผสม_en.json
+Keki_วัวล้วนๆไม่มีควายผสม_th.json
+Keki_หมูทอดป้าจุก_en.json
+Keki_หมูทอดป้าจุก_th.json
+Keki_อิ่มแปล้ แฮปปี้คัพ_en.json
+Keki_อิ่มแปล้ แฮปปี้คัพ_th.json
+Keki_เสต็ก อิ่มเอม_en.json
+Keki_เสต็ก อิ่มเอม_th.json
