@@ -76,6 +76,7 @@ div.btn_detail{
   width: 15%;
   padding-bottom: 8px;
 }
+
 .user_rating{
   display: inline-block;
   margin-bottom: 0px;
@@ -99,3 +100,18 @@ div.btn_detail{
   height: 15%;
 }
 
+@import 'https://fonts.googleapis.com/css?family=Kanit|Prompt';
+
+body{
+    font-family: 'Kanit', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Prompt', sans-serif;
+}
+h6{
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-size : 20px;
+  text-align: center;
+}
