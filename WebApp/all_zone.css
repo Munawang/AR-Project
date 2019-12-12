@@ -1,0 +1,32 @@
+#zone_btn{
+	position: absolute;
+	top: 30%;
+}
+h1{
+	font-size: 2rem;
+	font-family: sans-serif;
+}
+
+#title_jinda{
+	position: absolute;
+	top: 15%;
+	left: 32%;
+}
+
+#title_keki{
+	position: absolute;
+	top: 15%;
+	left: 30%;
+}
+
+#title_fbt{
+	position: absolute;
+	top: 15%;
+	left: 12%;
+}
+
+.edit_reslist{
+	display: inline-block;
+	width: 150px;
+	height: 60px;
+}
