@@ -22,13 +22,29 @@ body {
 		width: 425px;
 	}
 
-	#nav_zone{
+	#zone_header, #check_header{
 		width: 100%;
+		text-align: center; 
+		padding: 10px;
+	}
+
+	#check_header{
+		height: 10%;
+		color: white;
+		font-size: 16px;
+	}
+	
+	#zone_header{
 		height: 20%;
 		background-color: white;
-		text-align: center;
-		font-size: 18px;
-		padding: 8px;
 		color: black;
+		font-size: 18px;
+	}
+	#tutorial_btn{
+		position: absolute;
+		top: 520px;
+		right: 35px;
+		box-shadow: 10px 10px 5px grey;
+
 	}
 }
