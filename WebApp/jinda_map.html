@@ -1,64 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>eatAR-Jinda</title>
-	<meta name="viewport" content="initial-scale=1.0">
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="showdetail.css">
-	<link rel="stylesheet" type="text/css" href="all_zone.css">
+  <title>Jinda Map</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="jinda_map.css">
+  <link rel="stylesheet" type="text/css" href="showdetail.css">
+  <link rel="stylesheet" type="text/css" href="all_zone.css">
+  <script type="text/javascript" src="jinda_map.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap"rel="stylesheet">
 </head>
 <body>
 
-	<h1 id="title_jinda">โซนจินดา</h1>
-	<div id="zone_btn" class="container">
-		<div class="row">
-			<div class="col">
-				<button type="button" class="btn btn-block edit_reslist" data-toggle="modal" data-target="#exampleModalLong"> Bkk Grill </button>
-			</div>
-			<div class="col">
-				<button type="button" class="btn btn-block edit_reslist" data-toggle="modal" data-target="#exampleModalLong"> R-HA (อาร์-ฮ่า) </button>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col">
-				<button type="button" class="btn btn-block edit_reslist" data-toggle="modal" data-target="#exampleModalLong"> ไอศครีมไข่แข็ง </button>
-			</div>
-			<div class="col">
-				<button type="button" class="btn btn-block edit_reslist" data-toggle="modal" data-target="#exampleModalLong"> Pasta Home </button>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col">
-				<button type="button" class="btn btn-block edit_reslist" data-toggle="modal" data-target="#exampleModalLong"> ครัวป้าเจ๊ก </button>
-			</div>
-			<div class="col">
-				<button type="button" class="btn btn-block edit_reslist" data-toggle="modal" data-target="#exampleModalLong"> ครัวฅนเมือง </button>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col">
-				<button type="button" class="btn btn-block edit_reslist" data-toggle="modal" data-target="#exampleModalLong">เกี๊ยวกุ้งซอยจินดา</button>
-			</div>
-			<div class="col">
-				<button type="button" class="btn btn-block edit_reslist" data-toggle="modal" data-target="#exampleModalLong"> สุกี้ดารา ลาดกระบัง </button>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col">
-				<button type="button" class="btn btn-block edit_reslist" data-toggle="modal" data-target="#exampleModalLong"> Ice Feeling </button>
-			</div>
-			<div class="col">
-				<button type="button" class="btn btn-block edit_reslist" data-toggle="modal" data-target="#exampleModalLong"> Coffee Today ลาดกระบัง </button>
-			</div>
-		</div>
-	</div>
+<div id="nav_zone">Jinda Zone</div>
+<div id="map"></div>
 
-	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 
@@ -212,8 +170,7 @@
 		</div>
 	</div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvxzqr4qQKxIE7llXkPfkpiaMa8amsixo&callback=initMap" async defer></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

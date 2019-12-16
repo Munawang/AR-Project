@@ -1,0 +1,34 @@
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Kanit', sans-serif;
+}
+
+/*/*for mobile*/
+@media only screen and (max-width: 425px) {
+	#map {
+		height: 523px;
+		width: 425px;
+	}
+
+	#nav_zone{
+		width: 100%;
+		height: 20%;
+		background-color: white;
+		text-align: center;
+		font-size: 18px;
+		padding: 8px;
+		color: black;
+	}
+}
