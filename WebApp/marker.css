@@ -1,0 +1,55 @@
+.gm-style-iw, .gm-style-iw-c{
+	padding: 10px !important;
+}
+
+.gm-style-iw-d {
+	overflow: hidden !important; 
+}
+
+
+#icon_marker{
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 5px;
+}
+
+#name_marker{
+	margin-left: auto;
+	font-size: 16px;
+	display: inline-block;
+}
+
+#grid_marker{
+	margin: auto;
+}
+
+.mk_rating{
+	display: inline-block;
+	width: 80%;
+}
+
+.total_marker{
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	font-size: 14px;
+}
+
+#header_marker{
+	margin-top:5px;
+}
+
+.mk_rating{
+	display: inline-block;
+	width: 65%;
+}
+.mk_star{
+	display: inline-block;
+	width: 25%;
+	padding-bottom: 8px;
+}
+#status_marker{
+	color: green;
+	font-size: 14px;
+}
