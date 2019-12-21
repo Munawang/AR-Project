@@ -40,7 +40,12 @@ function showPosition(position) {
  		new google.maps.LatLng(13.7250487802915, 100.7821217802915) // โคม
  		);
 
-	var u_latlng = new google.maps.LatLng(13.7275202, 100.7694236); //user's location
+	var u_latlng = new google.maps.LatLng(13.722719, 100.780227); //user's location
+	// For test: Jinda = 13.720278, 100.783761
+	// For test: Keki = 13.727822, 100.769886
+	// For test: FBT = 13.722719, 100.780227
+	// For test: Unavailable  = 13.731270, 100.781224 (IT KMITL) | ใช้ตัวแปลตำแหน่งผู้ใช้
+
 	var check_jinda = zone_jinda.contains(u_latlng);
 	var check_keki = zone_keki.contains(u_latlng);
 	var check_fbt = zone_fbt.contains(u_latlng);	
@@ -60,7 +65,7 @@ function showPosition(position) {
 
 //z.innerHTML = '<form action="tutorial.html"><input id="tutorial_btn" type="image" src="pic/info.png" alt="Submit" width="48" height="48"></form>';
 
-	var locations = [
+var locations = [
 	['สุกี้ดารา', 13.7221057, 100.7852154],//jinda (10)
 	['Pasta Home (พาสต้าโฮม)', 13.71779, 100.783517],
 	['เกี๊ยวกุ้งจินดา', 13.7212019, 100.7842203],
@@ -99,7 +104,7 @@ function showPosition(position) {
 
 	var mapOptions = {
 		center: u_latlng,
-		zoom: 16.5,
+		zoom: 17,
 		mapTypeId: 'terrain',
 		zoomControl: false,
 		mapTypeControl: false,
@@ -110,29 +115,29 @@ function showPosition(position) {
 
 	
 	var ct1_marker ='<div class="row">'+
-  '<div class="col-3">'+
-  	'<img id="icon_marker" src="pic/coffee-cup.png">'+
-  '</div>'+
-  '<div class="col-9">'+
-  	'<div id="grid_marker" class="row">'+
-			'<div class="col-sm-6">'+
-				'<h4 class="modal-title" id="name_marker">';
+	'<div class="col-3">'+
+	'<img id="icon_marker" src="pic/coffee-cup.png">'+
+	'</div>'+
+	'<div class="col-9">'+
+	'<div id="grid_marker" class="row">'+
+	'<div class="col-sm-6">'+
+	'<h4 class="modal-title" id="name_marker">';
 
-    var ct2_marker = '</h4>'+
-              '</div>'+
-              '<div class="col-sm-6" id="header_marker">'+
-               '<div class="mk_rating">'+            
-                '<img class="mk_star" src="pic/get_star.png">'+
-                '<img class="mk_star" src="pic/get_star.png">'+
-                '<img class="mk_star" src="pic/get_star.png">'+
-                '<img class="mk_star" src="pic/get_star.png">'+
-                '<img class="mk_star" src="pic/nopoint.png">'+
-                '<h6 class="total_marker">4.0</h6>'+
-              '</div>'+
-            '</div>'+
-          '</div><h6 id="status_marker"> &#8226; เปิดอยู่ในขณะนี้</h6></div>';
+	var ct2_marker = '</h4>'+
+	'</div>'+
+	'<div class="col-sm-6" id="header_marker">'+
+	'<div class="mk_rating">'+            
+	'<img class="mk_star" src="pic/get_star.png">'+
+	'<img class="mk_star" src="pic/get_star.png">'+
+	'<img class="mk_star" src="pic/get_star.png">'+
+	'<img class="mk_star" src="pic/get_star.png">'+
+	'<img class="mk_star" src="pic/nopoint.png">'+
+	'<h6 class="total_marker">4.0</h6>'+
+	'</div>'+
+	'</div>'+
+	'</div><h6 id="status_marker"> &#8226; เปิดอยู่ในขณะนี้</h6></div>';
 
-     var btn_marker = '<button type="button" class="btn btn-block btn-info" data-toggle="modal" data-target="#exampleModalLong">อ่านต่อ</button>';
+	var btn_marker = '<button type="button" class="btn btn-block more_btn" data-toggle="modal" data-target="#exampleModalLong">อ่านต่อ</button>';
 
 	var maps = new google.maps.Map(document.getElementById("map"),mapOptions);
 
@@ -152,18 +157,22 @@ function showPosition(position) {
 			return function() {
 				info.setContent(ct1_marker+locations[i][0]+ct2_marker+btn_marker);
 				info.open(maps, marker);
+				
+				//modal part
+				var name_modal = document.getElementById("name_restaurant");
+				name_modal.innerHTML = locations[i][0];
 			}
-		})(marker, i));
+		})(marker, i)); 
+	} 
 
-	}
-
-	var u_marker = new google.maps.Marker({
-		position: new google.maps.LatLng(13.7275202, 100.7694236), //user's location
+var u_marker = new google.maps.Marker({
+		position: new google.maps.LatLng(13.722719, 100.780227), //user's location
 		map: maps,
 		title: 'ตำแหน่งผู้ใช้',
+		icon: 'pic/user_marker.png',
 		animation: google.maps.Animation.BOUNCE,
 	});
-	u_marker.addListener('click', toggleBounce);
+u_marker.addListener('click', toggleBounce);
 
 } // showposition function
 
@@ -174,4 +183,4 @@ function toggleBounce() {
 		marker.setAnimation(google.maps.Animation.BOUNCE);
 	}
 }
-}; //init function
+}; //init function 

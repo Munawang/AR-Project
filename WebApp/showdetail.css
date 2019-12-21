@@ -1,62 +1,89 @@
-div.btn_detail{
-  position: absolute;
-  top: 252px;
-  right: 120px;
-}
-
+/*header modal part*/
 #icon_cat{
   width: 20%;
   height: 20%;
   margin: auto;
 }
-
-#name_restaurant{
-  margin-left: auto;
-}
-
-.t_star{
-  display: inline-block;
-  width: 15%;
-  padding-bottom: 8px;
-}
-
 #grid_header{
   margin: auto;
 }
-
-.t_rating{
-  display: inline-block;
-  width: 80%;
+#name_restaurant{
+  margin-left: auto;
 }
-
-.total_rating{
-  display: inline-block;
-  margin-bottom: 0px;
-  font-size: 1.15rem;
-}
-
 #header_bt{
   margin-top:5px;
 }
+.t_rating{
+  display: inline-block;
+  width: 100%;
+}
+.t_star{
+  display: inline-block;
+  width: 10%;
+  padding-bottom: 8px;
+}
+.total_rating{
+  display: inline-block;
+  margin-bottom: 0px;
+  font-size: 1.2rem;
+}
+#status{
+  color: green;
+  font-size: 15px;
+  position: relative;
+  left: 20px;
+  margin-top: 5px;
+}
 
+/*tab part*/
+#nav-info-tab, #nav-review-tab, #nav-picture-tab{
+  color: #DC0F6E;
+}
+#nav-info-tab:hover, #nav-review-tab:hover, #nav-picture-tab:hover{
+  color: black;
+}
+#nav-info-tab.active{
+  color: black;
+}
+
+/*body modal part*/
 .cont_box{
   width: 100%;
   margin-top: 10px;
 }
-.other_web{
-  margin-top: 10px;
+.card-body{
+  padding: 1rem !important;
 }
 
+/*info tab*/
+.textinfo{
+  text-align: left;
+}
 #tel_btn{
   font-size: 1rem;
   padding: 5px;
+  background-color: rgb(149,52,98);
+  color: white;
+}
+.other_web{
+  margin-top: 10px;
+  background-color: rgb(149,52,98);
+  color: white;
+}
+#tel_btn:hover, .other_web:hover{
+  background-color: rgba(149,52,98,0.9);
+  opacity: 0.9;
+  color: white;
+}
+#more_web{
+  text-align: left;
 }
 
+/*review tab*/
 .review_pic{
   display: inline-block;
   margin-top: 20px;
 }
-
 .res_pic{
   margin-top: 10px;
 }
@@ -77,6 +104,8 @@ div.btn_detail{
   margin-bottom: 0px;
   font-size: 1rem;
 }
+
+/*picture tab*/
 .fade_textbox {
   position: relative;
   max-width: 200px; /* Maximum width */
@@ -94,4 +123,3 @@ div.btn_detail{
   font-size: x-small;
   height: 15%;
 }
-
