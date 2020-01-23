@@ -14,7 +14,8 @@
 
 var x = document.getElementById("header1");
 var y = document.getElementById("header2");
-var z = document.getElementById("btn")
+var btn1 = document.getElementById("camera_btn")
+var btn2 = document.getElementById("tutorial_btn")
 
 if (navigator.geolocation) {
 	navigator.geolocation.getCurrentPosition(showPosition);
@@ -63,7 +64,8 @@ function showPosition(position) {
 		y.innerHTML = '<div id="check_header" style="background-color: red;">คุณไม่อยู่ในพื้นที่ให้บริการในขณะนี้</div>';
 	}
 
-//z.innerHTML = '<form action="tutorial.html"><input id="tutorial_btn" type="image" src="pic/info.png" alt="Submit" width="48" height="48"></form>';
+btn1.innerHTML = '<a href="camera.html"><button type="button" id="c_btn" class="btn btn-primary btn-circle btn-xl"><i class="glyphicon glyphicon-camera"></i></button></a>';
+btn2.innerHTML = '<a href="tutorial.html"><button type="button" id="t_btn" class="btn btn-primary btn-circle btn-xl"><i class="glyphicon glyphicon-question-sign"></i></button></a>';
 
 var locations = [
 	['สุกี้ดารา', 13.7221057, 100.7852154],//jinda (10)
@@ -116,13 +118,13 @@ var locations = [
 	
 	var ct1_marker ='<div class="row">'+
 	'<div class="col-3">'+
-	'<img id="icon_marker" src="pic/food2.png">'+
+	'<img id="icon_marker" src="pic/coffee-cup.png">'+
 	'</div>'+
 	'<div class="col-9">'+
 	'<div id="grid_marker" class="row">'+
 	'<div class="col-sm-6">'+
 	'<h4 class="modal-title" id="name_marker">';
- 
+
 	var ct2_marker = '</h4>'+
 	'</div>'+
 	'<div class="col-sm-6" id="header_marker">'+
@@ -148,7 +150,6 @@ var locations = [
 		marker = new google.maps.Marker({
 			position: new google.maps.LatLng(locations[i][1], locations[i][2]),
 			map: maps,
-			icon: 'pic/res_marker.png',
 			title: locations[i][0]
 		});
 
