@@ -40,11 +40,42 @@ body {
 		color: black;
 		font-size: 18px;
 	}
-	#tutorial_btn{
+
+	.btn-circle.btn-xl {
+		width: 60px;
+		height: 60px;
+		padding: 10px 16px;
+		border-radius: 35px;
+		font-size: 24px;
+		line-height: 1;
+	}
+	
+	.btn-circle {
+		width: 30px;
+		height: 30px;
+		padding: 6px 0px;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 12px;
+		line-height: 1.42857;
+	}
+	
+	#c_btn, #t_btn{
+		box-shadow: 0px 2px 3px darkgrey;
+		background-color: white;
+		border-color: white;
+		color: dimgrey;
+	}
+
+	#c_btn{
 		position: absolute;
 		top: 520px;
 		right: 35px;
-		box-shadow: 10px 10px 5px grey;
+	}
 
+	#t_btn{
+		position: absolute;
+		top: 520px;
+		left: 35px;
 	}
 }

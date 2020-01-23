@@ -1,0 +1,68 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+#camera, #camera-view, #camera-sensor, #camera-output{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#camera-view, #camera-sensor, #camera-output{
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+#camera-trigger{
+    width: 200px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 3px 0 darkgrey;
+    position: fixed;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    font-family: 'Kanit', sans-serif
+}
+.taken{
+    height: 100px!important;
+    width: 100px!important;
+    transition: all 0.5s ease-in;
+    border: solid 3px white;
+    box-shadow: 0 2px 3px 0 darkgrey;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+.btn-circle.btn-xl {
+    width: 45px;
+    height: 45px;
+    padding: 10px 11px;
+    border-radius: 35px;
+    font-size: 20px;
+    line-height: 0.8;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+#close{
+    box-shadow: 0px 2px 3px darkgrey;
+    background-color: white;
+    border-color: white;
+    color: dimgrey;
+    position: absolute;
+	top: 25px;
+	right: 25px;
+}
