@@ -40,7 +40,7 @@ function showPosition(position) {
  		new google.maps.LatLng(13.7250487802915, 100.7821217802915) // โคม
  		);
 
-	var u_latlng = new google.maps.LatLng(13.722719, 100.780227); //user's location
+	var u_latlng = new google.maps.LatLng(13.720278, 100.783761); //user's location
 	// For test: Jinda = 13.720278, 100.783761
 	// For test: Keki = 13.727822, 100.769886
 	// For test: FBT = 13.722719, 100.780227
@@ -116,13 +116,13 @@ var locations = [
 	
 	var ct1_marker ='<div class="row">'+
 	'<div class="col-3">'+
-	'<img id="icon_marker" src="pic/coffee-cup.png">'+
+	'<img id="icon_marker" src="pic/food2.png">'+
 	'</div>'+
 	'<div class="col-9">'+
 	'<div id="grid_marker" class="row">'+
 	'<div class="col-sm-6">'+
 	'<h4 class="modal-title" id="name_marker">';
-
+ 
 	var ct2_marker = '</h4>'+
 	'</div>'+
 	'<div class="col-sm-6" id="header_marker">'+
@@ -148,6 +148,7 @@ var locations = [
 		marker = new google.maps.Marker({
 			position: new google.maps.LatLng(locations[i][1], locations[i][2]),
 			map: maps,
+			icon: 'pic/res_marker.png',
 			title: locations[i][0]
 		});
 
@@ -166,7 +167,7 @@ var locations = [
 	} 
 
 var u_marker = new google.maps.Marker({
-		position: new google.maps.LatLng(13.722719, 100.780227), //user's location
+		position: new google.maps.LatLng(13.720278, 100.783761), //user's location
 		map: maps,
 		title: 'ตำแหน่งผู้ใช้',
 		icon: 'pic/user_marker.png',
