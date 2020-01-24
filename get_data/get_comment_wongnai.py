@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import json
 import os
 
-url_list = open('wongnai_list.txt', 'r', encoding="utf-8")
+url_list = open('Desktop/wongnai_list.txt', 'r', encoding="utf-8")
 count = 0
 
 for j in url_list:
@@ -33,7 +33,7 @@ for i in range(count):
                 # reviews = parse_content.find_all('div', class_='w0wgso-3 hyZFro')
 
                 #Save all data to JSON file
-                with open('C://Users//Supapitch//Desktop//data_restaurant//Reviews_Scraping//'+"WongnaiReviews_"+name_text+'.json', 'w', encoding="utf-8") as info:
+                with open('C://Users//Munawang//Desktop//dataweb'+"WongnaiReviews_"+name_text+'.json', 'w', encoding="utf-8") as info:
                         for user in user_info:
                                 info.write(str(user)+'\n')
                         info.write("----------------------------------------------------------------"+'\n')
