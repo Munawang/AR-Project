@@ -225,13 +225,13 @@ function onclickDetail (data) {
 	database.on("value", function(snapshot) {
 		var typeRes = snapshot.child("res_type").val();
 		var phoneNumber = snapshot.child("res_phonenumber").val();
-		var d_mon = 'วันจันทร์: '+snapshot.child("res_opening/วันจันทร์").val()+'<br>';
-		var d_tue = 'วันอังคาร: '+snapshot.child("res_opening/วันอังคาร").val()+'<br>';
-		var d_wed = 'วันพุธ: '+snapshot.child("res_opening/วันพุธ").val()+'<br>';
-		var d_thu = 'วันพฤหัสบดี: '+snapshot.child("res_opening/วันพฤหัสบดี").val()+'<br>';
-		var d_fri = 'วันศุกร์: '+snapshot.child("res_opening/วันศุกร์").val()+'<br>';
-		var d_sat = 'วันเสาร์: '+snapshot.child("res_opening/วันเสาร์").val()+'<br>';
-		var d_sun = 'วันอาทิตย์: '+snapshot.child("res_opening/วันอาทิตย์").val();
+		var d_mon = snapshot.child("res_opening/วันจันทร์").val();
+		var d_tue = snapshot.child("res_opening/วันอังคาร").val();
+		var d_wed = snapshot.child("res_opening/วันพุธ").val();
+		var d_thu = snapshot.child("res_opening/วันพฤหัสบดี").val();
+		var d_fri = snapshot.child("res_opening/วันศุกร์").val();
+		var d_sat = snapshot.child("res_opening/วันเสาร์").val();
+		var d_sun = snapshot.child("res_opening/วันอาทิตย์").val();
 		//var pics = snapshot.child("res_img").val();
 		//var u_review = snapshot.child("").val();
 
@@ -251,13 +251,24 @@ function onclickDetail (data) {
 			'<button id="tel_btn" type="button" class="btn btn-lg btn-block">โทร</button></a>';
 		}
 		
-		mon.innerHTML = d_mon;
-		tue.innerHTML = d_tue;
-		wed.innerHTML = d_wed;
-		thu.innerHTML = d_thu;
-		fri.innerHTML = d_fri;
-		sat.innerHTML = d_sat;
-		sun.innerHTML = d_sun;
+		if (d_mon == "") {
+			mon.innerHTML = "ไม่พบข้อมูล";
+			tue.innerHTML = "";
+			wed.innerHTML = "";
+			thu.innerHTML = "";
+			fri.innerHTML = "";
+			sat.innerHTML = "";
+			sun.innerHTML = "";
+		} else {
+			mon.innerHTML = '<li>วันจันทร์: '+d_mon+'</li>';
+			tue.innerHTML = '<li>วันอังคาร: '+d_tue+'</li>';
+			wed.innerHTML = '<li>วันพุธ: '+d_wed+'</li>';
+			thu.innerHTML = '<li>วันพฤหัสบดี: '+d_thu+'</li>';
+			fri.innerHTML = '<li>วันศุกร์: '+d_fri+'</li>';
+			sat.innerHTML = '<li>วันเสาร์: '+d_sat+'</li>';
+			sun.innerHTML = '<li>วันอาทิตย์: '+d_sun+'</li>';
+		}
+		
 		//imageBox.innerHTML = pics;
 		//reviews.innerHTML = u_review;
 
