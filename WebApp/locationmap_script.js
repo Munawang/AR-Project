@@ -16,7 +16,8 @@ var firebaseConfig = {
 
 var ct1_marker ='<div class="row">'+
 '<div class="col-3">'+
-'<img id="icon_marker" src="pic/coffee-cup.png">'+
+'<div id="iconMarker">'+
+'</div>'+
 '</div>'+
 '<div class="col-9">'+
 '<div id="grid_marker" class="row">'+
@@ -211,10 +212,12 @@ function onclickDetail (data) {
 	var sat = document.getElementById("opening_sat");
 	var sun = document.getElementById("opening_sun");
 	var phoneCall = document.getElementById("phone");
+	var reviews = document.getElementById("reviewBox");
+	var images = document.getElementById("ImageBox");
+	var marker_icon = document.getElementById("iconMarker");
+	var category_icon = document.getElementById("iconCat");
 	//var detail_status = document.getElementById("status");
 	//var marker_status = document.getElementById("status_marker");
-	//var imageBox = document.getElementsByClassName("fade_textbox");
-	//var reviews = document.getElementsByClassName("cont_review")
 
 	var dataSplit = data.split(",");
 
@@ -232,14 +235,14 @@ function onclickDetail (data) {
 		var d_fri = snapshot.child("res_opening/วันศุกร์").val();
 		var d_sat = snapshot.child("res_opening/วันเสาร์").val();
 		var d_sun = snapshot.child("res_opening/วันอาทิตย์").val();
-		//var pics = snapshot.child("res_img").val();
-		//var u_review = snapshot.child("").val();
 
 		//Show data on webapp
 		if (typeRes == "") {
 			type.innerHTML = "ไม่พบข้อมูล";
 		} else {
 			type.innerHTML = typeRes;
+			marker_icon.innerHTML = '<img id="icon_marker" src="pic/'+typeRes+'_icon.png">';
+			category_icon.innerHTML = '<img id="icon_cat" src="pic/'+typeRes+'_icon.png">';
 		}
 
 		if (phoneNumber == "") {
@@ -269,27 +272,54 @@ function onclickDetail (data) {
 			sun.innerHTML = '<li>วันอาทิตย์: '+d_sun+'</li>';
 		}
 		
-		//imageBox.innerHTML = pics;
-		//reviews.innerHTML = u_review;
+		var  numReviews = snapshot.child("res_review").numChildren();
+		for (let x = 1; x <= numReviews; x++) {
+			var eachReview = snapshot.child("res_review/res_review"+x+"/text").val();
+			var eachRate = snapshot.child("res_review/res_review"+x+"/rating").val();
+			console.log(eachReview);
+			console.log(eachRate);
+			reviews.innerHTML += 
+			'<div class="card cont_box">'+
+			'<div class="card-body">'+
+				'<div class="col-sm-6 grid_rating">'+
+					'<div class="u_rating"></div>'+
+					'<p class="user_rating">'+eachRate+'</p>'+
+				'</div>'+
+				'<p class="cont_review">'+eachReview+'</p>'+
+			'</div></div><br>';
 
+			var userStars = document.querySelector(".u_rating");
+			var getPoint = '<img class="u_star" src="pic/get_star.png">';
+			var noPoint = '<img class="u_star" src="pic/nopoint.png">';
+			if (eachRate == 0 || eachRate == "") {
+				userStars.innerHTML = "";
+			} else {
+				userStars.innerHTML = "";
+				userStars.innerHTML += getPoint.repeat(eachRate);
+				userStars.innerHTML += noPoint.repeat(5-eachRate);
+			}
+		}
+		
+		var  numImage = snapshot.child("res_img").numChildren();
+		console.log(numImage);
+		for (let y = 1; y < numImage+1; y++) {
+			if(y < 10) {
+				var checkNum = "0";
+			}else{
+				var checkNum = "";
+			}
+			var urlImage = snapshot.child("res_img/img"+checkNum+y).val();
+			console.log(urlImage);
+			images.innerHTML += '<div class="fade_textbox">'+
+			'<img class="res_pic" src="'+ urlImage +'">'+
+			'<div class="cont_img">'+
+				'<p>Picture by Google Map</p>'
+			'</div>'+
+		'</div>';
+		}
 	}, function (error) {
 		console.log("Error: " + error.code);
 	});
 
 }
-
-// database.child("res_opening").on("value", (snapshot) => {
-// 	snapshot.forEach((child) => {
-// 	  opening.innerHTML += "<li>"+child.key+ " " +snapshot.child(child.key).val()+"</li>";
-// 	});
-//   } 
-//   )
-
-
-
-  
-
-
-
-
   
