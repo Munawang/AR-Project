@@ -1,0 +1,10 @@
+Jinda_BKK Grill_th.json
+Jinda_Coffee Today_th.json
+Jinda_Ice Feeling_th.json
+Jinda_ครัวฅนเมือง_th.json
+Jinda_ครัวป้าเจ๊ก_th.json
+Jinda_พาสต้าโฮม_th.json
+Jinda_สุกี้ดารา_th.json
+Jinda_อาฮ่า_th.json
+Jinda_เกี๊ยวกุ้งจินดา_th.json
+Jinda_ไอศครีมไข่แข็ง_th.json

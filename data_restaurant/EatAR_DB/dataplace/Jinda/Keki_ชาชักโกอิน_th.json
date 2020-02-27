@@ -1,0 +1,289 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Soi Keki Ngam 4",
+            "short_name" : "Soi Keki Ngam 4",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Lay Kraband",
+            "short_name" : "Lay Kraband",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "เขต ลาดกระบัง",
+            "short_name" : "เขต ลาดกระบัง",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "กรุงเทพมหานคร",
+            "short_name" : "กรุงเทพมหานคร",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "ประเทศไทย",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eSoi Keki Ngam 4\u003c/span\u003e, \u003cspan class=\"extended-address\"\u003eLay Kraband\u003c/span\u003e, \u003cspan class=\"locality\"\u003eเขต ลาดกระบัง\u003c/span\u003e \u003cspan class=\"region\"\u003eกรุงเทพมหานคร\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e \u003cspan class=\"country-name\"\u003eประเทศไทย\u003c/span\u003e",
+      "formatted_address" : "Soi Keki Ngam 4, Lay Kraband, เขต ลาดกระบัง กรุงเทพมหานคร 10520 ประเทศไทย",
+      "formatted_phone_number" : "093 138 2459",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.7273668,
+            "lng" : 100.769545
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7287175802915,
+               "lng" : 100.7710677802915
+            },
+            "southwest" : {
+               "lat" : 13.7260196197085,
+               "lng" : 100.7683698197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+      "international_phone_number" : "+66 93 138 2459",
+      "name" : "ชาชักโกอิน",
+      "opening_hours" : {
+         "open_now" : true,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "0100"
+               },
+               "open" : {
+                  "day" : 0,
+                  "time" : "1500"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "0100"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "1500"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "0100"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "1500"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "0100"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "1500"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "0100"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "1500"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 6,
+                  "time" : "0100"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "1500"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 0,
+                  "time" : "0100"
+               },
+               "open" : {
+                  "day" : 6,
+                  "time" : "1500"
+               }
+            }
+         ],
+         "weekday_text" : [
+            "วันจันทร์: 15:00–1:00",
+            "วันอังคาร: 15:00–1:00",
+            "วันพุธ: 15:00–1:00",
+            "วันพฤหัสบดี: 15:00–1:00",
+            "วันศุกร์: 15:00–1:00",
+            "วันเสาร์: 15:00–1:00",
+            "วันอาทิตย์: 15:00–1:00"
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 1108,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106905561402827680835/photos\"\u003eชาชักโกอิน\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA8mFJJu3BEJMiKQCZ3vlqyUl5o54q9ww_azQPqmmIdl-nH_Xlfk4LaW97i6_jqwstBIuurGyYpo2nKQ9VR8GpcJoa_i4qVRpybLHo70f5GTCwC3tOOb6xIKP5o2uE-RdHEhDqXWKw1V5YNBSvNi1VJm3mGhQZkzQgOYAlaGxovHhabEZm41Wvwg",
+            "width" : 1478
+         },
+         {
+            "height" : 3264,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/118360996219280688739/photos\"\u003eอรพรรณ รักษ์ธัญการ\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA58mf4ab05hICSY-Tl46t6hJTBmVsMIQlUpBnjTiiq0w3mwp7lNuq2Q_e53BMAypVrmQQQxuhoDY8ZXXVySfLAhv7GEFBJYVMXT1rY00gFAmG_ksqBqxGL7Ju6hFQMYStEhDzDiNlRCnB4ctjTtAw892LGhTzSZQ25svDJ9IlDq0_8lyVX63gFQ",
+            "width" : 2448
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116384425343946114597/photos\"\u003eThisawat Thongsawangjaeng\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAxyLfkmMJ3zr5Gp8i3xVF1ifKuSxDQByQ5s9E_luSqumGBpNOnU4hE4UrGj1v1rVveR0Q2_ZoWiOIzvS2laH9CKSm8bvQTB-8-jHt8jeGuKXeaQIpmLHX16CICqkRximqEhAHrOQPWok4kKKppTjnnPwLGhSA41wFeXeAIg5B-7sFUYVZWryR6A",
+            "width" : 3024
+         },
+         {
+            "height" : 2736,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/102995379849874656416/photos\"\u003eWatanyou D.\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAw-qPaQt9dtTUBDoSuKo7S9RECKIPx0U-FGmLwCTF7jVMZCqewW1eENHwnx0G-Tr4RkjVDwZSqX-Iy67YFG-OYdA8RbBbxukgDrxKhOMxsIz7fKMIkr6zO7Vl6abpkymTEhAc2kZ2N-EHx9IUAo0WluwzGhTwkY8tBmE9CIN-WHuJrCLEtc721A",
+            "width" : 3648
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100313482447125595319/photos\"\u003ePoyza Tasama\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAd2WoJfUI12mypf-25bjf9nGWIz4U3P4VR_m5AbNybYWA149RCLJcJSnqQ8KIeEzMHm9hSn8ihFLxIRi8Qkpg8h9MAJaGRi_WBAZ0WCF4u3K408vj1rcgu-xM-KVzezAkEhA8p7Js2oLalQPe1fm2GiLwGhS2FVoCcRxPrY2doHNq9rxjQtCmiA",
+            "width" : 2268
+         },
+         {
+            "height" : 3264,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/118360996219280688739/photos\"\u003eอรพรรณ รักษ์ธัญการ\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAVSXiQT_DKSmxmsgXWx_H-XbYRPRpi8MB1bal03m61Z4bnCytFMXPqg37GLl8dJWgcygfiwlvpjKfg75C6HTGTu-3NFJCZMDiOndUYDPrFUjLaRaO96dIEUbkNcwVND8NEhCQycMg0zR_wdV98T67JOdsGhTsApst3Q3sWr5EHfvioDQWLC19GQ",
+            "width" : 2448
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100313482447125595319/photos\"\u003ePoyza Tasama\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAyfb873vLzibAFS7WyrzhwuKKERLuY8IeZJ0PvhKoueY0gf3vrSfloe_SbIzYaTkJjeRFU9tN6OCIJ25zpsHrPGhhuDaq_zdnU-2cMO3IsakRvS4F0CEAXtToNekVbf3HEhBttugjD5O6B4gTupEesYqPGhQzm0zq9R72So3LaG-TdXSOiKgFdw",
+            "width" : 2268
+         },
+         {
+            "height" : 3826,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106905561402827680835/photos\"\u003eชาชักโกอิน\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAIX7K0AkbkSnm94mVPbE9l5RLgHzbfh8N2EcYNTiHhs6aa0UA-FJHMgqIGPtevy58h6O2UnNDHkqIhtxjhLqNSCoKDQ9UBdUwX7u1qFWERXq0eorYX-k0HiWRbUelWcMYEhDUNbTrQkyknITtW7Z4V-UDGhQumBuPIZ63SwjI4XrkCLZ6Nhvb1Q",
+            "width" : 12662
+         },
+         {
+            "height" : 3264,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/118360996219280688739/photos\"\u003eอรพรรณ รักษ์ธัญการ\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAUZuZW-VSUvs84DfOkHjYjh_ozNdvDVM-GxWalbacRA3LtbT8a3vkWpw6QWzSP93bYovwyU7iWmYexBJBnH9pfMcHYnMheuDpk5q6WAws0opDQSvbIQLG8OeEFQOBk0xsEhDRrAai7suU23JGo37YyFL4GhTNhF35_WZ5l9xAVk8-87fkYxf80A",
+            "width" : 2448
+         },
+         {
+            "height" : 3642,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100313482447125595319/photos\"\u003ePoyza Tasama\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA_RCOVxkxnFVVf6mhoN_iYjUU_2Ogc14dfegV59HS5S5usbj6I88VIenxP0e37kE67P_gdrHd-EqpbNUrEVlDhij5VRAFZq877d9m2bn3ZJcnzBkc7vW5_DNiiHR7k1WNEhA4QQ2vEnhwpxlcrN-XKhoZGhQFInpODxjM6176mSm5wyEQ2vmGhA",
+            "width" : 2268
+         }
+      ],
+      "place_id" : "ChIJb7HCqiBhHTER11guL2R8z88",
+      "plus_code" : {
+         "compound_code" : "PQG9+WR กรุงเทพมหานคร ไทย",
+         "global_code" : "7P52PQG9+WR"
+      },
+      "rating" : 4.399999999999999,
+      "reviews" : [
+         {
+            "author_name" : "ZEE Studio",
+            "author_url" : "https://www.google.com/maps/contrib/100902732429023852484/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh6.ggpht.com/-xhxVSDL2_gc/AAAAAAAAAAI/AAAAAAAAAAA/vOMa-WJ9hMI/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "เดือนที่แล้ว",
+            "text" : "ชาดี โรตีอร่อย ยุงเยอะะชิบหาย",
+            "time" : 1567607957
+         },
+         {
+            "author_name" : "Sanchai Kainaom",
+            "author_url" : "https://www.google.com/maps/contrib/108899238798616001846/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh6.ggpht.com/-RHByakk3wS4/AAAAAAAAAAI/AAAAAAAAAAA/YVD1AXBx3P8/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "เดือนที่แล้ว",
+            "text" : "กว้างขวางเหมาะกับการจักเลี้ยงอาหารอร่อย",
+            "time" : 1568438616
+         },
+         {
+            "author_name" : "แบงค์ พันโท",
+            "author_url" : "https://www.google.com/maps/contrib/101198035552069642791/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh3.ggpht.com/-coe03ItPE6c/AAAAAAAAAAI/AAAAAAAAAAA/cFq1Cg7AamU/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "5 เดือนที่แล้ว",
+            "text" : "ร้านอิสลาม เมนู น่าทานทั้งนั้น โรตีหลากหลายเมนู",
+            "time" : 1556502698
+         },
+         {
+            "author_name" : "Akarawat Pimsaeng",
+            "author_url" : "https://www.google.com/maps/contrib/105528965244421073953/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh6.ggpht.com/-6ujr1n46MDQ/AAAAAAAAAAI/AAAAAAAAAAA/e6Lxo1xCzGY/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+            "rating" : 4,
+            "relative_time_description" : "11 เดือนที่แล้ว",
+            "text" : "มีอาหารหลากหลายทั้งเครื่องดื่ม และประเภทน้ำแข็ง รสชาติโดดเด่นแตกต่างอย่างชัดเจนแต่ราคาอยู่ในเกณฑ์ถูกมากๆ อร่อยทุกอย่างครับ",
+            "time" : 1541560976
+         },
+         {
+            "author_name" : "Teerasak Nantasan",
+            "author_url" : "https://www.google.com/maps/contrib/111758833395166074597/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh4.ggpht.com/-j9g9LG-NJKQ/AAAAAAAAAAI/AAAAAAAAAAA/gww1kfdf92c/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "5 เดือนที่แล้ว",
+            "text" : "ราคาถูก ของอร่อย บริการรวดเร็วมาก",
+            "time" : 1557643679
+         }
+      ],
+      "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=14974324055760328919",
+      "user_ratings_total" : 41,
+      "utc_offset" : 420,
+      "vicinity" : "Soi Keki Ngam 4, Lay Kraband, เขต ลาดกระบัง"
+   },
+   "status" : "OK"
+}

@@ -1,0 +1,117 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "585",
+            "short_name" : "585",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "ฉลองกรุง 1 แยก 3",
+            "short_name" : "ฉลองกรุง 1 แยก 3",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "แขวง ลาดกระบัง",
+            "short_name" : "แขวง ลาดกระบัง",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "เขต ลาดกระบัง",
+            "short_name" : "เขต ลาดกระบัง",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "กรุงเทพมหานคร",
+            "short_name" : "กรุงเทพมหานคร",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "ประเทศไทย",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003e585 ฉลองกรุง 1 แยก 3\u003c/span\u003e \u003cspan class=\"extended-address\"\u003eแขวง ลาดกระบัง\u003c/span\u003e \u003cspan class=\"locality\"\u003eเขต ลาดกระบัง\u003c/span\u003e \u003cspan class=\"region\"\u003eกรุงเทพมหานคร\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e \u003cspan class=\"country-name\"\u003eประเทศไทย\u003c/span\u003e",
+      "formatted_address" : "585 ฉลองกรุง 1 แยก 3 แขวง ลาดกระบัง เขต ลาดกระบัง กรุงเทพมหานคร 10520 ประเทศไทย",
+      "formatted_phone_number" : "",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.7275202,
+            "lng" : 100.7694236
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7290575302915,
+               "lng" : 100.7707711302915
+            },
+            "southwest" : {
+               "lat" : 13.7263595697085,
+               "lng" : 100.7680731697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "name" : "A&P ไก่ยำแซ่บ",
+      "opening_hours" : {
+         "weekday_text" : [
+         ] 
+      },
+      "photos" : [
+         {
+            "height" : 1080,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/102296019344055794861/photos\"\u003etee sutthapop\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA2Ytsi24WIwyHlMTGEik_xeeKgPXBFXL7wiETzlOZq7tJbM_yxTsg4wAdDiccneC9IIRskxiRgUlnSw7hKdd4Rg88XjVF72BsKm9YOCzshGL-RdrjD0BG8NWwmR3y6QiWEhDDQrPG1nz1-SfqxJ-aG_AjGhQQ3BN-KJZtrg-hKqJgr4A3ELgmSw",
+            "width" : 1920
+         }
+      ],
+      "place_id" : "ChIJj4A1UUxmHTERaIIfvHZv0yM",
+      "plus_code" : {
+         "compound_code" : "PQH9+2Q กรุงเทพมหานคร ไทย",
+         "global_code" : "7P52PQH9+2Q"
+      },
+      "rating" : 5,
+      "reviews" : [
+         {
+            "author_name" : "tee sutthapop",
+            "author_url" : "https://www.google.com/maps/contrib/102296019344055794861/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh4.ggpht.com/-B1cFTjwUMIs/AAAAAAAAAAI/AAAAAAAAAAA/hFuZzDqdP5c/s128-c0x00000000-cc-rp-mo-ba2/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "ปีที่แล้ว",
+            "text" : "ข้าวอุ่นๆ,ไก่กรอบ อร่อยคุ้มค่า รวดเร็ว",
+            "time" : 1526921792
+         },
+         {
+            "rating" : "",
+            "text" : ""
+         },
+         {
+            "rating" : "",
+            "text" : ""
+         },
+         {
+            "rating" : "",
+            "text" : ""
+         },
+         {
+            "rating" : "",
+            "text" : ""
+         }
+      ],
+      "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=2581529567166431848",
+      "user_ratings_total" : 1,
+      "utc_offset" : 420,
+      "vicinity" : "585 ฉลองกรุง 1 แยก 3 แขวง ลาดกระบัง เขต ลาดกระบัง"
+   },
+   "status" : "OK"
+}

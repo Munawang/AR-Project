@@ -1,0 +1,47 @@
+{
+   "candidates" : [
+      {
+         "formatted_address" : "ซอย เกกีงาม 2 แขวง ลาดกระบัง เขต ลาดกระบัง กรุงเทพมหานคร 10520 ไทย",
+         "geometry" : {
+            "location" : {
+               "lat" : 13.7270951,
+               "lng" : 100.7702075
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 13.72844517989272,
+                  "lng" : 100.7715998798927
+               },
+               "southwest" : {
+                  "lat" : 13.72574552010728,
+                  "lng" : 100.7689002201073
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "name" : "หมูทอดป้าจุก",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1108,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/112892851804825586806/photos\"\u003eA Google User\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAmyjYA4gl8Lc7jrfBGmWqtn0jEItk_oj3Lf_RtmHLwkH65lNzbNFXE4xnolmMtfKrPvN5CMc28CTHfbI3_Le5GvhmdKJb8QL3dwSmWdT98qWcZyHt0UEedwFQBdHFiiCUEhD8o1Hr8FyN2xQAeKWFMxe-GhRVAq8m5icH9WgtW6xnmazS-DCbyQ",
+               "width" : 1478
+            }
+         ],
+         "place_id" : "ChIJZSKvaq5nHTER7fh5JfyEUGU",
+         "plus_code" : {
+            "compound_code" : "PQGC+R3 กรุงเทพมหานคร",
+            "global_code" : "7P52PQGC+R3"
+         },
+         "rating" : 5,
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 7
+      }
+   ],
+   "status" : "OK"
+}

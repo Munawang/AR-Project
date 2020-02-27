@@ -1,0 +1,282 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "15",
+            "short_name" : "15",
+            "types" : [ "subpremise" ]
+         },
+         {
+            "long_name" : "7",
+            "short_name" : "7",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "ถนน ลาดกระบัง",
+            "short_name" : "ถนน ลาดกระบัง",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "แขวง ลาดกระบัง",
+            "short_name" : "แขวง ลาดกระบัง",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "เขต ลาดกระบัง",
+            "short_name" : "เขต ลาดกระบัง",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "กรุงเทพมหานคร",
+            "short_name" : "กรุงเทพมหานคร",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "ประเทศไทย",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "15 \u003cspan class=\"street-address\"\u003e7 ถนน ลาดกระบัง\u003c/span\u003e \u003cspan class=\"extended-address\"\u003eแขวง ลาดกระบัง\u003c/span\u003e \u003cspan class=\"locality\"\u003eเขต ลาดกระบัง\u003c/span\u003e \u003cspan class=\"region\"\u003eกรุงเทพมหานคร\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e \u003cspan class=\"country-name\"\u003eประเทศไทย\u003c/span\u003e",
+      "formatted_address" : "15 7 ถนน ลาดกระบัง แขวง ลาดกระบัง เขต ลาดกระบัง กรุงเทพมหานคร 10520 ประเทศไทย",
+      "formatted_phone_number" : "089 777 6082",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.7220672,
+            "lng" : 100.7804952
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7233819802915,
+               "lng" : 100.7818453302915
+            },
+            "southwest" : {
+               "lat" : 13.7206840197085,
+               "lng" : 100.7791473697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "international_phone_number" : "+66 89 777 6082",
+      "name" : "ไก่เกาหลี อูรี ชิกเก้นท์ 우리 치킨 สาขา ลาดกระบัง",
+      "opening_hours" : {
+         "open_now" : true,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 0,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 0,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 6,
+                  "time" : "2200"
+               },
+               "open" : {
+                  "day" : 6,
+                  "time" : "1100"
+               }
+            }
+         ],
+         "weekday_text" : [
+            "วันจันทร์: 11:00–22:00",
+            "วันอังคาร: 11:00–22:00",
+            "วันพุธ: 11:00–22:00",
+            "วันพฤหัสบดี: 11:00–22:00",
+            "วันศุกร์: 11:00–22:00",
+            "วันเสาร์: 11:00–22:00",
+            "วันอาทิตย์: 11:00–22:00"
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 2268,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA_0MN1JqGXxGMa7-9DJWZl6sxq3GteFM_c6zDNN2ePXLBTksrKgfSIVwhkq3WOVLhqTHkd0deei2aOvVz5rtN_9paEyaqw8DIgyNl5DznewxpbFanRKUH8ac6DAytu59TEhAPrh-6t-AvSm1GYWzlb36aGhRnRjtL_7UluD9BhQDyfWX37bVrtQ",
+            "width" : 4032
+         },
+         {
+            "height" : 2268,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAvUhkDDTn5orpPwXtyzh4tug_GJ3D4Sn81mh4bhzf8mEkpTs-r2HNEn5ce9MpXaCdibuJxokPA0yPBq32lnj2aLnggP6r_8qtEnNWkMokIQIxfZ-a36QykUmhWbNwHmtXEhCuGjI0He1DY4ILtuDkFHhmGhSEXeegrh89oSkf-Gmhh_pR4_2B2w",
+            "width" : 4032
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAl0Ywk1R9Ek5h0Xw7e90RAp5qsHH_BRDdt6LT8zajGMjPZX4W_HFZ8qxVpB16EQ5Yee63H4aCZRQSHbgaj_sEoaW_r-wwxAyrXZ9Yn3fmyFJ9rMSkJye-Kgfp_-8_lCnZEhAnkO4i3dpYRpFzu3sXuc2IGhTaBOXRVVr_gdmDiKu0SEEi90DBpA",
+            "width" : 2268
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103982018244730442290/photos\"\u003eIt&#39;s ME stm.\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA0yRnv4cgTYuBgDTtBgVk4GY8UyPexpbo9GTGW6OQC99_Chn3qoXZSM43s2PauILxo8X-m2cjI40MwqA3fPWOtUNx2HzxPK2b0lq1p-fpVRN6Us8Fshd-mKRAuEfuoCvzEhC_c69tj09IlH6JzJJJI41dGhTVHICTHdFbA8yy6cIkCtRYQBOINw",
+            "width" : 4032
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAqsiQCGor1_d_VqM4qtLesafAB6cSBznst5QOFoN-Q8ptR9Gb5nLmJ462y2qSZVRny5wBnQ0_bbVYaHmsm4jqWnBaErMZzmTGLdWI9zgV2eNvurTXJJOqp8kO8-O6KXnjEhCW0w1g38toeGv_wph2U6qpGhT6p5zAE0CQ5rRj9Z1AGrnkOnQhMg",
+            "width" : 2268
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116482862617675794512/photos\"\u003ePair patchara\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAACoIzruRLBGfsnrtDCvEBUPL-c5MN37QUjfpeOX62bA3Qd3UtnS3PvV2URaRgB175a5vcZjWpPVaIcKZVcfuZk-Hppmvzu-S1b7SNCsXPOdMogvjdqyEc7aIbJTedPLTkEhDsbkwCPxZ53lev5oLSZtewGhRP1iTeHgLwOwyCA4h9am7WOdZxWQ",
+            "width" : 4032
+         },
+         {
+            "height" : 2268,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAUWlAT3tVvt0UA_d4Pp955cLl8QNONdkNMnqAs1g0p5fIc8PV8_v19qSR1V4UrdaPtuRFauamC9MbhziaxLNyfQFaJqrgcWM39EHmzCoE3W1bvo4zqs92jABS7LxiyNrkEhDoF717YnxLnJXY9xkhSF0bGhQGBl2KPqUeSdvmV2LdGeaM02N_HA",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103982018244730442290/photos\"\u003eIt&#39;s ME stm.\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAoN6RMvm0rbBgjhb-mhJ0TyL_9LHQtyL3rrPM7esxpg3xOWVhkn9O5rxT1MdMgKbLpWC1cWI5b0E8Yuho3zrwXzmRfN37_pzRXXmZuax6I2P0oLyqaDOnkSiX9W3OVrh5EhBTbUQ3nNHgRLNRSmwVD5B6GhS8OPSIeg6YeVt9ouCxUP4djje0fA",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103982018244730442290/photos\"\u003eIt&#39;s ME stm.\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAER-xESAFFvAHropdTGP0EyI7KLLbhV6okTYOyrg_vCfMcUIFd6zFZaVFjkT3IZofWHV5JOBa_VGlXXPG2XdITA8Ot5vUqUDFz3z7YIuzj9MKKzd8AKpUCwQVM0ydc1vREhAhq0Uj0s1E4-UTbzpZ7VQtGhSSmq3T7HFw-mlm5u-4W3GUbknUCQ",
+            "width" : 4032
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373/photos\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAXmU_Gepkiof-rqs_5DfbSyHth1ShpPl-waNxLJEBjyd0Xv0faismS1yiWfOJ9Tip9e2w1cu8-RNxBaK0l7C0gvOfxHe7YTgNWryk-F82a_q9tiV7C0_6AOksW3PEuGutEhBnezYIuUgnZ-gX2qAMWj-dGhT2roaHVsvFqe3xoElDXZSzXH9HTg",
+            "width" : 2268
+         }
+      ],
+      "place_id" : "ChIJvU8_wT5nHTERhO_fCevRNbM",
+      "plus_code" : {
+         "compound_code" : "PQCJ+R5 กรุงเทพมหานคร ไทย",
+         "global_code" : "7P52PQCJ+R5"
+      },
+      "rating" : 3.7,
+      "reviews" : [
+         {
+            "author_name" : "Ruji Peera",
+            "author_url" : "https://www.google.com/maps/contrib/104160413783378571373/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh3.ggpht.com/-NM-rP1eBibs/AAAAAAAAAAI/AAAAAAAAAAA/JNOfdzL8-K4/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "2 เดือนที่แล้ว",
+            "text" : "ร้านเปิดใหม่ในลาดกระบังเป็นไก่ทอดสไตล์เกาหลีมี 2 รสรสเค็มและรสเผ็ดพร้อมอาหารเกาหลีหลายอย่าง ราคาไม่แพงนะครับ รสชาติอร่อย มีทั้งเซ็ตเล็ก กลางและใหญ่",
+            "time" : 1566043734
+         },
+         {
+            "author_name" : "Pair patchara",
+            "author_url" : "https://www.google.com/maps/contrib/116482862617675794512/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh4.ggpht.com/-Ukbdmhg8mpE/AAAAAAAAAAI/AAAAAAAAAAA/3JA5TegyPTg/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 3,
+            "relative_time_description" : "เดือนที่แล้ว",
+            "text" : "อร่อยใช้ได้ เสียดายไก่ทอดแป้งเยอะไปนิด ส่วนชอบหมูย่างเกาหลี น้ำจิ้มโคชูจังเด็ดมากเข้าปากคนไทยสุดๆ \nผักให้เยอะดีชอบบบ",
+            "time" : 1567312961
+         },
+         {
+            "rating" : "",
+            "text" : ""
+         },
+         {
+            "rating" : "",
+            "text" : ""
+         },
+         {
+            "rating" : "",
+            "text" : ""
+         }
+      ],
+      "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=12913458313967955844",
+      "user_ratings_total" : 3,
+      "utc_offset" : 420,
+      "vicinity" : "15 7 ถนน ลาดกระบัง แขวง ลาดกระบัง เขต ลาดกระบัง",
+      "website" : "https://facebook.com/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99-%E0%B9%84%E0%B8%81%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B5-%E0%B8%AD%E0%B8%B9%E0%B8%A3%E0%B8%B5-%E0%B8%8A%E0%B8%B4%E0%B8%81%E0%B9%80%E0%B8%81%E0%B9%89%E0%B8%99%E0%B8%97%E0%B9%8C-%EC%9A%B0%EB%A6%AC-%EC%B9%98%ED%82%A8-%E0%B8%AA%E0%B8%B2%E0%B8%82%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87-2313844735506134/"
+   },
+   "status" : "OK"
+}

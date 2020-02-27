@@ -1,0 +1,192 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "585",
+            "short_name" : "585",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "ฉลองกรุง 1 แยก 3",
+            "short_name" : "ฉลองกรุง 1 แยก 3",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "แขวง ลาดกระบัง",
+            "short_name" : "แขวง ลาดกระบัง",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "เขต ลาดกระบัง",
+            "short_name" : "เขต ลาดกระบัง",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "กรุงเทพมหานคร",
+            "short_name" : "กรุงเทพมหานคร",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "ประเทศไทย",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003e585 ฉลองกรุง 1 แยก 3\u003c/span\u003e, \u003cspan class=\"extended-address\"\u003eแขวง ลาดกระบัง\u003c/span\u003e \u003cspan class=\"locality\"\u003eเขต ลาดกระบัง\u003c/span\u003e \u003cspan class=\"region\"\u003eกรุงเทพมหานคร\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e \u003cspan class=\"country-name\"\u003eประเทศไทย\u003c/span\u003e",
+      "formatted_address" : "585 ฉลองกรุง 1 แยก 3, แขวง ลาดกระบัง เขต ลาดกระบัง กรุงเทพมหานคร 10520 ประเทศไทย",
+      "formatted_phone_number" : "081 554 8822",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.727737,
+            "lng" : 100.769764
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7290866302915,
+               "lng" : 100.7711752802915
+            },
+            "southwest" : {
+               "lat" : 13.7263886697085,
+               "lng" : 100.7684773197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+      "international_phone_number" : "+66 81 554 8822",
+      "name" : "อิ่มแปล้ แฮปปี้คัพ",
+      "opening_hours" : {
+         "open_now" : false,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 0,
+                  "time" : "2345"
+               },
+               "open" : {
+                  "day" : 0,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "1530"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "1530"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "1530"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "1530"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "1530"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 6,
+                  "time" : "2345"
+               },
+               "open" : {
+                  "day" : 6,
+                  "time" : "1100"
+               }
+            }
+         ],
+         "weekday_text" : [
+            "วันจันทร์: 11:00–15:30",
+            "วันอังคาร: 11:00–15:30",
+            "วันพุธ: 11:00–15:30",
+            "วันพฤหัสบดี: 11:00–15:30",
+            "วันศุกร์: 11:00–15:30",
+            "วันเสาร์: 11:00–23:45",
+            "วันอาทิตย์: 11:00–23:45"
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/107101408227277399694/photos\"\u003ePa Kl\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA1Yq8-O-7CLX-2sEO6-KhbZE_BaQ9r5cePMUk8lR9gWpKK27DxdBS_moe-SqIyWwy-5-B5yX4zNykJZpiro_lf4uak-H6P5PAmX-6Te9KaWDswmPquyGSVnEBPYJ3YE9EEhCnSti0wtEZT45ERKZK-vBwGhT5dkbSHyAPcBl5gNORqBy2x7lQAg",
+            "width" : 3024
+         }
+      ],
+      "place_id" : "ChIJka4KQnhnHTERA3vd3JnwIJ0",
+      "plus_code" : {
+         "compound_code" : "PQH9+3W กรุงเทพมหานคร ไทย",
+         "global_code" : "7P52PQH9+3W"
+      },
+      "rating" : "",
+      "reviews" : [
+         {
+            "rating" : "",
+            "text" : ""
+         },
+         {
+            "rating" : "",
+            "text" : ""
+         },
+         {
+            "rating" : "",
+            "text" : ""
+         },
+         {
+            "rating" : "",
+            "text" : ""
+         },
+         {
+            "rating" : "",
+            "text" : ""
+         }
+      ],
+      "types" : [ "cafe", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=11322314006835591939",
+      "utc_offset" : 420,
+      "vicinity" : "585 ฉลองกรุง 1 แยก 3, แขวง ลาดกระบัง, เขต ลาดกระบัง",
+      "website" : ""
+   },
+   "status" : "OK"
+}
