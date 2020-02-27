@@ -1,284 +1,345 @@
 /* For get location and map Part */
+
+
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
+
 #map {
-	max-height: 100%;
-	max-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
+
 
 /* Optional: Makes the sample page fill the window. */
+
 body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	font-family: 'Kanit', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
 }
+
 
 /*/*for mobile*/
+
 @media only screen and (max-width: 425px) {
-	#map {
-		height: 523px;
-		width: 425px;
-	}
-
-	#zone_header, #check_header{
-		width: 100%;
-		text-align: center; 
-		padding: 10px;
-	}
-
-	#check_header{
-		height: 10%;
-		color: white;
-		font-size: 16px;
-	}
-	
-	#zone_header{
-		height: 20%;
-		background-color: white;
-		color: black;
-		font-size: 18px;
-	}
-
-	.btn-circle.btn-xl {
-		width: 60px;
-		height: 60px;
-		padding: 10px 16px;
-		border-radius: 35px;
-		font-size: 24px;
-		line-height: 1;
-	}
-	
-	.btn-circle {
-		width: 30px;
-		height: 30px;
-		padding: 6px 0px;
-		border-radius: 15px;
-		text-align: center;
-		font-size: 12px;
-		line-height: 1.42857;
-	}
-	
-	#c_btn, #t_btn{
-		box-shadow: 0px 2px 3px darkgrey;
-		background-color: white;
-		border-color: white;
-		color: dimgrey;
-	}
-
-	#c_btn{
-		position: absolute;
-		top: 520px;
-		right: 35px;
-	}
-
-	#t_btn{
-		position: absolute;
-		top: 520px;
-		left: 35px;
-	}
+    #map {
+        height: 523px;
+        width: 425px;
+    }
+    #zone_header,
+    #check_header {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    #check_header {
+        height: 10%;
+        color: white;
+        font-size: 16px;
+    }
+    #zone_header {
+        height: 20%;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+    }
+    .btn-circle.btn-xl {
+        width: 60px;
+        height: 60px;
+        padding: 10px 16px;
+        border-radius: 35px;
+        font-size: 24px;
+        line-height: 1;
+    }
+    .btn-circle {
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.42857;
+    }
+    #c_btn,
+    #t_btn {
+        box-shadow: 0px 2px 3px darkgrey;
+        background-color: white;
+        border-color: white;
+        color: dimgrey;
+    }
+    #c_btn {
+        position: absolute;
+        top: 520px;
+        right: 35px;
+    }
+    #t_btn {
+        position: absolute;
+        top: 520px;
+        left: 35px;
+    }
 }
 
-/* For show detail part */
-/*header modal part*/
-#icon_cat{
-	width: 20%;
-	height: 20%;
-	margin: auto;
-  }
-  #grid_header{
-	margin: auto;
-  }
-  #name_restaurant{
-	margin-left: auto;
-  }
-  #header_bt{
-	margin-top:5px;
-  }
-  .t_rating{
-	display: inline-block;
-	width: 100%;
-  }
-  .t_star{
-	display: inline-block;
-	width: 10%;
-	padding-bottom: 8px;
-  }
-  .total_rating{
-	display: inline-block;
-	margin-bottom: 0px;
-	font-size: 1.2rem;
-  }
-  #status{
-	color: green;
-	font-size: 15px;
-	position: relative;
-	left: 20px;
-	margin-top: 5px;
-  }
-  
-  /*tab part*/
-  #nav-info-tab, #nav-review-tab, #nav-picture-tab{
-	color: #DC0F6E;
-  }
-  #nav-info-tab:hover, #nav-review-tab:hover, #nav-picture-tab:hover{
-	color: black;
-  }
-  #nav-info-tab.active{
-	color: black;
-  }
-  
-  /*body modal part*/
-  .cont_box{
-	width: 100%;
-	margin-top: 10px;
-  }
-  .card-body{
-	padding: 1rem !important;
-  }
-  
-  /*info tab*/
-  .textinfo{
-	text-align: left;
-  }
-  #notel_btn{
-	font-size: 1rem;
-	padding: 5px;
-  }
-  #tel_btn{
-	font-size: 1rem;
-	padding: 5px;
-	background-color: rgb(149,52,98);
-	color: white;
-  }
-  .other_web{
-	margin-top: 10px;
-	background-color: rgb(149,52,98);
-	color: white;
-  }
-  #tel_btn:hover, .other_web:hover{
-	background-color: rgba(149,52,98,0.9);
-	opacity: 0.9;
-	color: white;
-  }
-  #more_web{
-	text-align: left;
-  }
-  
-  /*review tab*/
-  .review_pic{
-	display: inline-block;
-	margin-top: 20px;
-  }
-  .res_pic{
-	margin-top: 10px;
-  }
-  .grid_rating{
-	margin-top:5px;
-  }
-  .u_rating{
-	display: inline-block;
-	width: 65%;
-  }
-  .u_star{
-	display: inline-block;
-	width: 15%;
-	padding-bottom: 8px;
-  }
-  .user_rating{
-	display: inline-block;
-	margin-bottom: 0px;
-	font-size: 1rem;
-  }
-  
-  /*picture tab*/
-  .fade_textbox {
-	position: relative;
-	max-width: 200px; /* Maximum width */
-	margin: 0 auto; /* Center it */
-  }
-  
-  .fade_textbox .cont_img {
-	position: absolute; /* Position the background text */
-	bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-	background: rgb(0, 0, 0); /* Fallback color */
-	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-	text-align: center;
-	color: #f1f1f1; /* Grey text */
-	width: 100%; /* Full width */
-	font-size: x-small;
-	height: 15%;
-  }
 
-  /* For marker part */
-  .gm-style-iw, .gm-style-iw-c{
-	padding: 10px !important;
+/*/*for ipad and tablet*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+
+/* For show detail part */
+
+
+/*header modal part*/
+
+#icon_cat {
+    width: 20%;
+    height: 20%;
+    margin: auto;
+}
+
+#grid_header {
+    margin: auto;
+}
+
+#name_restaurant {
+    margin-left: auto;
+}
+
+#header_bt {
+    margin-top: 5px;
+}
+
+.t_rating {
+    display: inline-block;
+    width: 100%;
+}
+
+.t_star {
+    display: inline-block;
+    width: 10%;
+    padding-bottom: 8px;
+}
+
+.total_rating {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+}
+
+#status {
+    color: green;
+    font-size: 15px;
+    position: relative;
+    left: 20px;
+    margin-top: 5px;
+}
+
+
+/*tab part*/
+
+#nav-info-tab,
+#nav-review-tab,
+#nav-picture-tab {
+    color: #DC0F6E;
+}
+
+#nav-info-tab:hover,
+#nav-review-tab:hover,
+#nav-picture-tab:hover {
+    color: black;
+}
+
+#nav-info-tab.active {
+    color: black;
+}
+
+
+/*body modal part*/
+
+.cont_box {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.card-body {
+    padding: 1rem !important;
+}
+
+
+/*info tab*/
+
+.textinfo {
+    text-align: left;
+}
+
+#notel_btn {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+#tel_btn {
+    font-size: 1rem;
+    padding: 5px;
+    background-color: rgb(149, 52, 98);
+    color: white;
+}
+
+.other_web {
+    margin-top: 10px;
+    background-color: rgb(149, 52, 98);
+    color: white;
+}
+
+#tel_btn:hover,
+.other_web:hover {
+    background-color: rgba(149, 52, 98, 0.9);
+    opacity: 0.9;
+    color: white;
+}
+
+#more_web {
+    text-align: left;
+}
+
+
+/*review tab*/
+
+.review_pic {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.res_pic {
+    margin-top: 10px;
+}
+
+.grid_rating {
+    margin-top: 5px;
+}
+
+.u_rating {
+    display: inline-block;
+    width: 65%;
+}
+
+.u_star {
+    display: inline-block;
+    width: 15%;
+    padding-bottom: 8px;
+}
+
+.user_rating {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 1rem;
+}
+
+
+/*picture tab*/
+
+.fade_textbox {
+    position: relative;
+    max-width: 200px;
+    /* Maximum width */
+    margin: 0 auto;
+    /* Center it */
+}
+
+.fade_textbox .cont_img {
+    position: absolute;
+    /* Position the background text */
+    bottom: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    text-align: center;
+    color: #f1f1f1;
+    /* Grey text */
+    width: 100%;
+    /* Full width */
+    font-size: x-small;
+    height: 15%;
+}
+
+
+/* For marker part */
+
+.gm-style-iw,
+.gm-style-iw-c {
+    padding: 10px !important;
 }
 
 .gm-style-iw-d {
-	overflow: hidden !important; 
+    overflow: hidden !important;
 }
 
-.col-3, .col-9, .col-sm-6{
-	padding: 0px !important;
+.col-3,
+.col-9,
+.col-sm-6 {
+    padding: 0px !important;
 }
 
-#icon_marker{
-	width: 50px;
-	height: 50px;
-	display: block;
-	margin: 20px;
+#icon_marker {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 20px;
 }
 
-#name_marker{
-	margin-left: auto;
-	font-size: 16px;
-	display: inline-block;
+#name_marker {
+    margin-left: auto;
+    font-size: 16px;
+    display: inline-block;
 }
 
-#grid_marker{
-	margin: auto;
+#grid_marker {
+    margin: auto;
 }
 
-.mk_rating{
-	display: inline-block;
-	width: 80%;
+.mk_rating {
+    display: inline-block;
+    width: 80%;
 }
 
-.total_marker{
-	display: inline-block;
-	margin-bottom: 0px;
-	margin-left: 5px;
-	font-size: 14px;
+.total_marker {
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-size: 14px;
 }
 
-#header_marker{
-	margin-top:5px;
+#header_marker {
+    margin-top: 5px;
 }
 
-.mk_rating{
-	display: inline-block;
-	width: 65%;
-}
-.mk_star{
-	display: inline-block;
-	width: 15px;
-	padding-bottom: 8px;
-}
-#status_marker{
-	color: green;
-	font-size: 14px;
+.mk_rating {
+    display: inline-block;
+    width: 65%;
 }
 
-.more_btn{
-	font-size: 14px;
-	background-color: rgb(94,43,91);
-  	color: white;
+.mk_star {
+    display: inline-block;
+    width: 15px;
+    padding-bottom: 8px;
 }
-.more_btn:hover{
-	opacity: 0.9;
-	color: white;
-	background-color: rgba(94,43,91,0.9);
+
+#status_marker {
+    color: green;
+    font-size: 14px;
+}
+
+.more_btn {
+    font-size: 14px;
+    background-color: rgb(94, 43, 91);
+    color: white;
+}
+
+.more_btn:hover {
+    opacity: 0.9;
+    color: white;
+    background-color: rgba(94, 43, 91, 0.9);
 }
