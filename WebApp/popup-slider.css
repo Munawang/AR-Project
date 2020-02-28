@@ -182,6 +182,10 @@
         .sliderPop-close {
             width: 60px;
         }
+        
+        .icon-tutorial {
+            color: white;
+        }
         /* =================================
   # Media Queries 
 ================================= */
