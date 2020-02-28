@@ -268,15 +268,25 @@ function onclickDetail (data) {
 			timeClose = splitTime[1].split(":");
 			nowHours = dateToday.getHours();
 			nowMinutes = dateToday.getMinutes();
+
 			if (nowHours >= timeOpen[0] && nowHours <= timeClose[0] ) {
-				if (nowMinutes >= timeOpen[1] && nowMinutes <= timeClose[1]) {
+				if (nowHours == timeClose) {
+					if (nowMinutes <= timeClose[1]) {
+						detail_status.innerHTML = "เปิดอยู่ในขณะนี้";
+						detail_status.style.color = "#008000";
+						marker_status.innerHTML = "เปิดอยู่ในขณะนี้";
+						marker_status.style.color = "#008000";
+					} else {
+						detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
+						detail_status.style.color = "#ff0000";
+						marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
+						marker_status.style.color = "#ff0000";
+					} 
+				}else {
 					detail_status.innerHTML = "เปิดอยู่ในขณะนี้";
+					detail_status.style.color = "#008000";
 					marker_status.innerHTML = "เปิดอยู่ในขณะนี้";
-				} else {
-					detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
-					detail_status.style.color = "#ff0000";
-					marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
-					marker_status.style.color = "#ff0000";
+					marker_status.style.color = "#008000";
 				}
 			} else {
 				detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
