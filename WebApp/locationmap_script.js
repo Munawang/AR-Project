@@ -339,7 +339,7 @@ function onclickDetail (data) {
 	var phone = document.getElementById("cont_phone");
 	var phoneCall = document.getElementById("phone");
 	var images = document.getElementById("ImageBox");
-	//var website_btn = document.getElementById("more_web");
+	var website_btn = document.getElementById("more_web");
  
 	var dataSplit = data.split(",");
 	name_modal.innerHTML = dataSplit[0]; //get name's restaurant on modal
@@ -376,19 +376,21 @@ function onclickDetail (data) {
 			'</div></div>';
 		}
 
-		// var numWebsite = snapshot.child("").numChildren();
-		// website_btn.innerHTML = "";
-		// for (let z = 1; z < numWebsite+1; z++) {
-		// 	if(z < 10) {
-		// 		var checkWeb = "0";
-		// 	}else{
-		// 		var checkWeb = "";
-		// 	}
-		// 	var urlWeb = snapshot.child(""+checkWeb+y).val();
-		// 	var nameWeb = snapshot.child(""+checkWeb+y).val();
-		// 	website_btn.innerHTML += '<a href="'+urlWeb+'">'+
-		// 	'<button type="button" class="btn other_web">'+nameWeb+'</button></a>';
-		// }
+		var numWebsite = snapshot.child("res_urlweb").numChildren();
+		website_btn.innerHTML = "";
+		for (let z = 1; z <= numWebsite; z++) {
+			if(z < 10) {
+				var checkWeb = "0";
+			}else{
+				var checkWeb = "";
+			}
+			var nameWeb = snapshot.child("res_urlweb/res_urlweb"+checkWeb+z+"/webname").val();
+			var urlWeb = snapshot.child("res_urlweb/res_urlweb"+checkWeb+z+"/url").val();
+			console.log(nameWeb)
+			console.log(urlWeb)
+			website_btn.innerHTML += '<a href="'+urlWeb+'">'+
+			'<button type="button" class="btn other_web">'+nameWeb+'</button></a>&nbsp;';
+		}
 
 	}, function (error) {
 		console.log("Error: " + error.code);
