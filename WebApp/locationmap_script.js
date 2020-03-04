@@ -24,17 +24,12 @@ var firebaseConfig = {
 '<div class="col-sm-6">'+
 '<h4 class="modal-title" id="name_marker">';
 
-var ct3_marker = '</h4>'+
+var ct2_marker = '</h4>'+
 '</div>'+
 '<div class="col-sm-6" id="header_marker">'+
-'<div class="mk_rating">'+            
-'<img class="mk_star" src="pic/get_star.png">'+
-'<img class="mk_star" src="pic/get_star.png">'+
-'<img class="mk_star" src="pic/get_star.png">'+
-'<img class="mk_star" src="pic/get_star.png">'+
-'<img class="mk_star" src="pic/nopoint.png">'+
-'<h6 class="total_marker">4.0</h6>'+
+'<div id="mk_rating">'+            
 '</div>'+
+'<h6 id="total_marker"></h6>'+
 '</div>'+
 '</div><h6 id="status_marker"> &#8226;</h6></div>';
  
@@ -167,13 +162,28 @@ var ct3_marker = '</h4>'+
 				return function() {
 					var btn_marker = '<button type="button" class="btn btn-block more_btn" data-toggle="modal" data-target="#exampleModalLong"'+
 					'onclick= "onclickDetail(\''+[locations[i][0],locations[i][3],locations[i][4]]+'\')">อ่านต่อ</button>';
-					info.setContent(ct1_marker+locations[i][0]+ct3_marker+btn_marker);
+					info.setContent(ct1_marker+locations[i][0]+ct2_marker+btn_marker);
 					info.open(maps, marker);
 
 					// get icon, status and score on marker window
 					var type = document.getElementById("category");
 					var marker_icon = document.getElementById("iconMarker");
 					var category_icon = document.getElementById("iconCat");
+					var reviews = document.getElementById("reviewBox");
+					var modal_sumRate = document.getElementById("total_rating");
+					var modal_sumStar = document.getElementById("t_rating");
+					var marker_sumRate = document.getElementById("total_marker");
+					var marker_sumStar = document.getElementById("mk_rating");
+					var mon = document.getElementById("opening_mon");
+					var tue = document.getElementById("opening_tue");
+					var wed = document.getElementById("opening_wed");
+					var thu = document.getElementById("opening_thu");
+					var fri = document.getElementById("opening_fri");
+					var sat = document.getElementById("opening_sat");
+					var sun = document.getElementById("opening_sun");
+					var detail_status = document.getElementById("status");
+					var marker_status = document.getElementById("status_marker");
+
 					var dbMarker = ref.child("restaurant/"+locations[i][3]+"/"+locations[i][4]+"/")
 					dbMarker.on("value", function(snapshot) {
 						typeRes = snapshot.child("res_type").val();
@@ -183,6 +193,119 @@ var ct3_marker = '</h4>'+
 							type.innerHTML = typeRes;
 							marker_icon.innerHTML = '<img id="icon_marker" src="pic/'+typeRes+'_icon.png">';
 							category_icon.innerHTML = '<img id="icon_cat" src="pic/'+typeRes+'_icon.png">';
+						}
+
+						var  numReviews = snapshot.child("res_review").numChildren();
+						reviews.innerHTML = "";
+						var sumRating = 0;
+
+						for (let x = 1; x <= numReviews; x++) {
+							var eachReview = snapshot.child("res_review/res_review"+x+"/text").val();
+							var eachRate = snapshot.child("res_review/res_review"+x+"/rating").val();
+							reviews.innerHTML += 
+							'<div class="card cont_box">'+
+							'<div class="card-body">'+
+								'<div class="col-sm-6 grid_rating">'+
+									'<div class="u_rating"></div>'+
+									'<p class="user_rating">'+eachRate+'</p>'+
+								'</div>'+
+								'<p class="cont_review">'+eachReview+'</p>'+
+							'</div></div><br>';
+
+							var userStars = document.getElementsByClassName("u_rating")[x-1];
+							var getPoint = '<img class="u_star" src="pic/get_star.png">';
+							var noPoint = '<img class="u_star" src="pic/nopoint.png">';
+							if (eachRate == 0 || eachRate == "") {
+								userStars.innerHTML += noPoint.repeat(5);
+							} else {
+								userStars.innerHTML = "";
+								userStars.innerHTML += getPoint.repeat(eachRate);
+								userStars.innerHTML += noPoint.repeat(5-eachRate);
+							}
+							sumRating += (eachRate/5);
+						}
+						
+						modal_sumRate.innerHTML = sumRating.toFixed(1);
+						marker_sumRate.innerHTML = sumRating.toFixed(1);
+						var floorStar = Math.floor(sumRating);
+						if (sumRating == 0 || sumRating == "") {
+							modal_sumStar.innerHTML += noPoint.repeat(5);
+							marker_sumStar.innerHTML += noPoint.repeat(5);
+						} else {
+							modal_sumStar.innerHTML = "";
+							modal_sumStar.innerHTML += getPoint.repeat(floorStar);
+							modal_sumStar.innerHTML += noPoint.repeat(5-floorStar);
+							marker_sumStar.innerHTML = "";
+							marker_sumStar.innerHTML += getPoint.repeat(floorStar);
+							marker_sumStar.innerHTML += noPoint.repeat(5-floorStar);
+						}
+
+						var dateToday = new Date();
+						var dayName = ["วันอาทิตย์","วันจันทร์","วันอังคาร","วันพุธ","วันพฤหัสบดี","วันศุกร์","วันเสาร์"];
+						var days = snapshot.child("res_opening/"+dayName[dateToday.getDay()]).val();
+						if (days == "ปิดทำการ") {
+							detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
+							detail_status.style.color = "#ff0000";
+							marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
+							marker_status.style.color = "#ff0000";
+						} else {
+							splitTime = days.split("–");
+							timeOpen = splitTime[0].split(":");
+							timeClose = splitTime[1].split(":");
+							nowHours = dateToday.getHours();
+							nowMinutes = dateToday.getMinutes();
+
+							if (nowHours >= timeOpen[0] && nowHours <= timeClose[0] ) {
+								if (nowHours == timeClose) {
+									if (nowMinutes <= timeClose[1]) {
+										detail_status.innerHTML = "เปิดอยู่ในขณะนี้";
+										detail_status.style.color = "#008000";
+										marker_status.innerHTML = "เปิดอยู่ในขณะนี้";
+										marker_status.style.color = "#008000";
+									} else {
+										detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
+										detail_status.style.color = "#ff0000";
+										marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
+										marker_status.style.color = "#ff0000";
+									} 
+								}else {
+									detail_status.innerHTML = "เปิดอยู่ในขณะนี้";
+									detail_status.style.color = "#008000";
+									marker_status.innerHTML = "เปิดอยู่ในขณะนี้";
+									marker_status.style.color = "#008000";
+								}
+							} else {
+								detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
+								detail_status.style.color = "#ff0000";
+								marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
+								marker_status.style.color = "#ff0000";
+							}
+						}
+						
+						var d_mon = snapshot.child("res_opening/วันจันทร์").val();
+						var d_tue = snapshot.child("res_opening/วันอังคาร").val();
+						var d_wed = snapshot.child("res_opening/วันพุธ").val();
+						var d_thu = snapshot.child("res_opening/วันพฤหัสบดี").val();
+						var d_fri = snapshot.child("res_opening/วันศุกร์").val();
+						var d_sat = snapshot.child("res_opening/วันเสาร์").val();
+						var d_sun = snapshot.child("res_opening/วันอาทิตย์").val();
+
+						if (d_mon == "") {
+							mon.innerHTML = "ไม่พบข้อมูล";
+							tue.innerHTML = "";
+							wed.innerHTML = "";
+							thu.innerHTML = "";
+							fri.innerHTML = "";
+							sat.innerHTML = "";
+							sun.innerHTML = "";
+						} else {
+							mon.innerHTML = '<li>วันจันทร์: '+d_mon+'</li>';
+							tue.innerHTML = '<li>วันอังคาร: '+d_tue+'</li>';
+							wed.innerHTML = '<li>วันพุธ: '+d_wed+'</li>';
+							thu.innerHTML = '<li>วันพฤหัสบดี: '+d_thu+'</li>';
+							fri.innerHTML = '<li>วันศุกร์: '+d_fri+'</li>';
+							sat.innerHTML = '<li>วันเสาร์: '+d_sat+'</li>';
+							sun.innerHTML = '<li>วันอาทิตย์: '+d_sun+'</li>';
 						}
 					});
 				}
@@ -214,35 +337,18 @@ var ct3_marker = '</h4>'+
 function onclickDetail (data) {
 	var name_modal = document.getElementById("name_restaurant");
 	var phone = document.getElementById("cont_phone");
-	var mon = document.getElementById("opening_mon");
-	var tue = document.getElementById("opening_tue");
-	var wed = document.getElementById("opening_wed");
-	var thu = document.getElementById("opening_thu");
-	var fri = document.getElementById("opening_fri");
-	var sat = document.getElementById("opening_sat");
-	var sun = document.getElementById("opening_sun");
 	var phoneCall = document.getElementById("phone");
-	var reviews = document.getElementById("reviewBox");
 	var images = document.getElementById("ImageBox");
-	var detail_status = document.getElementById("status");
-	var marker_status = document.getElementById("status_marker");
-
+	//var website_btn = document.getElementById("more_web");
+ 
 	var dataSplit = data.split(",");
 	name_modal.innerHTML = dataSplit[0]; //get name's restaurant on modal
 
 	// Get data from Firebase
-	var ref = firebase.database().ref();
 	var dbModal = ref.child("restaurant/"+dataSplit[1]+"/"+dataSplit[2]+"/")
 
 	dbModal.on("value", function(snapshot) {
 		var phoneNumber = snapshot.child("res_phonenumber").val();
-		var d_mon = snapshot.child("res_opening/วันจันทร์").val();
-		var d_tue = snapshot.child("res_opening/วันอังคาร").val();
-		var d_wed = snapshot.child("res_opening/วันพุธ").val();
-		var d_thu = snapshot.child("res_opening/วันพฤหัสบดี").val();
-		var d_fri = snapshot.child("res_opening/วันศุกร์").val();
-		var d_sat = snapshot.child("res_opening/วันเสาร์").val();
-		var d_sun = snapshot.child("res_opening/วันอาทิตย์").val();
 
 		//Show details on modal
 		if (phoneNumber == "") {
@@ -254,93 +360,6 @@ function onclickDetail (data) {
 			'<button id="tel_btn" type="button" class="btn btn-lg btn-block">โทร</button></a>';
 		}
 
-		var dateToday = new Date();
-		var dayName = ["วันอาทิตย์","วันจันทร์","วันอังคาร","วันพุธ","วันพฤหัสบดี","วันศุกร์","วันเสาร์"];
-		var days = snapshot.child("res_opening/"+dayName[dateToday.getDay()]).val();
-		if (days == "ปิดทำการ") {
-			detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
-			detail_status.style.color = "#ff0000";
-			marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
-			marker_status.style.color = "#ff0000";
-		} else {
-			splitTime = days.split("–");
-			timeOpen = splitTime[0].split(":");
-			timeClose = splitTime[1].split(":");
-			nowHours = dateToday.getHours();
-			nowMinutes = dateToday.getMinutes();
-
-			if (nowHours >= timeOpen[0] && nowHours <= timeClose[0] ) {
-				if (nowHours == timeClose) {
-					if (nowMinutes <= timeClose[1]) {
-						detail_status.innerHTML = "เปิดอยู่ในขณะนี้";
-						detail_status.style.color = "#008000";
-						marker_status.innerHTML = "เปิดอยู่ในขณะนี้";
-						marker_status.style.color = "#008000";
-					} else {
-						detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
-						detail_status.style.color = "#ff0000";
-						marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
-						marker_status.style.color = "#ff0000";
-					} 
-				}else {
-					detail_status.innerHTML = "เปิดอยู่ในขณะนี้";
-					detail_status.style.color = "#008000";
-					marker_status.innerHTML = "เปิดอยู่ในขณะนี้";
-					marker_status.style.color = "#008000";
-				}
-			} else {
-				detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
-				detail_status.style.color = "#ff0000";
-				marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
-				marker_status.style.color = "#ff0000";
-			}
-		}
-		
-		if (d_mon == "") {
-			mon.innerHTML = "ไม่พบข้อมูล";
-			tue.innerHTML = "";
-			wed.innerHTML = "";
-			thu.innerHTML = "";
-			fri.innerHTML = "";
-			sat.innerHTML = "";
-			sun.innerHTML = "";
-		} else {
-			mon.innerHTML = '<li>วันจันทร์: '+d_mon+'</li>';
-			tue.innerHTML = '<li>วันอังคาร: '+d_tue+'</li>';
-			wed.innerHTML = '<li>วันพุธ: '+d_wed+'</li>';
-			thu.innerHTML = '<li>วันพฤหัสบดี: '+d_thu+'</li>';
-			fri.innerHTML = '<li>วันศุกร์: '+d_fri+'</li>';
-			sat.innerHTML = '<li>วันเสาร์: '+d_sat+'</li>';
-			sun.innerHTML = '<li>วันอาทิตย์: '+d_sun+'</li>';
-		}
-		
-		var  numReviews = snapshot.child("res_review").numChildren();
-		reviews.innerHTML = "";
-		for (let x = 1; x <= numReviews; x++) {
-			var eachReview = snapshot.child("res_review/res_review"+x+"/text").val();
-			var eachRate = snapshot.child("res_review/res_review"+x+"/rating").val();
-			reviews.innerHTML += 
-			'<div class="card cont_box">'+
-			'<div class="card-body">'+
-				'<div class="col-sm-6 grid_rating">'+
-					'<div class="u_rating"></div>'+
-					'<p class="user_rating">'+eachRate+'</p>'+
-				'</div>'+
-				'<p class="cont_review">'+eachReview+'</p>'+
-			'</div></div><br>';
-
-			var userStars = document.getElementsByClassName("u_rating")[x-1];
-			var getPoint = '<img class="u_star" src="pic/get_star.png">';
-			var noPoint = '<img class="u_star" src="pic/nopoint.png">';
-			if (eachRate == 0 || eachRate == "") {
-				userStars.innerHTML = "";
-			} else {
-				userStars.innerHTML = "";
-				userStars.innerHTML += getPoint.repeat(eachRate);
-				userStars.innerHTML += noPoint.repeat(5-eachRate);
-			}
-		}
-		
 		var  numImage = snapshot.child("res_img").numChildren();
 		images.innerHTML = "";
 		for (let y = 1; y < numImage+1; y++) {
@@ -354,12 +373,25 @@ function onclickDetail (data) {
 			'<img class="res_pic" src="'+ urlImage +'">'+
 			'<div class="cont_img">'+
 				'<p>Picture by Google Map</p>'
-			'</div>'+
-		'</div>';
+			'</div></div>';
 		}
+
+		// var numWebsite = snapshot.child("").numChildren();
+		// website_btn.innerHTML = "";
+		// for (let z = 1; z < numWebsite+1; z++) {
+		// 	if(z < 10) {
+		// 		var checkWeb = "0";
+		// 	}else{
+		// 		var checkWeb = "";
+		// 	}
+		// 	var urlWeb = snapshot.child(""+checkWeb+y).val();
+		// 	var nameWeb = snapshot.child(""+checkWeb+y).val();
+		// 	website_btn.innerHTML += '<a href="'+urlWeb+'">'+
+		// 	'<button type="button" class="btn other_web">'+nameWeb+'</button></a>';
+		// }
+
 	}, function (error) {
 		console.log("Error: " + error.code);
 	});
 
 }
-  
