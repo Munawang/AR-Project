@@ -1,0 +1,300 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "296",
+            "short_name" : "296",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "ถนน ลาดกระบัง",
+            "short_name" : "ถนน ลาดกระบัง",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "แขวง ลาดกระบัง",
+            "short_name" : "แขวง ลาดกระบัง",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "เขตลาดกระบัง",
+            "short_name" : "เขตลาดกระบัง",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "กรุงเทพมหานคร",
+            "short_name" : "กรุงเทพมหานคร",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "ประเทศไทย",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003e296 ถนน ลาดกระบัง\u003c/span\u003e \u003cspan class=\"extended-address\"\u003eแขวง ลาดกระบัง\u003c/span\u003e \u003cspan class=\"locality\"\u003eเขตลาดกระบัง\u003c/span\u003e \u003cspan class=\"region\"\u003eกรุงเทพมหานคร\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e \u003cspan class=\"country-name\"\u003eประเทศไทย\u003c/span\u003e",
+      "formatted_address" : "296 ถนน ลาดกระบัง แขวง ลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 10520 ประเทศไทย",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.7218051,
+            "lng" : 100.7835085
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7231992802915,
+               "lng" : 100.7848567802915
+            },
+            "southwest" : {
+               "lat" : 13.7205013197085,
+               "lng" : 100.7821588197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "name" : "เดอะ พิซซ่า คอมปะนี",
+      "opening_hours" : {
+         "open_now" : true,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "0000"
+               },
+               "open" : {
+                  "day" : 0,
+                  "time" : "1000"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "0000"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "1000"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "0000"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "1000"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "0000"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "1000"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "0000"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "1000"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 6,
+                  "time" : "0000"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "1000"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 0,
+                  "time" : "0000"
+               },
+               "open" : {
+                  "day" : 6,
+                  "time" : "1000"
+               }
+            }
+         ],
+         "weekday_text" : [
+            "วันจันทร์: 10:00–0:00",
+            "วันอังคาร: 10:00–0:00",
+            "วันพุธ: 10:00–0:00",
+            "วันพฤหัสบดี: 10:00–0:00",
+            "วันศุกร์: 10:00–0:00",
+            "วันเสาร์: 10:00–0:00",
+            "วันอาทิตย์: 10:00–0:00"
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 3000,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101867827164480794200\"\u003eNathan Yiangsupapaanontr\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA29pBrOF3KfXo3cAze3bXIJbheWph8b4_K403UQFe-Fjg44PubPS5IYDDPtt3AmZKG46qrRQlhtIRqgVukRuHCz3i-SjrthmteypooydQYPpVThqvwuoqkAyexjwVLSGFEhBJBzIxtfmEJVZbZw-4jf0tGhSRDXAeO8j7JWfQTzzaIqauMqeZRQ",
+            "width" : 4000
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104160413783378571373\"\u003eRuji Peera\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAX-s5wZOKyHPrIEUaLqnxvl1GWtxbHraCe01W4h_uYSbSHje23QhgGHzy8IliJhbeAoggKR_XFPpaZaohXY98D-5xnBP19t-mJlJySrKnz3Wkhu9KtIugtyWTxPxPsNevEhAx6PaLGUa_rTGoc_OkLqSiGhSy9ao4fwnuO6vCLQGGTHcwps4YQg",
+            "width" : 4032
+         },
+         {
+            "height" : 4160,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116202670763004375955\"\u003eArtorn Pongsri\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAQv0h4EjKDXPQ0JwIQj14gyrKoHnEmKa1dzqZRqz6C7nrsS91h2OWTEjimMTdBEW2kPR7Ccv8TD_4yAvZD0gDbQpu0LorBJ9lDjenXiZzZLjZB_cKfXoCWBAS9Na9UzlPEhC2ENUHiuZBgfE3boMKjviIGhSiPV8rEmVGBFSs-aMIfwllvIMgTQ",
+            "width" : 3120
+         },
+         {
+            "height" : 3120,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114878638005506095567\"\u003espin creator\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAV3PXHktJT0ylyzk74OLeDG88L_m35-eUvVWsd-CeiHUt50s6jCdIILbgkd-mn2RqN5uFvAcxmv_ljjRf46st6tsqrk0tQnKAlO5qICxgUk3jQSzo6vx5-1Wq00A-KZ--EhD6kxIEm-r2oTQMRZrfS5U_GhQN8mCLp91QMfZmJnC3DpIPEUTcBw",
+            "width" : 4160
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117593920346036724720\"\u003eAckrawin Boonpuen\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA_MYr4rIYw8RpCkCbcD_bplfQg6OWgqK2UBCD4T5YXosyFrZxzP8JV8vLMK5rjiU7CFouCNVj6yGOyxdAQMzR7XXFBSCIHpnm22hOcVmeo0mEIyHXkdFs-lo32soxZsJmEhDQU596oBe3mMhCjjiwNIobGhTbb9UREypE-CvnMExfOoFwVmxHhw",
+            "width" : 4032
+         },
+         {
+            "height" : 4000,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101867827164480794200\"\u003eNathan Yiangsupapaanontr\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAO3Y0LqyblCZlFksyjq17J3qoPN7dirT6xOS4MehPMcgToKTysel_xuYqD-cRXpI_aq4VZA5-KuLFVrPG2JhXoEFhVed1LDpcjLoft9JH2JBKRBpr6LVhPnVUvEH-_LX8EhApNHvI49nXD1HWAhjzuJVkGhRdcr2SeDvuPXQBntImd5SX0HExJA",
+            "width" : 3000
+         },
+         {
+            "height" : 4160,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116202670763004375955\"\u003eArtorn Pongsri\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAAOdKwsqsW6CWNbFa3Of0pPPB9znPxBsjWII9FzrLB0OvRBo8oKKajrTCu8q0y769bzGM50DXlxtEQnlX2CgyY_eHmjEyp-SvYM7tuFeODGWlr8j2-ZZivKAbeWfbttjBEhB4s1OrMmmdpu0ggM4wZWw4GhQBedMQKLST8FK1oJ8o95GzUJ03eA",
+            "width" : 3120
+         },
+         {
+            "height" : 4160,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114878638005506095567\"\u003espin creator\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAArTczvWvf-0U24sEQjcwX49X4E9Fy21X2NLyeuORlSpwymLzEwJjbzGvGEnjqj9XiHrZHdLMFHdpi-HosABK4j59LTsTMESRYVrbSb2uAEUPaiD7w8zR8TyA_ttoDYCbmEhDBVE9UVByjSFQM20-lckPoGhQy_CNaT3V1Ez6peMTPldJAqie0Ng",
+            "width" : 3120
+         },
+         {
+            "height" : 2225,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117848523630987721695\"\u003eWanchalerm Krittakanee\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAbJRF1fjgwHH5zRJjSNcIPSNJTlbd_3hzkCv6ITe_jfvzQxMQgc_PaB2IMVGzpQaBnJ7OBxTUR2nnZzGAOkMHYBjQFEX3mCZ_5qncgPQK-uMDRnfgENWADfHEy1Gwz-vgEhC1RMEV9PnuM8OvN5xbzzKsGhTNfcuh5MZp2TJiO2Ba371zUnGtDg",
+            "width" : 1310
+         },
+         {
+            "height" : 4160,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114878638005506095567\"\u003espin creator\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA0klERJaqb6qnKg6cIrBjrTaPJ-MCrvRblAGc07mTn136WxilI8r8785bslYENeYEN09QILngEq4wclAh2DvIBLAp3O-qjdbQwcsJ2mCuDi6iO0nd4xHUlR_eaIv0-KefEhAdJnHm2Gbocp4IDZwe-kp5GhTKUrJJGbMUWjnpqxGYfiDYwc7oLg",
+            "width" : 3120
+         }
+      ],
+      "place_id" : "ChIJSfka78xnHTERW9nEcK_cu0I",
+      "plus_code" : {
+         "compound_code" : "PQCM+PC กรุงเทพมหานคร ไทย",
+         "global_code" : "7P52PQCM+PC"
+      },
+      "price_level" : 2,
+      "rating" : 4,
+      "reviews" : [
+         {
+            "author_name" : "Nat LUCID",
+            "author_url" : "https://www.google.com/maps/contrib/112166108075482133110/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh3.ggpht.com/-skxQ26Ldn0k/AAAAAAAAAAI/AAAAAAAAAAA/6Aw4ylH-V6k/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 2,
+            "relative_time_description" : "ในสัปดาห์ที่ผ่านมา",
+            "text" : "ไม่ทวนออเดอร์ก่อนส่งของให้ลูกค้า ต้องทวงเองว่าของไม่ครบ",
+            "time" : 1583253733
+         },
+         {
+            "author_name" : "pinpinut yimbaow",
+            "author_url" : "https://www.google.com/maps/contrib/104325953855135622187/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh4.ggpht.com/-4cPmXCfbtno/AAAAAAAAAAI/AAAAAAAAAAA/yKHq1OxjvPo/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating" : 3,
+            "relative_time_description" : "2 สัปดาห์ที่แล้ว",
+            "text" : "พนง. บางคนดูแต่งตัวดี น่าจะมีตำแหน่ง\nแต่พูดจาไม่ค่อยดี",
+            "time" : 1581820246
+         },
+         {
+            "author_name" : "Tivakorn Peesong",
+            "author_url" : "https://www.google.com/maps/contrib/117583768118647650389/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh5.ggpht.com/-GHgJoaUvhaU/AAAAAAAAAAI/AAAAAAAAAAA/PNBdsV-B574/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "เดือนที่แล้ว",
+            "text" : "ผู้จัดการร้านพูดจาไม่ค่อยดีนะครับ",
+            "time" : 1580050539
+         },
+         {
+            "author_name" : "Nuý Arumarung",
+            "author_url" : "https://www.google.com/maps/contrib/102117024865182666649/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh5.ggpht.com/-SqpUZctxi7E/AAAAAAAAAAI/AAAAAAAAAAA/8nX5hhFhhJ4/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating" : 3,
+            "relative_time_description" : "ในสัปดาห์ที่ผ่านมา",
+            "text" : "พิชซ่าโปร1แถม1",
+            "time" : 1582985868
+         },
+         {
+            "author_name" : "Siwaporn Chaidumrong",
+            "author_url" : "https://www.google.com/maps/contrib/106958189632308167796/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh4.ggpht.com/-hUyBog-m7RE/AAAAAAAAAAI/AAAAAAAAAAA/2Ty7_N-XXHY/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "3 เดือนที่แล้ว",
+            "text" : "บริการดี อาหารอร่อย",
+            "time" : 1574264987
+         }
+      ],
+      "types" : [
+         "meal_delivery",
+         "restaurant",
+         "food",
+         "point_of_interest",
+         "establishment"
+      ],
+      "url" : "https://maps.google.com/?cid=4808679673217472859",
+      "user_ratings_total" : 60,
+      "utc_offset" : 420,
+      "vicinity" : "296 ถนน ลาดกระบัง แขวง ลาดกระบัง เขตลาดกระบัง",
+      "website" : "https://www.1112.com/"
+   },
+   "status" : "OK"
+}

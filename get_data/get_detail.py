@@ -3,7 +3,7 @@ import urllib
 import json
 import os
 
-file_txt = open('.txt', 'r', encoding="utf-8")
+file_txt = open('newRestaurant.txt', 'r', encoding="utf-8")
 
 t1 = 'https://maps.googleapis.com/maps/api/place/details/json?place_id='
 t2 = ('&fields=address_component,adr_address,formatted_address,geometry,icon,name,permanently_closed,photo,place_id'+

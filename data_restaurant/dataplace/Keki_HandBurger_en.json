@@ -1,0 +1,250 @@
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "ซอย เกกีงาม 2",
+            "short_name" : "ซอย เกกีงาม 2",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "แขวง ลาดกระบัง",
+            "short_name" : "แขวง ลาดกระบัง",
+            "types" : [ "sublocality_level_2", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "เขตลาดกระบัง",
+            "short_name" : "เขตลาดกระบัง",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "กรุงเทพมหานคร",
+            "short_name" : "กรุงเทพมหานคร",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Thailand",
+            "short_name" : "TH",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "10520",
+            "short_name" : "10520",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "14/31, \u003cspan class=\"street-address\"\u003eซอย เกกีงาม 2\u003c/span\u003e \u003cspan class=\"extended-address\"\u003eแขวง ลาดกระบัง\u003c/span\u003e \u003cspan class=\"locality\"\u003eเขตลาดกระบัง\u003c/span\u003e \u003cspan class=\"region\"\u003eกรุงเทพมหานคร\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e10520\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eThailand\u003c/span\u003e",
+      "formatted_address" : "14/31, ซอย เกกีงาม 2 แขวง ลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 10520, Thailand",
+      "formatted_phone_number" : "063 429 1551",
+      "geometry" : {
+         "location" : {
+            "lat" : 13.7277198,
+            "lng" : 100.770279
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 13.7290687302915,
+               "lng" : 100.7716056802915
+            },
+            "southwest" : {
+               "lat" : 13.7263707697085,
+               "lng" : 100.7689077197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+      "international_phone_number" : "+66 63 429 1551",
+      "name" : "Hand Burger",
+      "opening_hours" : {
+         "open_now" : true,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 0,
+                  "time" : "2030"
+               },
+               "open" : {
+                  "day" : 0,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "2030"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "2030"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "2030"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "2030"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "2030"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "1100"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 6,
+                  "time" : "2030"
+               },
+               "open" : {
+                  "day" : 6,
+                  "time" : "1100"
+               }
+            }
+         ],
+         "weekday_text" : [
+            "Monday: 11:00 AM – 8:30 PM",
+            "Tuesday: 11:00 AM – 8:30 PM",
+            "Wednesday: 11:00 AM – 8:30 PM",
+            "Thursday: 11:00 AM – 8:30 PM",
+            "Friday: 11:00 AM – 8:30 PM",
+            "Saturday: 11:00 AM – 8:30 PM",
+            "Sunday: 11:00 AM – 8:30 PM"
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114568581731600214388\"\u003eHand Burger\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAw0RkCe_Kwcq915gWLv_uSn3jFMjn8snXrQsincVVnQRI3qVd8Sr-6vehXBYVZAItGoFVFyx1bSC4mH2jQI81gQgFEvs64LF9j6FERjIm8BnaN6PpMw-W1ZFeMmu-ak5EEhD4vnPebJ_QCY3Mn8zKkNIkGhQlKiZywGYw5Dnhs0Tz2grnB7Kl_Q",
+            "width" : 3024
+         },
+         {
+            "height" : 459,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114568581731600214388\"\u003eHand Burger\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAXPJKNHdSS1QRBzi3ItdYTapUyN47fym8Qo9r5agbmaJcXLT7M5AfESUoVWveqcoQ6VHaAprFnF0VeeBo8D14oJuKX7jIykPn-54RVjbMYBvu_1luXjMxNNPMlcGGHoovEhA1HkYnqQYyFZ4ObbVY3caxGhSqA4hfZvcBYOPLRjgcpokbLiJvTg",
+            "width" : 816
+         },
+         {
+            "height" : 1477,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114568581731600214388\"\u003eHand Burger\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAACCD0Sh1kZhEBX9x9qPeI6Mq7E2LVEcZcC4OGC9o0jSoqpZ24vss81-SiCHvmJUmed3HrTCbSEWWvD8mdMCR4mODInCDkU3ABRYtQTX5Dw08V0Qo6k8Zdi_LJ2ZazVYl7EhCw4Xw4gfpzG6ypqf0CnMzVGhTlpTmZilQr95g3CbK87HdRNijF1w",
+            "width" : 1108
+         },
+         {
+            "height" : 559,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114568581731600214388\"\u003eHand Burger\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA3zcfszUEryZh116KH6Jz6fiBQtrlZLXSh_iaLEwLKWaxIfasfylfmRPAQtuqhhSPcMRF6WtFtT5tczPmk9pp8mjTqrallBQ9Ze9WWB1VxaQL1DdfjQeSOwDKFLdTG-1NEhAgQXDb_25DwoF4LltdIzUdGhToK3JdXwHhTo2c3mn8pKzWJEQUkg",
+            "width" : 824
+         },
+         {
+            "height" : 960,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114568581731600214388\"\u003eHand Burger\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAACWaD3pVWuz4b2zKNtNh0PHxszbro-9i_k8pjclNVn9RgpgAKwreVXDiBnd7hW9sgUx2k6-CY1sCWLzMle3IR_JXVVem_TMkiJDBH-gX1XwcUj-cpV___5Aq9-052edq7EhADQge7el1PQvc7oTds3D-EGhR2gI7lTsKrrpBhAOdDHzrAxNdPcw",
+            "width" : 720
+         },
+         {
+            "height" : 810,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114568581731600214388\"\u003eHand Burger\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAwrlRebK_WltMDFhyAjaC7bBe5TFbEXwrPXLF7kWgf2Go8w5vxIxH1mDAi_Jv8lAQip2Ch55xOx3F4IzQzwAxqb3TRLlHgIdoK4Rltly07YBcDw0iIeoBoJL2aWE_BQ1mEhBea2HRrOQuhMQ-GFk6XUrlGhQ1hpcypdK8uZ1lOHICquaK1LpE2Q",
+            "width" : 810
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114568581731600214388\"\u003eHand Burger\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAifBfpoZb8KLuFDvFyu7DkcjMU9KY2lAHVe7rvPlPpPpiGwzk3AKQBVYilVr-Le1yfXAVZPbpsaEWEWTWiLZV3GiucwewvUm4hl-1TFUJT1l3zptfJ_KrRUU8rgeD5ExQEhCN8620ui1mJ_Wy9Et5pXeEGhQNrAiTmlSP0ww69sr891xu-uCW3w",
+            "width" : 3024
+         },
+         {
+            "height" : 1056,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114568581731600214388\"\u003eHand Burger\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAzzNh7IA00sw2RUEkTlKdEbe9K4FhnqND911C2Iu153c124e-bzJBq3wSr7cBdAlKzniaAdLYKqyhhw39KYW3HiTJxYNSm3QAoqiYPYmrU8gPmB1KfsAME7SvP-IckALqEhDdia4d6rZRgpaxhkA0twoiGhS_JYgt9xmaoTtEO47ifduOGhte6A",
+            "width" : 816
+         },
+         {
+            "height" : 810,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114568581731600214388\"\u003eHand Burger\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA9Jc-vUH-_OUgrZF0cAh5yeZiQYp2isd1J9ldKGSILeJIvsqz4NzqR81eu2JRhOEFJ0lZ0z6PHrZ0HClSuoFxVkKLkNpssCzkfgTiWvRpik4plabmR0z7DBWXyQkcdm49EhC8JhWWE8ghU1sviWV6Q97PGhReG50ojQx8YM78QWVjq_xkYLf0ew",
+            "width" : 540
+         },
+         {
+            "height" : 562,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114568581731600214388\"\u003eHand Burger\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAA9rge5JNMs0lcs_99RiSn_N42cc6RyzIF6CLltw28BWFddUVTt9DEaqUmo3J1FxJz4GE6g5Nej0lfUhnZIU4d-HnZzprv1Z4dNvGYVMWCtf6DUNZojF5Kekd1ZwTq3N9PEhDJLCM_vgM8wBOE7VnxmXk9GhRVkndSgMOsSctEEnDuUe-yhI6Q1w",
+            "width" : 825
+         }
+      ],
+      "place_id" : "ChIJlWjt2EFnHTERLp9z6F4425I",
+      "plus_code" : {
+         "compound_code" : "PQHC+34 Bangkok, Thailand",
+         "global_code" : "7P52PQHC+34"
+      },
+      "rating" : 5,
+      "reviews" : [
+         {
+            "author_name" : "Rawiwan Cho",
+            "author_url" : "https://www.google.com/maps/contrib/101399676962679936355/reviews",
+            "language" : "th",
+            "profile_photo_url" : "https://lh3.ggpht.com/-PMwMnEQ6ETo/AAAAAAAAAAI/AAAAAAAAAAA/t68l2EYST50/s128-c0x00000000-cc-rp-mo/photo.jpg",
+            "rating" : 5,
+            "relative_time_description" : "8 months ago",
+            "text" : "รสชาติอร่อย หอม",
+            "time" : 1562158697
+         }
+      ],
+      "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+      "url" : "https://maps.google.com/?cid=10582113729715085102",
+      "user_ratings_total" : 1,
+      "utc_offset" : 420,
+      "vicinity" : "14/31, ซอย เกกีงาม 2, เขตลาดกระบัง",
+      "website" : "https://hand-burger-self-service-restaurant.business.site/?utm_source=gmb&utm_medium=referral"
+   },
+   "status" : "OK"
+}
