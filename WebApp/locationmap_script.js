@@ -103,22 +103,22 @@ var ct2_marker = '</h4>'+
 		}
 
 		var locations = [
-			['A&P ไก่ยำแซ่บ',13.7275202, 100.7694236,'zone01','keki01'], //keki (11)
+			['Sumfruit บิงซู ลาดกระบัง',13.7275256,100.7708011,'zone01','keki01'], //keki (11)
 			['Daily delivery KMITL',13.7278467,100.7701097,'zone01','keki02'],
-			['Kinnii กินนี่',13.7278592,100.7703925,'zone01','keki03'],
+			['มานีมีนมลาดกระบัง',13.7277224,100.7704063,'zone01','keki03'],
 			['STEAK TECHNO สเต็ก เทคโนฯ',13.727815,100.769738,'zone01','keki04'],
 			['Shogun ลาดกระบัง',13.7277267,100.7702708,'zone01','keki05'],
 			['ฅน 8 หน้า SUSHI BAR & RESTAURANT',13.7275384,100.7696328,'zone01','keki06'],
 			['ชาชักโกอิน',13.7273668,100.769545,'zone01','keki07'],
 			['ญาแฝดข้าวมันไก่ ซ.เกกี4',13.7273834,100.7694829,'zone01','keki08'],
-			['มุมสบาย',13.7269879,100.7698375,'zone01','keki09'],
+			['Hand Burger',13.7277198,100.770279,'zone01','keki09'],
 			['วัวล้วนๆ ไม่มีควายผสม สาขา ลาดกะบัง KMITL',13.7277895,100.7701018,'zone01','keki10'],
 			['เสต็ก อิ่มเอม',13.7271134,100.7703543,'zone01','keki11'],
 			['BKK Grill',13.7213184, 100.7836547,'zone02','jinda01'],//jinda (10)
 			['Coffee Today คอฟฟี่ทูเดย์',13.7218673, 100.7843005,'zone02','jinda02'],
 			['ICE FEELING',13.7215943, 100.7836567,'zone02','jinda03'],
 			['ครัวฅนเมือง', 13.7214214, 100.7836731,'zone02','jinda04'],
-			['ครัวป้าเจ๊ก', 13.7197648, 100.7837982,'zone02','jinda05'],
+			['เดอะ พิซซ่า คอมปะนี', 13.7218051, 100.7835085,'zone02','jinda05'],
 			['Pasta Home (พาสต้าโฮม)', 13.71779, 100.783517,'zone02','jinda06'],
 			['สุกี้ดารา', 13.7221057, 100.7852154,'zone02','jinda07'],
 			['R-HA (อาฮ่า)', 13.721437, 100.783842,'zone02','jinda08'],
@@ -255,7 +255,7 @@ var ct2_marker = '</h4>'+
 							nowHours = dateToday.getHours();
 							nowMinutes = dateToday.getMinutes();
 
-							if (nowHours >= timeOpen[0] && nowHours <= timeClose[0] ) {
+							if ((nowHours >= timeOpen[0] && nowHours <= timeClose[0]) || (nowHours < timeOpen[0] && nowHours < timeClose[0])) {
 								if (nowHours == timeClose) {
 									if (nowMinutes <= timeClose[1]) {
 										detail_status.innerHTML = "เปิดอยู่ในขณะนี้";
