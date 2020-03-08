@@ -1,0 +1,26 @@
+{
+    "res_name": "Coffee Today คอฟฟี่ทูเดย์",
+    "res_type": "cafe",
+    "res_phonenumber": "",
+    "res_review1": "สุดจริงกาแฟ ร้านนี้อร่อยแล้วยังถูกอีกด้วย",
+    "res_review2": "A recently opened coffee shop near Lat Krabang 54 (near the Family Mart and foot bridge).  This is one of few if only coffee shops in the area where you can sit indoors.  Coffee prices are affordabe at around 55 baht for a large cup of coffee.  The shop opens arround  6 a.m. which is earlier than most.",
+    "res_review3": "เพิ่งรุ้นะว่ากาแฟแบรนด์นี้มีสาขาเยอะเลยทีเดียว",
+    "res_review4": "ร้านเงียบ wifiฟรี มีปลั๊กไฟ  ทำงานไปได้ดื่มเครื่องดื่ม อร่อยๆไป มีความสุขสุดๆ",
+    "res_review5": "วันนี้วันอาทิตย์เลยอยากเปลี่ยนบรรยากาศทำงานบ้างเลยเลือกมาที่ coffee today",
+    "res_ratingscore": 5,
+    "res_opening": [
+        "วันจันทร์: 6:00–20:30",
+        "วันอังคาร: 6:00–20:30",
+        "วันพุธ: 6:00–20:30",
+        "วันพฤหัสบดี: 6:00–20:30",
+        "วันศุกร์: 6:00–20:30",
+        "วันเสาร์: 6:00–20:30",
+        "วันอาทิตย์: 6:00–20:30"
+    ],
+    "res_lat": 13.7218673,
+    "res_lng": 100.7843005,
+    "res_northeast_lat": 13.7232239802915,
+    "res_northeast_lng": 100.7856492802915,
+    "res_southwest_lat": 13.7205260197085,
+    "res_southwest_lng": 100.7829513197085
+}

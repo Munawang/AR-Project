@@ -1,0 +1,25 @@
+{
+    "res_name": "STEAK TECHNO สเต็ก เทคโนฯ",
+    "res_type": "restaurant",
+    "res_review1": "เป็นร้านสเต็กที่ให้ฟิลเหมือนกินอยู่ที่บ้าน สเต็กสันคออร่อยนุ่มดีมากค่ะ มันบดก็อร่อย ผักสลัดสดใหม่ โยรวมคือดีค่ะ อร่อยมาก",
+    "res_review2": "อร่อย สมราคา ปริมาณให้เยอะ สเต็กคุณภาพดี มันบดอร่อย แนะนำให้มากิน แต่ปกติคนเยอะ ต้องหาจังหวะดีๆ",
+    "res_review3": "มันบดอร่อยครับ",
+    "res_review4": "Really tasty and yummy with cheap cost.\nBut there are only 5 table to sit down while eating\nand It's look like street food than restuarant",
+    "res_review5": "Love the food!",
+    "res_ratingscore": 4.8,
+    "res_opening": [
+        "วันจันทร์: 17:00–22:00",
+        "วันอังคาร: 17:00–22:00",
+        "วันพุธ: 17:00–22:00",
+        "วันพฤหัสบดี: 17:00–22:00",
+        "วันศุกร์: 17:00–22:00",
+        "วันเสาร์: ปิดทำการ",
+        "วันอาทิตย์: 17:00–22:00"
+    ],
+    "res_lat": 13.727815,
+    "res_lng": 100.769738,
+    "res_northeast_lat": 13.7292060802915,
+    "res_northeast_lng": 100.7710866302915,
+    "res_southwest_lat": 13.7265081197085,
+    "res_southwest_lng": 100.7683886697085
+}
