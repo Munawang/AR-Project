@@ -1,6 +1,6 @@
 window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
-    button.innerText = '﹖';
+    button.innerText = 'Click';
 
     let places = staticLoadPlaces();
     renderPlaces(places);
@@ -9,24 +9,26 @@ window.onload = () => {
 //ANCHOR    ใส่ชื่อตำแหน่งที่ต้องการให้แสดงและพิกัดละติจุดลองจิจุด
 function staticLoadPlaces() {
     return [{
-            name: 'Place1',
+            name: 'Tapchang School',
             location: {
-                // lat: <latitude>,
-                // lng: <longitude>,
+                //โรงเรียนสุเหร่าทับช้าง ตึก
+                lat: 13.7337159,
+                lng: 100.6370816,
             },
         },
         {
-            name: 'Place2',
+            name: 'My Home',
             location: {
-                // lat: <latitude>,
-                // lng: <longitude>,
+                //บ้านตัวเอง
+                lat: 13.7354394,
+                lng: 100.6639269,
             },
         },
         {
-            name: 'Place2',
+            name: 'Tapchang Station',
             location: {
-                // lat: <latitude>,
-                // lng: <longitude>,
+                lat: 13.7331541,
+                lng: 100.6889038,
             },
         },
     ];
@@ -39,22 +41,22 @@ function staticLoadPlaces() {
     info: ข้อมูลที่ต้องการให้แสดงบนหน้าจอ
 */
 var models = [{
-        url: './assets/magnemite/scene.gltf',
+        url: 'icon/pin.png',
         scale: '0.5 0.5 0.5',
-        info: 'Magnemite, Lv. 5, HP 10/10',
+        info: 'PIN Level 1',
         rotation: '0 180 0',
     },
     {
-        url: './assets/articuno/scene.gltf',
+        url: 'icon/world.png',
         scale: '0.2 0.2 0.2',
         rotation: '0 180 0',
-        info: 'Articuno, Lv. 80, HP 100/100',
+        info: 'World Level 2',
     },
     {
-        url: './assets/dragonite/scene.gltf',
+        url: 'icon/map.png',
         scale: '0.08 0.08 0.08',
         rotation: '0 180 0',
-        info: 'Dragonite, Lv. 99, HP 150/150',
+        info: 'Map Level 3',
     },
 ];
 
@@ -72,7 +74,7 @@ var setModel = function(model, entity) {
         entity.setAttribute('position', model.position);
     }
 
-    entity.setAttribute('gltf-model', model.url);
+    entity.setAttribute('model', model.url);
 
     const div = document.querySelector('.instructions');
     div.innerText = model.info;
