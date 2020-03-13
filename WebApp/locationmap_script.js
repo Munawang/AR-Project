@@ -58,8 +58,8 @@ var ct2_marker = '</h4>'+
 		x.innerHTML = "Geolocation is not supported by this browser.";
 	}
 
-	btn1.innerHTML = '<a href="camera.html"><button type="button" id="c_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">camera</i></button></a>';
-	btn2.innerHTML = '<a href="tutorial.html"><button type="button" id="t_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">help_outline</i></button></a>';
+	btn1.innerHTML = '<a href="Location-AR.html"><button type="button" id="c_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">camera</i></button></a>';
+	btn2.innerHTML = '<a href="tutorial-new.html"><button type="button" id="t_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">help_outline</i></button></a>';
 
 
 	function  showPosition(position) {
