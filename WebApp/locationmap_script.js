@@ -16,9 +16,9 @@ var firebaseConfig = {
   ref = firebase.database().ref();
 
 
-  var ct1_marker = '<div class="row">'+
-  '<div class="col-3">'+
-  '<div id="iconMarker"></div></div>'+
+var ct1_marker = '<div class="row">'+
+'<div class="col-3">'+
+'<div id="iconMarker"></div></div>'+
 '<div class="col-9">'+
 '<div id="grid_marker" class="row">'+
 '<div class="col-sm-6">'+
@@ -58,8 +58,8 @@ var ct2_marker = '</h4>'+
 		x.innerHTML = "Geolocation is not supported by this browser.";
 	}
 
-	btn1.innerHTML = '<a href="Location-AR.html"><button type="button" id="c_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">camera</i></button></a>';
-	btn2.innerHTML = '<a href="tutorial-new.html"><button type="button" id="t_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">help_outline</i></button></a>';
+	btn1.innerHTML = '<a href="location_ar.html"><button type="button" id="c_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">camera</i></button></a>';
+	btn2.innerHTML = '<a href="tutorial_new.html"><button type="button" id="t_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">help_outline</i></button></a>';
 
 
 	function  showPosition(position) {
@@ -79,7 +79,7 @@ var ct2_marker = '</h4>'+
 			new google.maps.LatLng(13.7250487802915, 100.7821217802915) // โคม
 			);
 
-		var u_latlng = new google.maps.LatLng(13.720278, 100.783761); //user's location
+		var u_latlng = new google.maps.LatLng(13.720278, 100.783761); //**user's location
 		// For test: Jinda = 13.720278, 100.783761
 		// For test: Keki = 13.727822, 100.769886
 		// For test: FBT = 13.722719, 100.780227
@@ -254,10 +254,11 @@ var ct2_marker = '</h4>'+
 							timeClose = splitTime[1].split(":");
 							nowHours = dateToday.getHours();
 							nowMinutes = dateToday.getMinutes();
+							// parseInt
 
-							if ((nowHours >= timeOpen[0] && nowHours <= timeClose[0]) || (nowHours < timeOpen[0] && nowHours < timeClose[0])) {
-								if (nowHours == timeClose) {
-									if (nowMinutes <= timeClose[1]) {
+							if (nowHours >= parseInt(timeOpen[0]) && nowHours <= parseInt(timeClose[0])) {
+								if (nowHours == parseInt(timeClose[0])) {
+									if (nowMinutes <= parseInt(timeClose[1])) {
 										detail_status.innerHTML = "เปิดอยู่ในขณะนี้";
 										detail_status.style.color = "#008000";
 										marker_status.innerHTML = "เปิดอยู่ในขณะนี้";
@@ -275,10 +276,41 @@ var ct2_marker = '</h4>'+
 									marker_status.style.color = "#008000";
 								}
 							} else {
-								detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
-								detail_status.style.color = "#ff0000";
-								marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
-								marker_status.style.color = "#ff0000";
+								if (parseInt(timeClose[0]) < parseInt(timeOpen[0])) {
+									if (nowHours <= parseInt(timeClose[0]) || nowHours >= parseInt(timeOpen[0])) {
+										if (nowHours == parseInt(timeClose[0])) {
+											if (nowMinutes <= parseInt(timeClose[1])) {
+												detail_status.innerHTML = "เปิดอยู่ในขณะนี้";
+												detail_status.style.color = "#008000";
+												marker_status.innerHTML = "เปิดอยู่ในขณะนี้";
+												marker_status.style.color = "#008000";
+											} else {
+												detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
+												detail_status.style.color = "#ff0000";
+												marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
+												marker_status.style.color = "#ff0000";
+											} 
+										}else {
+											detail_status.innerHTML = "เปิดอยู่ในขณะนี้";
+											detail_status.style.color = "#008000";
+											marker_status.innerHTML = "เปิดอยู่ในขณะนี้";
+											marker_status.style.color = "#008000";
+											// in case that timeClose >= midnight & noeHour < timeClose
+										}
+									} else {
+										detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
+										detail_status.style.color = "#ff0000";
+										marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
+										marker_status.style.color = "#ff0000";
+										// in other case that nowHour != opening hour
+									}
+								} else {
+									detail_status.innerHTML = "ปิดอยู่ในขณะนี้";
+									detail_status.style.color = "#ff0000";
+									marker_status.innerHTML = "ปิดอยู่ในขณะนี้";
+									marker_status.style.color = "#ff0000";
+									// else in normal case 
+								}
 							}
 						}
 						
@@ -314,7 +346,7 @@ var ct2_marker = '</h4>'+
 
 		// show user's marker position
 		var u_marker = new google.maps.Marker({
-				position: new google.maps.LatLng(13.720278, 100.783761), //user's location
+				position: new google.maps.LatLng(13.720278, 100.783761), //**user's location
 				map: maps,
 				title: 'ตำแหน่งผู้ใช้',
 				icon: 'pic/user_marker.png',
