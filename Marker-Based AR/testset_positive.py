@@ -11,8 +11,8 @@ count = 0
 for ts in testset:
         count += 1
         
-txtfile = open("result_positive.txt","a+") #change
-txtfile.write("\n" + "FRONT-FAR" +"\n") #change
+txtfile = open("result0.86_positive.txt","a+") #change
+txtfile.write("\n" + "FRONT-FAR" +"\n") #change front/left/right/far
 
 testset.seek(0,0)
 for num in range(count):
@@ -58,7 +58,7 @@ for num in range(count):
         # ratio test as per Lowe's paper
         good_points = []
         for i,(m,n) in enumerate(matches):
-            if m.distance < 0.5*n.distance: #distance value
+            if m.distance < 0.86*n.distance: #distance value
                 matchesMask[i]=[1,0]
                 good_points.append(m)
 

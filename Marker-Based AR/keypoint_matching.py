@@ -5,8 +5,8 @@ import os
 #from time import process_time
 
 # Don't forget to resize images before processing (size < 2000)
-original = cv2.imread("")
-image_to_compare = cv2.imread("")
+original = cv2.imread("testset/negative/front/jinda10_front.jpg")
+image_to_compare = cv2.imread("testset/negative/frontdiff/keki04_front_diff.jpg")
 
 #t1_start = process_time()  
 
@@ -43,7 +43,7 @@ matchesMask = [[0,0] for i in range(len(matches))]
 # ratio test as per Lowe's paper
 good_points = []
 for i,(m,n) in enumerate(matches):
-    if m.distance < 0.5*n.distance:
+    if m.distance < 0.88*n.distance:
         matchesMask[i]=[1,0]
         good_points.append(m)
 

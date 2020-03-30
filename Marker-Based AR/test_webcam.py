@@ -1,40 +1,19 @@
 import cv2
 import numpy as np
-from requests.exceptions import HTTPError
-import json
-import random
 import os
-        
-txtfile = open("result0.86_negative.txt","a+") #change
-txtfile.write("\n" + "FRONT-FAR" +"\n") #change
+#from time import process_time
 
-path1 = r"C:\Users\Supapitch\Desktop\detect_how_similar_images_are\testset\negative\front"
-path2 = r"C:\Users\Supapitch\Desktop\detect_how_similar_images_are\testset\negative\far" #change
+# Don't forget to resize images before processing (size < 2000)
+original = cv2.imread("myhome/home_far.jpg")
+cap = cv2.VideoCapture(0)
 
-for num in range(22):
-    random1 = random.choice([
-        x for x in os.listdir(path1)
-        if os.path.isfile(os.path.join(path1, x))
-    ])
+while True:
+    ret, image_to_compare = cap.read()
+    cv2.imshow("WebCam", image_to_compare)
     
-    random2 = random.choice([
-        y for y in os.listdir(path2)
-        if os.path.isfile(os.path.join(path2, y))
-    ])
-    
-    random_front = random1.strip("\n")
-    random_other = random2.strip("\n")
-    
-    stripfront = random1.strip(".jpg")
-    stripother = random2.strip(".jpg")
-    frontName = stripfront.split("_")
-    otherName = stripother.split("_")
+#t1_start = process_time()  
 
-    # Don't forget to resize images before processing (size < 2000)
-    original = cv2.imread("testset/negative/front/"+random_front)
-    image_to_compare = cv2.imread("testset/negative/far/"+random_other) #change
-
-    # 1) Check if 2 images are equals
+# 1) Check if 2 images are equals
     if original.shape == image_to_compare.shape:
         print("same size and channels")
         difference = cv2.subtract(original, image_to_compare)
@@ -67,7 +46,7 @@ for num in range(22):
     # ratio test as per Lowe's paper
     good_points = []
     for i,(m,n) in enumerate(matches):
-        if m.distance < 0.86*n.distance: #distance value
+        if m.distance < 0.5*n.distance:
             matchesMask[i]=[1,0]
             good_points.append(m)
 
@@ -79,8 +58,31 @@ for num in range(22):
         number_keypoints = len(kp_2)
         
     percentSimilar = (len(good_points) / number_keypoints)* 100
-    
-    
-    txtfile.write("%d. %s - %s: %d / %d / %d / %f \n" % (num+1,frontName[0],otherName[0],len(kp_1),len(kp_2),len(good_points),percentSimilar))
 
-txtfile.close()
+    #t1_stop = process_time()
+
+    draw_params = dict(matchColor = (0,255,0),
+                    singlePointColor = (0,0,255), # b,g,r
+                    matchesMask = matchesMask,
+                    flags = 0)
+
+    print("Keypoints 1ST Image: " + str(len(kp_1)))
+    print("Keypoints 2ND Image: " + str(len(kp_2)))
+    print("GOOD Matches:", len(good_points))
+    print("Similarity: ", percentSimilar)
+
+    result = cv2.drawMatchesKnn(original, kp_1, image_to_compare, kp_2, matches, None, **draw_params)
+    cv2.imshow("result", cv2.resize(result, None, fx=0.3, fy=0.3))
+
+    #print("Time to process:", t1_stop-t1_start, "seconds")
+    
+    key = cv2.waitKey(1)
+    if key == 27: #27=esc
+        break
+    if percentSimilar > 30:
+        break
+
+
+cv2.waitKey(0)
+cap.release()
+cv2.destroyAllWindows()

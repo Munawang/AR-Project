@@ -2,12 +2,12 @@ import json
 import os
 
 
-txtfile = open("result0.6.txt","a+") #change
+txtfile = open("count0.86.txt","a+") #change
+percent = 10;
 
-for i in range(9):
-    result = open('list_0.6.txt', 'r', encoding="utf-8") #change
-    percent = [5,10,15,20,25,30,35,40,45,50]
-    txtfile.write("\n -- %d -- \n" % percent[i])
+while percent <= 100:
+    result = open('result0.86.txt', 'r', encoding="utf-8") #change
+    txtfile.write("\n -- %d -- \n" % percent)
     num = 0
     TP = 0
     TN = 0
@@ -17,7 +17,7 @@ for i in range(9):
 
     for r in result:
             num += 1
-    print(num) 
+    print(num)
     result.seek(0,0)
     
     for j in range(num):
@@ -25,21 +25,28 @@ for i in range(9):
             resultStrip = response.strip("\n")
             listResult= resultStrip.split(" ")
             
-            if len(listResult) == 10: 
-                if float(listResult[8]) >= percent[i] and float(listResult[8]) < percent[i+1]:
+            if len(listResult) == 10: #len of positive set = 10 and negative = 12
+                if float(listResult[8]) >= percent:
                     count += 1
                     TP += 1
                 else:
-                    TN += 1
+                    FN += 1
             else:
-                if float(listResult[10]) >=  percent[i]and float(listResult[10]) < percent[i+1]:
+                if float(listResult[10]) >=  percent:
                     count += 1
                     FP += 1
                 else:
-                    FN += 1
+                    TN += 1
+    percent += 5;
     
-    txtfile.write("Accuracy: %d / 104 \n" % count)
-    txtfile.write("TP: %d / TN: %d / FP: %d / FN: %d \n" % (TP,TN,FP,FN))
+    p_count = (count/104)*100
+    p_tp = (TP/24)*100 
+    p_fn = (FN/24)*100 
+    p_fp = (FP/80)*100 
+    p_tn = (TN/80)*100 
+    txtfile.write("Accuracy: %d / 104 = %.2f \n" % (count,p_count))
+    txtfile.write("TP: %d / FN: %d / FP: %d / TN: %d \n" % (TP,FN,FP,TN))
+    txtfile.write("TP: %.2f / FN: %.2f / FP: %.2f / TN: %.2f \n" % (p_tp,p_fn,p_fp,p_tn))
     txtfile.write("---------------------------------------\n")
 
 txtfile.close()
