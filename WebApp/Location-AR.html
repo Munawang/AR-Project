@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EatAR Web Application</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" href="pic/logo.png">
+    <meta charset='utf-8'>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvxzqr4qQKxIE7llXkPfkpiaMa8amsixo&callback=initMap"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
+    <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body style='margin: 0; overflow: hidden;'>
+
+    <div class="centered instructions"></div>
+    <a-scene vr-mode-ui='enabled: false' embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        <a-camera gps-camera rotation-reader></a-camera>
+    </a-scene>
+    <div class="centered">
+        <button data-action="change" id="find-me">Check</button><br/>
+        <p id="zone"></p><br>
+        <p id="status"></p><br>
+        <p id="demo"></p><br>
+        <a id="map-link" target="_blank"></a>
+    </div>
+
+    <script>
+        var x = document.getElementById("demo");
+
+        function geoFindMe() {
+
+            const status = document.querySelector('#status');
+            const mapLink = document.querySelector('#map-link');
+            const zone = document.querySelector('#zone');
+
+            mapLink.innerHTML = '';
+            mapLink.href = '';
+            mapLink.textContent = '';
+
+            function success(position) {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+
+                status.textContent = '';
+                zone.textContent = '';
+
+                x.innerHTML = "Latitude: " + latitude +
+                    "<br>Longitude: " + latitude;
+                mapLink.href = `http://www.google.com/maps/place/${latitude},${longitude}`;
+                mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+                if (latitude == 13.7179259 && longitude == 100.6534443) {
+                    status.textContent = "My Home";
+
+                } else if (latitude == 13.7337142 && longitude == 100.6887425) {
+                    status.textContent = "โรงเรียนสุเหร่าทับช้าง";
+                } else if (latitude == 13.7329601 && longitude == 100.6857741) {
+                    status.textContent = "สถานีรถไฟบ้านทับช้าง";
+                } else {
+                    status.textContent = "ไม่มีสถานที่ในฐานข้อมูล";
+                }
+
+                zone.textContent = '';
+                var zone_jinda = new google.maps.LatLngBounds(
+                    new google.maps.LatLng(13.7164414197085, 100.7821680197085), //พาสต้าโฮม
+                    new google.maps.LatLng(13.7234142302915, 100.7865633802915) // สุกี้ดารา	
+                );
+                var zone_keki = new google.maps.LatLngBounds(
+                    new google.maps.LatLng(13.7260196197085, 100.7685153197085), //ชาชักโกอิน+มุมสบาย
+                    new google.maps.LatLng(13.7292078802915, 100.7716893802915) //kinnii 
+                );
+                var zone_fbt = new google.maps.LatLngBounds(
+                    new google.maps.LatLng(13.7203452697085, 100.7789322697085), //พั้นซ์
+                    new google.maps.LatLng(13.7250487802915, 100.7821217802915) // โคม
+                );
+
+                var latlng = new google.maps.LatLng(latitude, longitude); //user's location
+                // For test: Jinda = 13.720278, 100.783761
+                // For test: Keki = 13.727822, 100.769886
+                // For test: FBT = 13.722719, 100.780227
+                // For test: Unavailable  = 13.731270, 100.781224 (IT KMITL)
+
+                var check_jinda = zone_jinda.contains(latlng);
+                var check_keki = zone_keki.contains(latlng);
+                var check_fbt = zone_fbt.contains(latlng);
+
+                if (check_jinda == true) {
+                    zone.textContent = "โซนจินดานิเวศน์";
+                } else if (check_keki == true) {
+                    zone.textContent = "โซนเกกีงาม";
+                } else if (check_fbt == true) {
+                    zone.textContent = "โซนเอฟบีที";
+                } else {
+                    zone.textContent = "คุณไม่ได้อยู่ในโซนที่กำหนด";
+                }
+
+            }
+
+
+
+            function error() {
+                //ไม่สามารถเรียกคืนตำแหน่งของคุณ
+                status.textContent = 'Unable to retrieve your location';
+            }
+
+            if (!navigator.geolocation) {
+                //เบราว์เซอร์ของคุณไม่รองรับการระบุตำแหน่งทางภูมิศาสตร์
+                status.textContent = 'Geolocation is not supported by your browser';
+            } else {
+                status.textContent = 'Locating…';
+                navigator.geolocation.getCurrentPosition(success, error);
+            }
+
+        }
+
+        document.querySelector('#find-me').addEventListener('click', geoFindMe);
+    </script>
+</body>
+
+</html>
