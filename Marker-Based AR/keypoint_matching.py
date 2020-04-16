@@ -2,13 +2,13 @@ import cv2
 import numpy as np
 import random
 import os
-#from time import process_time
+from time import process_time
 
 # Don't forget to resize images before processing (size < 2000)
-original = cv2.imread("testset/negative/front/jinda10_front.jpg")
-image_to_compare = cv2.imread("testset/negative/frontdiff/keki04_front_diff.jpg")
+original = cv2.imread("images/keki02_front.jpg")
+image_to_compare = cv2.imread("images/keki_other07.jpg")
 
-#t1_start = process_time()  
+t1_start = process_time()  
 
 # 1) Check if 2 images are equals
 if original.shape == image_to_compare.shape:
@@ -43,7 +43,7 @@ matchesMask = [[0,0] for i in range(len(matches))]
 # ratio test as per Lowe's paper
 good_points = []
 for i,(m,n) in enumerate(matches):
-    if m.distance < 0.88*n.distance:
+    if m.distance < 0.85*n.distance:
         matchesMask[i]=[1,0]
         good_points.append(m)
 
@@ -56,7 +56,6 @@ else:
     
 percentSimilar = (len(good_points) / number_keypoints)* 100
 
-#t1_stop = process_time()
 
 draw_params = dict(matchColor = (0,255,0),
                 singlePointColor = (0,0,255), # b,g,r
@@ -69,9 +68,10 @@ print("GOOD Matches:", len(good_points))
 print("Similarity: ", (len(good_points) / number_keypoints)* 100)
 
 result = cv2.drawMatchesKnn(original, kp_1, image_to_compare, kp_2, matches, None, **draw_params)
+t1_stop = process_time()
 cv2.imshow("result", cv2.resize(result, None, fx=0.4, fy=0.4))
 
-#print("Time to process:", t1_stop-t1_start, "seconds")
+print("Time to process:", t1_stop-t1_start, "seconds")
 
 
 cv2.waitKey(0)

@@ -1,25 +1,33 @@
 from firebase import firebase
+from requests.exceptions import HTTPError
 import cv2
 import numpy as np
 import urllib.request
 import os
+from collections import Counter 
 from time import process_time
 
 t1_start = process_time()
-checkSimilar = 0
-nameSimilar = "ไม่พบข้อมูลร้าน"
 
-#01keki/02jinda/03fbt
-zoneId = "zone03" #change
+#SET PART
+zoneId = "zone01"
+nameRest = "keki05"
+perspective = "far"
+
 if zoneId == "zone01":
     zonename = "keki"
     numRest = 11
 elif zoneId == "zone02":
     zonename = "jinda"
     numRest = 10
-else:
+elif zoneId == "zone03":
     zonename = "fbt"
     numRest = 10
+
+# Prepare for write data in txtfile
+txtfile = open("compare"+nameRest+"_"+perspective+".txt","a+")
+txtfile.write("- %s : %s -\n" % (zoneId,perspective))
+checkDict = {}
 
 # 1) Get the image URLs from Firebase
 firebase = firebase.FirebaseApplication("https://eatarproject.firebaseio.com/", None)
@@ -28,7 +36,7 @@ for restNo in range(1, numRest+1):
         checkNum = '0'
     else:
         checkNum = ""
-     
+    
     def url_to_image(urlImg):
         resp = urllib.request.urlopen(urlImg)
         image = np.asarray(bytearray(resp.read()), dtype="uint8")
@@ -36,8 +44,9 @@ for restNo in range(1, numRest+1):
         return image
 
     urlImg = firebase.get('/restaurant/'+zoneId+'/'+zonename+checkNum+str(restNo)+'/res_marker', '')
+    pathImg = "testset/positive_compare/"+nameRest+"_"+perspective+".jpg"
     original = url_to_image(urlImg)
-    image_to_compare = cv2.imread("images/imgtest_fbt.jpg") #change
+    image_to_compare = cv2.imread(pathImg)
 
     # 2) Check for similarities between the 2 images
     sift = cv2.xfeatures2d.SIFT_create()
@@ -68,21 +77,45 @@ for restNo in range(1, numRest+1):
     if len(kp_1) <= len(kp_2):
         number_keypoints = len(kp_1)
     else:
-        number_keypoints = len(kp_2)
+        number_keypoints = len(kp_2) 
         
-    percentSimilar = (len(good_points) / number_keypoints)* 100
-    if (percentSimilar >= 10) and (percentSimilar >= checkSimilar):
-        checkSimilar = percentSimilar
-        nameSimilar = zonename+checkNum+str(restNo)
+    percentSimilar = (len(good_points) / number_keypoints)*100
+    if (percentSimilar >= 10):
+        nameCheck = zonename+checkNum+str(restNo)
+        updateDict = {nameCheck: percentSimilar}
+        checkDict.update(updateDict)
     
-    print("%d. : %d / %d / %d / %f" % (restNo,len(kp_1),len(kp_2),len(good_points),percentSimilar))
+    txtfile.write("%d. %d / %d / %d / %f \n" % (restNo,len(kp_1),len(kp_2),len(good_points),percentSimilar))
 
-print("\n-----------------------------------------\n")
-print(nameSimilar)
-print(checkNum)
+counterDict = Counter(checkDict) 
+top3 = counterDict.most_common(3)
 
+txtfile.write("\n-----------------------------------------\n")
+countTop = 0
+
+if perspective[0:5] == "other": #Negative
+    for topNo in top3:
+        countTop += 1
+        txtfile.write("%s : %f \n" % (topNo[0],topNo[1]))
+    if countTop == 0:
+        result = "Positive TN"
+    else:
+        result = "Negative FP"
+
+else: #Positive
+    for topNo in top3:
+        if topNo[0] == nameRest:
+            countTop += 1
+        txtfile.write("%s : %f \n" % (topNo[0],topNo[1]))
+    if countTop == 1:
+        result = "Positive TP"
+    elif countTop == 0:
+        result = "Negative FN"
+    
+txtfile.write(result)
 t1_stop = process_time()
-print("Time to process:", t1_stop-t1_start, "seconds")
 
+txtfile.write("\nTime to process: %f seconds" % (t1_stop-t1_start))
+txtfile.close()
 cv2.waitKey(0)
 cv2.destroyAllWindows()
