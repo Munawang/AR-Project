@@ -27,11 +27,22 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
 
+    <script src='vendor/ar.js/aframe/build/aframe-ar.js'></script>
+    <script>
+        ARjs.Context.baseURL = 'vendor/ar.js/three.js/'
+    </script>
+    <!-- include gps-ar.js -->
+    <script src="../src/gps-camera-debug.js"></script>
+    <script src="../src/gps-camera-position.js"></script>
+    <script src="../src/gps-camera-rotation.js"></script>
+    <script src="../src/gps-entity-place.js"></script>
+
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="locationmap.css">
 
     <script type="text/javascript" src="locationmap_script.js"></script>
     <script type="text/javascript" src="ar-camera.js"></script>
+
 
 </head>
 
