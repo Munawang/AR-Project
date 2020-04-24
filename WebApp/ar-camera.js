@@ -1,4 +1,94 @@
 window.onload = () => {
+    const button = document.querySelector('button[data-action="change"]');
+    button.innerText = '?';
+
+    let places = staticLoadPlaces();
+    renderPlaces(places);
+};
+
+function staticLoadPlaces() {
+    return [{
+            name: 'Sumfruit บิงซู ลาดกระบัง',
+            location: {
+                // decomment the following and add coordinates:
+                // lat: <your-latitude>,
+                // lng: <your-longitude>,
+                lat: 13.7275256,
+                lng: 100.7708011,
+            },
+            zone:
+        },
+        {
+            name: 'Daily delivery KMITL',
+            location: {
+                lat: 13.7278467,
+                lng: 100.7701097,
+            },
+        },
+
+    ];
+}
+
+var models = [{
+        url: './icon/pin.png',
+        icon: "<img src='icon/pin.png'>",
+        scale: '0.5 0.5 0.5',
+        info: 'Pin-icon',
+        rotation: '0 0 0',
+    },
+
+];
+
+var modelIndex = 0;
+
+var setModel = function(model, entity) {
+    if (model.scale) {
+        entity.setAttribute('scale', model.scale);
+    }
+
+    if (model.rotation) {
+        entity.setAttribute('rotation', model.rotation);
+    }
+
+    if (model.position) {
+        entity.setAttribute('position', model.position);
+    }
+
+    entity.setAttribute('ar-show', model.url);
+
+    const div = document.querySelector('.instructions');
+    div.innerText = model.info;
+    //div.innerHTML = "<img src='icon/home.png'>";
+};
+
+function renderPlaces(places) {
+    let scene = document.querySelector('a-scene');
+
+    places.forEach((place) => {
+        let latitude = place.location.lat;
+        let longitude = place.location.lng;
+
+        let model = document.createElement('a-entity');
+        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+        console.log("latitude : " + latitude + "longitude : " + longitude);
+
+        setModel(models[modelIndex], model);
+
+        model.setAttribute('animation-mixer', '');
+
+        document.querySelector('button[data-action="change"]').addEventListener('click', function() {
+            var entity = document.querySelector('[gps-entity-place]');
+            modelIndex++;
+            var newIndex = modelIndex % models.length;
+            setModel(models[newIndex], entity);
+        });
+
+        scene.appendChild(model);
+    });
+}
+
+/*/
+window.onload = () => {
     let places = staticLoadPlaces();
     renderPlaces(places);
 };
@@ -70,9 +160,7 @@ function renderPlaces(places) {
         scene.appendChild(model);
     });
 }
-/*/
 
-/*/
 var locate = document.getElementById("location");
 var pic = document.getElementById("picstatus");
 
@@ -180,102 +268,3 @@ function geoFindMe() {
     }
 }
 /*/
-function showPosition(position) {
-    var locations = [
-        ['Sumfruit บิงซู ลาดกระบัง', 13.7275256, 100.7708011, 'zone01', 'keki01'], //keki (11)
-        ['Daily delivery KMITL', 13.7278467, 100.7701097, 'zone01', 'keki02'],
-        ['มานีมีนมลาดกระบัง', 13.7277224, 100.7704063, 'zone01', 'keki03'],
-        ['STEAK TECHNO สเต็ก เทคโนฯ', 13.727815, 100.769738, 'zone01', 'keki04'],
-        ['Shogun ลาดกระบัง', 13.7277267, 100.7702708, 'zone01', 'keki05'],
-        ['ฅน 8 หน้า SUSHI BAR & RESTAURANT', 13.7275384, 100.7696328, 'zone01', 'keki06'],
-        ['ชาชักโกอิน', 13.7273668, 100.769545, 'zone01', 'keki07'],
-        ['ญาแฝดข้าวมันไก่ ซ.เกกี4', 13.7273834, 100.7694829, 'zone01', 'keki08'],
-        ['Hand Burger', 13.7277198, 100.770279, 'zone01', 'keki09'],
-        ['วัวล้วนๆ ไม่มีควายผสม สาขา ลาดกะบัง KMITL', 13.7277895, 100.7701018, 'zone01', 'keki10'],
-        ['เสต็ก อิ่มเอม', 13.7271134, 100.7703543, 'zone01', 'keki11'],
-        ['BKK Grill', 13.7213184, 100.7836547, 'zone02', 'jinda01'], //jinda (10)
-        ['Coffee Today คอฟฟี่ทูเดย์', 13.7218673, 100.7843005, 'zone02', 'jinda02'],
-        ['ICE FEELING', 13.7215943, 100.7836567, 'zone02', 'jinda03'],
-        ['ครัวฅนเมือง', 13.7214214, 100.7836731, 'zone02', 'jinda04'],
-        ['เดอะ พิซซ่า คอมปะนี', 13.7218051, 100.7835085, 'zone02', 'jinda05'],
-        ['Pasta Home (พาสต้าโฮม)', 13.71779, 100.783517, 'zone02', 'jinda06'],
-        ['สุกี้ดารา', 13.7221057, 100.7852154, 'zone02', 'jinda07'],
-        ['R-HA (อาฮ่า)', 13.721437, 100.783842, 'zone02', 'jinda08'],
-        ['เกี๊ยวกุ้งจินดา', 13.7212019, 100.7842203, 'zone02', 'jinda09'],
-        ['ไอศครีมไข่แข็ง', 13.720562, 100.783833, 'zone02', 'jinda10'],
-        ['ชาบู ปาร์ตี้ (Shabu party)', 13.7221422, 100.7807354, 'zone03', 'fbt01'], //fbt (10)
-        ['จินตภัทร์ เบเกอรี่', 13.722068, 100.780391, 'zone03', 'fbt02'],
-        ['ชา กุมารทอง', 13.723102, 100.7804381, 'zone03', 'fbt03'],
-        ['บ้านข้าวซอย', 13.7228489, 100.7807009, 'zone03', 'fbt04'],
-        ['พั้น~ซ์', 13.7216955, 100.780325, 'zone03', 'fbt05'],
-        ['ร้านโคม', 13.7237173, 100.7807419, 'zone03', 'fbt06'],
-        ['ละมุน (Lamoon)', 13.7225579, 100.7803574, 'zone03', 'fbt07'],
-        ['สุขใจเตี๋ยวไข่ต้มยำ ', 13.7228773, 100.7803227, 'zone03', 'fbt08'],
-        ['แมวกินปลา@ลาดกระบัง', 13.7228186, 100.7801383, 'zone03', 'fbt09'],
-        ['ไก่เกาหลี อูรี ชิกเก้นท์ 우리 치킨 สาขา ลาดกระบัง', 13.7220672, 100.7804952, 'zone03', 'fbt10']
-    ];
-var i, position, title;
-    /*/
-
-/*/    // add markers to location and show window of restaurant
-    for (i = 0; i < locations.length; i++) {
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        title: locations[i][0]
-    };
-}
-/*/
-// add markers to location and show window of restaurant
-
-document.querySelector('#find-me').addEventListener('click', geoFindMe);
-
-var models = [{
-    url: './icon/pin.png',
-    scale: '0.5 0.5 0.5',
-    info: 'Rest... Location',
-    //rotation: '0 0 0',
-}];
-
-var modelIndex = 0;
-
-var setModel = function(model, entity) {
-    if (model.scale) {
-        entity.setAttribute('scale', model.scale);
-    }
-    /*/
-    if (model.rotation) {
-        entity.setAttribute('rotation', model.rotation);
-    }
-    /*/
-    if (model.position) {
-        entity.setAttribute('position', model.position);
-    }
-
-    entity.setAttribute('gltf-model', model.url);
-
-    const div = document.querySelector('.instructions');
-    div.innerText = model.info;
-
-};
-scene.appendChild(model);
-
-function renderPlaces(places) {
-    let scene = document.querySelector('a-scene');
-
-    places.forEach((place) => {
-                let latitude = place.location.lat;
-                let longitude = place.location.lng;
-
-                let model = document.createElement('a-entity');
-                model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-
-                setModel(models[modelIndex], model);
-
-                model.setAttribute('animation-mixer', '');
-
-                document.querySelector('button[data-action="change"]').addEventListener('click', function() {
-                    var entity = document.querySelector('[gps-entity-place]');
-                    modelIndex++;
-                    var newIndex = modelIndex % models.length;
-                    setModel(models[newIndex], entity);
-                });
-            }

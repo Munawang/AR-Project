@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <link rel="icon" href="pic/logo.png">
-    <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvxzqr4qQKxIE7llXkPfkpiaMa8amsixo&callback=initMap"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -20,6 +19,9 @@
     <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
     <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script>
+        THREEx.ArToolkitContext.baseURL = "https://raw.githack.com/jeromeetienne/ar.js/master/three.js/"
+    </script>
 
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
@@ -27,35 +29,36 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
 
-    <script src='vendor/ar.js/aframe/build/aframe-ar.js'></script>
+    <script src="vendor/ar.js/aframe/build/aframe-ar.js"></script>
     <script>
         ARjs.Context.baseURL = 'vendor/ar.js/three.js/'
     </script>
-    <!-- include gps-ar.js -->
-    <script src="../src/gps-camera-debug.js"></script>
-    <script src="../src/gps-camera-position.js"></script>
-    <script src="../src/gps-camera-rotation.js"></script>
-    <script src="../src/gps-entity-place.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" type="text/css" href="locationmap.css">
+    <!-- include gps-ar.js -->
+    <script src="src/gps-camera-debug.js"></script>
+    <script src="src/gps-camera-position.js"></script>
+    <script src="src/gps-camera-rotation.js"></script>
+    <script src="src/gps-entity-place.js"></script>
+
+    <!-- <script src="aframe-ar.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/locationmap.css">
 
     <script type="text/javascript" src="locationmap_script.js"></script>
     <script type="text/javascript" src="ar-camera.js"></script>
 
-
 </head>
-
 
 <!-- <body style='margin: 0; overflow: hidden;'> -->
 
 <body style='margin: 5; overflow: hidden;'>
-    <div id="header2"></div>
     <div id="header1"></div>
-    <div class="centered">
-        <button data-action="change" id="find-me">Check</button><br/>
-    </div>
-
+    <div id="header2"></div>
+    <!--
+       <div class="centered">
+        <button data-action="change" id="find-me"></button><br/>
+    </div> 
+    -->
     <!-- <div class="centered instructions"></div> -->
     <a-scene vr-mode-ui='enabled: false' embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
         <a-camera gps-camera rotation-reader></a-camera>
