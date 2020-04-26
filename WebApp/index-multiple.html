@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>Geoposition Multiple example</title>
     <meta name="viewport" content="initial-scale=1.0">
@@ -14,6 +15,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="index-multiple.js"></script>
     <link rel="stylesheet" href="resources/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="resources/style.css">
@@ -43,7 +45,7 @@
         <a-assets>
             <img id="buzzpin" src="resources/textures/buzz-pin.png">
         </a-assets>
-        
+
         <!-- ทดสอบใช้พิกัดสถานที่ใกล้เคียง -->
         <ar-geopose id="Tabchang" lla="100.6865316 13.7331092" userotation="false">
             <a-entity fixedsize="20" billboard>
