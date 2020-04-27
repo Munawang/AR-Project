@@ -31,10 +31,9 @@ dbMarker.on("value", function(snapshot) {
 
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(checkZone);
-    alert("browser does support geolocation!");
+    console.log("Geolocation is supported by this browser.");
 } else {
     console.log("Geolocation is not supported by this browser.");
-    alert("Sorry, browser does not support geolocation!");
 }
 
 function checkZone(position) {
