@@ -55,7 +55,7 @@ function checkZone(position) {
         new google.maps.LatLng(13.7250487802915, 100.7821217802915) // โคม
     );
 
-    var u_latlng = new google.maps.LatLng(13.722719, 100.780227); //**user's location
+    var u_latlng = new google.maps.LatLng(13.727822, 100.769886); //**user's location
     // For test: Jinda = 13.720278, 100.783761
     // For test: Keki = 13.727822, 100.769886
     // For test: FBT = 13.722719, 100.780227
@@ -108,6 +108,12 @@ function checkZone(position) {
                 //console.log('zone 2 จินดา');
                 //console(locations[i][4])
                 console.log(locations[i][0])
+                var zl = document.getElementsByClassName('zonelabel');
+                var zp = document.getElementsByClassName('zonepin');
+                zl.innerHTML = '<div id="' + locations[i][4] + 'div" class="label">' + locations[i][0] + '</div>';
+                zp.innerHTML = '<div id="' + locations[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
+                console.log(zl.innerHTML)
+                console.log(zp.innerHTML)
             }
         }
     } else if (check_keki == true) {
@@ -116,6 +122,12 @@ function checkZone(position) {
             if (locations[i][3] == 'zone01') {
                 //console.log('zone 1 เกกี');
                 console.log(locations[i][0])
+                var zl = document.getElementsByClassName('zonelabel');
+                var zp = document.getElementsByClassName('zonepin');
+                zl.innerHTML = '<div id="' + locations[i][4] + 'div" class="label">' + locations[i][0] + '</div>';
+                zp.innerHTML = '<div id="' + locations[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
+                console.log(zl.innerHTML)
+                console.log(zp.innerHTML)
             }
         }
     } else if (check_fbt == true) {
@@ -124,6 +136,12 @@ function checkZone(position) {
             if (locations[i][3] == 'zone03') {
                 //console.log('zone 3 เอฟบีที');
                 console.log(locations[i][0])
+                var zl = document.getElementsByClassName('zonelabel');
+                var zp = document.getElementsByClassName('zonepin');
+                zl.innerHTML = '<div id="' + locations[i][4] + 'div" class="label">' + locations[i][0] + '</div>';
+                zp.innerHTML = '<div id="' + locations[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
+                console.log(zl.innerHTML)
+                console.log(zp.innerHTML)
             }
         }
     } else {
