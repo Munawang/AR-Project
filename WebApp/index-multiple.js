@@ -28,7 +28,7 @@ dbMarker.on("value", function(snapshot) {
 });
 
 // เช็ค
-window.onload = function init() {
+window.onload = function initMap() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(checkZone);
         console.log("Geolocation is supported by this browser.");
@@ -66,7 +66,7 @@ window.onload = function init() {
         var check_keki = zone_keki.contains(u_latlng);
         var check_fbt = zone_fbt.contains(u_latlng);
 
-        var locations = [
+        var kekiZone = [
             ['Sumfruit บิงซู ลาดกระบัง', 13.7275256, 100.7708011, 'zone01', 'keki01'], //keki (11)
             ['Daily delivery KMITL', 13.7278467, 100.7701097, 'zone01', 'keki02'],
             ['มานีมีนมลาดกระบัง', 13.7277224, 100.7704063, 'zone01', 'keki03'],
@@ -77,7 +77,9 @@ window.onload = function init() {
             ['ญาแฝดข้าวมันไก่ ซ.เกกี4', 13.7273834, 100.7694829, 'zone01', 'keki08'],
             ['Hand Burger', 13.7277198, 100.770279, 'zone01', 'keki09'],
             ['วัวล้วนๆ ไม่มีควายผสม สาขา ลาดกะบัง KMITL', 13.7277895, 100.7701018, 'zone01', 'keki10'],
-            ['เสต็ก อิ่มเอม', 13.7271134, 100.7703543, 'zone01', 'keki11'],
+            ['เสต็ก อิ่มเอม', 13.7271134, 100.7703543, 'zone01', 'keki11']];
+            
+        var jindaZone = [
             ['BKK Grill', 13.7213184, 100.7836547, 'zone02', 'jinda01'], //jinda (10)
             ['Coffee Today คอฟฟี่ทูเดย์', 13.7218673, 100.7843005, 'zone02', 'jinda02'],
             ['ICE FEELING', 13.7215943, 100.7836567, 'zone02', 'jinda03'],
@@ -87,7 +89,9 @@ window.onload = function init() {
             ['สุกี้ดารา', 13.7221057, 100.7852154, 'zone02', 'jinda07'],
             ['R-HA (อาฮ่า)', 13.721437, 100.783842, 'zone02', 'jinda08'],
             ['เกี๊ยวกุ้งจินดา', 13.7212019, 100.7842203, 'zone02', 'jinda09'],
-            ['ไอศครีมไข่แข็ง', 13.720562, 100.783833, 'zone02', 'jinda10'],
+            ['ไอศครีมไข่แข็ง', 13.720562, 100.783833, 'zone02', 'jinda10']];
+
+        var fbtZone = [
             ['ชาบู ปาร์ตี้ (Shabu party)', 13.7221422, 100.7807354, 'zone03', 'fbt01'], //fbt (10)
             ['จินตภัทร์ เบเกอรี่', 13.722068, 100.780391, 'zone03', 'fbt02'],
             ['ชา กุมารทอง', 13.723102, 100.7804381, 'zone03', 'fbt03'],
@@ -106,41 +110,100 @@ window.onload = function init() {
 
         if (check_jinda == true) {
             console.log('ตอนนี้คุณอยู่ในโซนจินดา');
-            for (let i = 0; i < locations.length; i++) {
-                if (locations[i][3] == 'zone02') {
+            for (let i = 0; i < jindaZone.length; i++) {
+                if (jindaZone[i][3] == 'zone02') {
                     //console.log('zone 2 จินดา');
-                    //console(locations[i][4])
-                    console.log(locations[i][0])
-                    zl.innerHTML = '<div id="' + locations[i][4] + 'div" class="label">' + locations[i][0] + '</div>';
-                    zp.innerHTML = '<div id="' + locations[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
+                    //console(jindaZone[i][4])
+                    console.log(jindaZone[i][0])
+                    zl.innerHTML = '<div id="' + jindaZone[i][4] + 'div" class="label">' + jindaZone[i][0] + '</div>';
+                    zp.innerHTML = '<div id="' + jindaZone[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
                     //console.log(zl.innerHTML);
                     //console.log(zp.innerHTML);
-                    ar.innerHTML = '<ar-geopose id="' + locations[i][4] + '" lla="' + locations[i][2] + ' ' + locations[i][1] + '" userotation="false">' +
+                    ar.innerHTML = '<ar-geopose id="' + jindaZone[i][4] + '" lla="' + jindaZone[i][2] + ' ' + jindaZone[i][1] + '" userotation="false">' +
                         '<a-entity fixedsize="20" billboard>' +
-                        '<a-entity css-object="div: #' + locations[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
-                        '<a-entity css-object="div: #' + locations[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + locations[i][0] + 'It is "></a-entity>' +
+                        '<a-entity css-object="div: #' + jindaZone[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
+                        '<a-entity css-object="div: #' + jindaZone[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + jindaZone[i][0] + 'It is "></a-entity>' +
                         '</a-entity></ar-geopose>';
                     console.log(zl);
                 }
             }
         } else if (check_keki == true) {
             console.log('ตอนนี้คุณอยู่ในโซนเกกี');
-            for (let i = 0; i < locations.length; i++) {
-                if (locations[i][3] == 'zone01') {
+            for (let i = 0; i < kekiZone.length; i++) {
+                if (kekiZone[i][3] == 'zone01') {
                     //console.log('zone 1 เกกี');
-                    console.log(locations[i][0])
-                    zl.innerHTML = '<div id="' + locations[i][4] + 'div" class="label">' + locations[i][0] + '</div>';
-                    zp.innerHTML = '<div id="' + locations[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
+                    console.log(kekiZone[i][0])
+                    zl.innerHTML = '<div id="' + kekiZone[i][4] + 'div" class="label">' + kekiZone[i][0] + '</div>';
+                    zp.innerHTML = '<div id="' + kekiZone[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
                     console.log(zl.innerHTML);
                     console.log(zp.innerHTML);
-                    ar.innerHTML = '<ar-geopose id="' + locations[i][4] + '" lla="' + locations[i][2] + ' ' + locations[i][1] + '" userotation="false">' +
+                    ar.innerHTML = '<ar-geopose id="' + kekiZone[i][4] + '" lla="' + kekiZone[i][2] + ' ' + kekiZone[i][1] + '" userotation="false">' +
                         '<a-entity fixedsize="20" billboard>' +
-                        '<a-entity css-object="div: #' + locations[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
-                        '<a-entity css-object="div: #' + locations[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + locations[i][0] + 'It is "></a-entity>' +
+                        '<a-entity css-object="div: #' + kekiZone[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
+                        '<a-entity css-object="div: #' + kekiZone[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + kekiZone[i][0] + 'It is "></a-entity>' +
                         '</a-entity></ar-geopose>';
                     console.log(ar.innerHTML);
+                }
+            }
+        } else if (check_fbt == true) {
+            console.log('ตอนนี้คุณอยู่ในโซนเอฟบีที');
+            for (let i = 0; i < fbtZone.length; i++) {
+                if (fbtZone[i][3] == 'zone03') {
+                    //console.log('zone 3 เอฟบีที');
+                    console.log(fbtZone[i][0])
+                    zl.innerHTML = '<div id="' + fbtZone[i][4] + 'div" class="label">' + fbtZone[i][0] + '</div>';
+                    zp.innerHTML = '<div id="' + fbtZone[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
+                    console.log(zl.innerHTML);
+                    console.log(zp.innerHTML);
+                    ar.innerHTML = '<ar-geopose id="' + fbtZone[i][4] + '" lla="' + fbtZone[i][2] + ' ' + fbtZone[i][1] + '" userotation="false">' +
+                        '<a-entity fixedsize="20" billboard>' +
+                        '<a-entity css-object="div: #' + fbtZone[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
+                        '<a-entity css-object="div: #' + fbtZone[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + fbtZone[i][0] + 'It is "></a-entity>' +
+                        '</a-entity></ar-geopose>';
+                    console.log(ar.innerHTML);
+                }
+            }
+        } else {
+            console.log('คุณไม่อยู่ในพื้นที่ให้บริการ');
+        }
+    };
+} //initMap
 
-                    /*/ ทดสอบแบบแมนนวล -0-
+AFRAME.registerComponent('showdistance', {
+    schema: {
+        default: ""
+    },
+
+    init: function() {
+        this.text = "";
+    },
+
+    update: function() {
+        this.text = this.data;
+
+    },
+
+    tick: function(t) {
+        var object3D = this.el.object3D;
+        var camera = this.el.sceneEl.camera;
+        if (!camera) {
+            return;
+        }
+
+        var cameraPos = camera.getWorldPosition();
+        var thisPos = object3D.getWorldPosition();
+        var distance = Math.round(thisPos.distanceTo(cameraPos));
+
+        var cssDiv = this.el.getObject3D('div');
+        var msg = this.text + cate;
+        cssDiv.elements[0].innerHTML = msg;
+        cssDiv.elements[1].innerHTML = msg;
+
+    }
+
+});
+
+/*/ ทดสอบแบบแมนนวล -0-
                     zl.innerHTML =
                         '<div id="keki01div" class="label"></div>' +
                         '<div id="keki02div" class="label"></div>' +
@@ -178,64 +241,3 @@ window.onload = function init() {
                         '<ar-geopose id="keki10" lla="100.7701018 13.7277895" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki10pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki10div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="วัวล้วนๆ ไม่มีควายผสม สาขา ลาดกะบัง KMITLIt is "></a-entity></a-entity></ar-geopose>' +
                         '<ar-geopose id="keki11" lla="100.7703543 13.7271134" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki11pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki11div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="เสต็ก อิ่มเอมIt is "></a-entity></a-entity></ar-geopose>';
                 /*/
-                }
-            }
-        } else if (check_fbt == true) {
-            console.log('ตอนนี้คุณอยู่ในโซนเอฟบีที');
-            for (let i = 0; i < locations.length; i++) {
-                if (locations[i][3] == 'zone03') {
-                    //console.log('zone 3 เอฟบีที');
-                    console.log(locations[i][0])
-                    zl.innerHTML = '<div id="' + locations[i][4] + 'div" class="label">' + locations[i][0] + '</div>';
-                    zp.innerHTML = '<div id="' + locations[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
-                    console.log(zl.innerHTML);
-                    console.log(zp.innerHTML);
-                    ar.innerHTML = '<ar-geopose id="' + locations[i][4] + '" lla="' + locations[i][2] + ' ' + locations[i][1] + '" userotation="false">' +
-                        '<a-entity fixedsize="20" billboard>' +
-                        '<a-entity css-object="div: #' + locations[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
-                        '<a-entity css-object="div: #' + locations[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + locations[i][0] + 'It is "></a-entity>' +
-                        '</a-entity></ar-geopose>';
-                    console.log(ar.innerHTML);
-                }
-            }
-        } else {
-            console.log('คุณไม่อยู่ในพื้นที่ให้บริการ');
-        }
-    };
-
-
-}
-
-AFRAME.registerComponent('showdistance', {
-    schema: {
-        default: ""
-    },
-
-    init: function() {
-        this.text = "";
-    },
-
-    update: function() {
-        this.text = this.data;
-
-    },
-
-    tick: function(t) {
-        var object3D = this.el.object3D;
-        var camera = this.el.sceneEl.camera;
-        if (!camera) {
-            return;
-        }
-
-        var cameraPos = camera.getWorldPosition();
-        var thisPos = object3D.getWorldPosition();
-        var distance = Math.round(thisPos.distanceTo(cameraPos));
-
-        var cssDiv = this.el.getObject3D('div');
-        var msg = this.text + cate;
-        cssDiv.elements[0].innerHTML = msg;
-        cssDiv.elements[1].innerHTML = msg;
-
-    }
-
-});
