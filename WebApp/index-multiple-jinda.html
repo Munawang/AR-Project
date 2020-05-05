@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <title>EatAR Web Application</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="icon" href="pic/logo.png">
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvxzqr4qQKxIE7llXkPfkpiaMa8amsixo&callback=initMap"></script>
+
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/argonjs/argon/develop/dist/argon.js"></script>
+    <script src="https://rawgit.com/argonjs/argon-aframe/master/dist/argon-aframe.js"></script>
+    <script src="https://samples-develop.argonjs.io/resources/lib/CSS3DArgonRenderer.js"></script>
+    <script src="https://samples-develop.argonjs.io/resources/lib/CSS3DArgonHUD.js"></script>
+    <script src="resources/js/aframe-look-at-component.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+    <script type="text/javascript" src="index-multiple.js"></script>
+    <link rel="stylesheet" href="resources/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+</head>
+
+<body>
+    <div hidden>
+        <!-- Div ทดสอบพิกัด -->
+        <div id="tabchangdiv" class="label">Tabchang station</div>
+        <div id="jinda01div" class="label"></div>
+        <div id="jinda02div" class="label"></div>
+        <div id="jinda03div" class="label"></div>
+        <div id="jinda04div" class="label"></div>
+        <div id="jinda05div" class="label"></div>
+        <div id="jinda06div" class="label"></div>
+        <div id="jinda07div" class="label"></div>
+        <div id="jinda08div" class="label"></div>
+        <div id="jinda09div" class="label"></div>
+        <div id="jinda10div" class="label"></div>
+        <!-- pin ทดสอบพิกัด -->
+        <div id="tabchangpin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="jinda01pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="jinda02pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="jinda03pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="jinda04pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="jinda05pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="jinda06pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="jinda07pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="jinda08pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="jinda09pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="jinda10pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+
+
+    </div>
+
+    <ar-scene>
+
+        <div class="showobject"></div>
+
+        <!-- ทดสอบใช้พิกัดสถานที่ใกล้เคียง -->
+        <ar-geopose id="Tabchang" lla="100.6865316 13.7331092" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #tabchangpin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #tabchangbt" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #tabchangdiv" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Tabchang Station<br>Bangkok Thailand<br>It is "></a-entity>
+
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="jinda01" lla="100.7836547 13.7213184" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #jinda01pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #jinda01div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="BKK Grill<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="jinda02" lla="100.7843005 13.7218673" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #jinda02pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #jinda02div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Coffee Today คอฟฟี่ทูเดย์<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="jinda03" lla="100.7836567 13.7215943" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #jinda03pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #jinda03div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ICE FEELING<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="jinda04" lla="100.7836731 13.7214214" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #jinda04pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #jinda04div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ครัวฅนเมือง<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="jinda05" lla="100.7835085 13.7218051" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #jinda05pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #jinda05div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="เดอะ พิซซ่า คอมปะนี<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="jinda06" lla="100.783517 13.71779" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #jinda06pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #jinda06div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Pasta Home (พาสต้าโฮม)<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="jinda07" lla="100.7852154 13.7221057" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #jinda07pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #jinda07div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="สุกี้ดารา<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="jinda08" lla="100.783842 13.721437" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #jinda08pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #jinda08div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="R-HA (อาฮ่า)<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="jinda09" lla="100.7842203 13.7212019" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #jinda09pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #jinda09div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="เกี๊ยวกุ้งจินดา<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="jinda10" lla="100.783833 13.720562" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #jinda10pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #jinda10div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ไอศครีมไข่แข็ง<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+
+
+    </ar-scene>
+</body>
+
+</html>

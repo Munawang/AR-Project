@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <title>EatAR Web Application</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="icon" href="pic/logo.png">
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvxzqr4qQKxIE7llXkPfkpiaMa8amsixo&callback=initMap"></script>
+
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/argonjs/argon/develop/dist/argon.js"></script>
+    <script src="https://rawgit.com/argonjs/argon-aframe/master/dist/argon-aframe.js"></script>
+    <script src="https://samples-develop.argonjs.io/resources/lib/CSS3DArgonRenderer.js"></script>
+    <script src="https://samples-develop.argonjs.io/resources/lib/CSS3DArgonHUD.js"></script>
+    <script src="resources/js/aframe-look-at-component.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+    <script type="text/javascript" src="index-multiple.js"></script>
+    <link rel="stylesheet" href="resources/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+</head>
+
+<body>
+    <div hidden>
+        <!-- Div ทดสอบพิกัด -->
+        <div id="tabchangdiv" class="label">Tabchang station</div>
+        <div id="keki01div" class="label">Sumfruit บิงซู ลาดกระบัง</div>
+        <div id="keki02div" class="label">Daily delivery KMITL</div>
+        <div id="keki03div" class="label">มานีมีนมลาดกระบัง</div>
+        <div id="keki04div" class="label">มานีมีนมลาดกระบัง</div>
+        <div id="keki05div" class="label">Shogun ลาดกระบัง</div>
+        <div id="keki06div" class="label">Sumfruit บิงซู ลาดกระบัง</div>
+        <div id="keki07div" class="label">Daily delivery KMITL</div>
+        <div id="keki08div" class="label">มานีมีนมลาดกระบัง</div>
+        <div id="keki09div" class="label">มานีมีนมลาดกระบัง</div>
+        <div id="keki10div" class="label">Shogun ลาดกระบัง</div>
+        <div id="keki11div" class="label">Shogun ลาดกระบัง</div>
+
+
+
+        <!-- pin ทดสอบพิกัด -->
+        <div id="tabchangpin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="keki01pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="keki02pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="keki03pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="keki04pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="keki05pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="keki06pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="keki07pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="keki08pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="keki09pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="keki10pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="keki11pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+
+
+
+    </div>
+
+    <ar-scene>
+
+        <div class="showobject"></div>
+
+        <a-assets>
+            <img id="buzzpin" src="resources/textures/buzz-pin.png">
+        </a-assets>
+
+        <!-- ทดสอบใช้พิกัดสถานที่ใกล้เคียง -->
+        <ar-geopose id="Tabchang" lla="100.6865316 13.7331092" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #tabchangpin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #tabchangdiv" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Tabchang Station<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity id="mysphere" position="0 1.25 -1" radias="1.25" color="#EF2D5E"></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="keki01" lla="100.7708011 13.7275256" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki01pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #keki01div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Sumfruit บิงซู ลาดกระบัง<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="keki02" lla="100.7701097 13.7278467" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki02pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #keki02div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Daily delivery KMITL<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="keki03" lla="100.7704063 13.7277224" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki03pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #keki03div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="มานีมีนมลาดกระบัง<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="keki04" lla="100.769738 13.727815" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki04pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #keki04div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="STEAK TECHNO สเต็ก เทคโนฯ<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="keki05" lla="100.7702708 13.7277267" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki05pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #keki05div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Shogun ลาดกระบัง<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="keki06" lla="100.7696328 13.7275384" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki06pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #keki06div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ฅน 8 หน้า SUSHI BAR & RESTAURANT<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="keki07" lla="100.769545 13.7273668" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki07pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #keki07div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ชาชักโกอิน<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="keki08" lla="100.7694829 13.7273834" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki08pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #keki08div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ญาแฝดข้าวมันไก่ ซ.เกกี4<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="keki09" lla="100.770279 13.7277198" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki09pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #keki09div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Hand Burger<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="keki10" lla="100.7701018 13.7277895" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki10pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #keki10div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="วัวล้วนๆ ไม่มีควายผสม สาขา ลาดกะบัง KMITL<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+        <ar-geopose id="keki11" lla="100.7703543 13.7271134" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki11pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
+                <a-entity css-object="div: #keki11div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="เสต็ก อิ่มเอม<br>Bangkok Thailand<br>It is "></a-entity>
+            </a-entity>
+        </ar-geopose>
+
+
+    </ar-scene>
+</body>
+
+</html>
