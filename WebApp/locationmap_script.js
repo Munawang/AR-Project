@@ -79,7 +79,7 @@ window.onload = function initMap() {
             new google.maps.LatLng(13.7250487802915, 100.7821217802915) // โคม
         );
 
-        var u_latlng = new google.maps.LatLng(13.720278, 100.783761); //**user's location
+        var u_latlng = new google.maps.LatLng(13.722719, 100.780227); //**user's location
         // For test: Jinda = 13.720278, 100.783761
         // For test: Keki = 13.727822, 100.769886
         // For test: FBT = 13.722719, 100.780227
@@ -92,15 +92,15 @@ window.onload = function initMap() {
         if (check_jinda == true) {
             x.innerHTML = '<div id="check_header" style="background-color: green;">คุณกำลังอยู่ในพื้นที่ให้บริการ</div>';
             y.innerHTML = '<div id="zone_header">โซนจินดานิเวศน์</div>';
-            btn1.innerHTML = '<a href="index-multiple-jinda.html"><button type="button" id="c_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">camera</i></button></a>';
+            btn1.innerHTML = '<a href="jinda-ar.html"><button type="button" id="c_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">camera</i></button></a>';
         } else if (check_keki == true) {
             x.innerHTML = '<div id="check_header" style="background-color: green;">คุณกำลังอยู่ในพื้นที่ให้บริการ</div>';
             y.innerHTML = '<div id="zone_header">โซนเกกีงาม</div>';
-            btn1.innerHTML = '<a href="index-multiple-keki.html"><button type="button" id="c_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">camera</i></button></a>';
+            btn1.innerHTML = '<a href="keki-ar.html"><button type="button" id="c_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">camera</i></button></a>';
         } else if (check_fbt == true) {
             x.innerHTML = '<div id="check_header" style="background-color: green;">คุณกำลังอยู่ในพื้นที่ให้บริการ</div>';
             y.innerHTML = '<div id="zone_header">โซนอพาร์ทเมนต์ FBT</div>';
-            btn1.innerHTML = '<a href="index-multiple-fbt.html"><button type="button" id="c_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">camera</i></button></a>';
+            btn1.innerHTML = '<a href="fbt-ar.html"><button type="button" id="c_btn" class="btn btn-primary btn-circle btn-xl"><i class="material-icons">camera</i></button></a>';
         } else {
             y.innerHTML = '<div id="check_header" style="background-color: red;">คุณไม่อยู่ในพื้นที่ให้บริการในขณะนี้</div>';
         }
