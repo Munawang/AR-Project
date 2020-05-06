@@ -79,7 +79,7 @@ window.onload = function initMap() {
             new google.maps.LatLng(13.7250487802915, 100.7821217802915) // โคม
         );
 
-        var u_latlng = new google.maps.LatLng(13.731270, 100.781224); //**user's location
+        var u_latlng = new google.maps.LatLng(13.720278, 100.783761); //**user's location
         // For test: Jinda = 13.720278, 100.783761
         // For test: Keki = 13.727822, 100.769886
         // For test: FBT = 13.722719, 100.780227
@@ -356,6 +356,12 @@ window.onload = function initMap() {
             icon: 'pic/user_marker.png',
             animation: google.maps.Animation.BOUNCE,
         });
+        // For test: Jinda = 13.720278, 100.783761
+        // For test: Keki = 13.727822, 100.769886
+        // For test: FBT = 13.722719, 100.780227
+        // For test: Unavailable  = 13.731270, 100.781224 (IT KMITL)
+        //var u_latitude = position.coords.latitude;
+        //var u_longitude = position.coords.longitude;
 
         u_marker.addListener('click', toggleBounce);
 

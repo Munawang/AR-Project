@@ -207,7 +207,7 @@ AFRAME.registerComponent('showdistance', {
         var distance = Math.round(thisPos.distanceTo(cameraPos));
 
         var cssDiv = this.el.getObject3D('div');
-        var msg = this.text + cate;
+        var msg = this.text;
         cssDiv.elements[0].innerHTML = msg;
         cssDiv.elements[1].innerHTML = msg;
 

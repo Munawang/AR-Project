@@ -14,7 +14,7 @@
     <script src="https://samples-develop.argonjs.io/resources/lib/CSS3DArgonRenderer.js"></script>
     <script src="https://samples-develop.argonjs.io/resources/lib/CSS3DArgonHUD.js"></script>
     <script src="resources/js/aframe-look-at-component.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
@@ -39,7 +39,7 @@
         <div id="jinda09div" class="label"></div>
         <div id="jinda10div" class="label"></div>
         <!-- pin ทดสอบพิกัด -->
-        <div id="tabchangpin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+        <div id="tabchangpin" class="pin"></div>
         <div id="jinda01pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
         <div id="jinda02pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
         <div id="jinda03pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
@@ -62,8 +62,8 @@
         <ar-geopose id="Tabchang" lla="100.6865316 13.7331092" userotation="false">
             <a-entity fixedsize="20" billboard>
                 <a-entity css-object="div: #tabchangpin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #tabchangbt" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #tabchangdiv" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Tabchang Station<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity css-object="div: #tabchangdiv" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Lamoon (ละมุน)<br>CAFE<br>★★★★☆ 4.0"></a-entity>
+                <a-image src="/icon-arpage/cafe_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
 
             </a-entity>
         </ar-geopose>
