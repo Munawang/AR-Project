@@ -38,93 +38,75 @@
         <div id="fbt08div" class="label"></div>
         <div id="fbt09div" class="label"></div>
         <div id="fbt10div" class="label"></div>
-        <!-- pin ทดสอบพิกัด -->
-        <div id="tabchangpin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        <div id="fbt01pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        <div id="fbt02pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        <div id="fbt03pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        <div id="fbt04pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        <div id="fbt05pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        <div id="fbt06pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        <div id="fbt07pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        <div id="fbt08pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        <div id="fbt09pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-        <div id="fbt10pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-
 
     </div>
 
     <ar-scene>
-
-        <div class="showobject"></div>
-
         <!-- ทดสอบใช้พิกัดสถานที่ใกล้เคียง -->
         <ar-geopose id="Tabchang" lla="100.6865316 13.7331092" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #tabchangpin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #tabchangbt" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #tabchangdiv" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Tabchang Station<br>Bangkok Thailand<br>It is "></a-entity>
-
+                <a-entity css-object="div: #tabchangdiv" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Tabchang Station<br>Bangkok Thailand"></a-entity>
+                <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="fbt01" lla="100.7807354 13.7221422" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #fbt01pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #fbt01div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ชาบู ปาร์ตี้ (Shabu party)<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity css-object="div: #fbt01div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ชาบู ปาร์ตี้ (Shabu party)<br>★★★★☆ 3.8<br>restaurant"></a-entity>
+                <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="fbt02" lla="100.780391 13.722068" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #fbt02pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #fbt02div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="จินตภัทร์ เบเกอรี่<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity css-object="div: #fbt02div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="จินตภัทร์ เบเกอรี่<br>★★★★★ 4.7<br>food"></a-entity>
+                <a-image src="/icon-arpage/food_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="fbt03" lla="100.7804381 13.723102" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #fbt03pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #fbt03div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ชา กุมารทอง<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity css-object="div: #fbt03div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ชา กุมารทอง<br>★★★★★ 5<br>cafe"></a-entity>
+                <a-image src="/icon-arpage/cafe_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="fbt04" lla="100.7807009 13.7228489" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #fbt04pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #fbt04div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="บ้านข้าวซอย<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity css-object="div: #fbt04div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="บ้านข้าวซอย<br>★★★★☆ 4.4<br>restaurant"></a-entity>
+                <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="fbt05" lla="100.780325 13.7216955" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #fbt05pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #fbt05div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="พั้น~ซ์<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity css-object="div: #fbt05div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="พั้น~ซ์<br>★★★★☆ 4.3<br>restaurant"></a-entity>
+                <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="fbt06" lla="100.7807419 13.7237173" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #fbt06pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #fbt06div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ร้านโคม<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity css-object="div: #fbt06div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ร้านโคม<br>★★★★☆ 4.2<br>restaurant"></a-entity>
+                <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="fbt07" lla="100.7803574 13.7225579" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #fbt07pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #fbt07div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ละมุน (Lamoon)<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity css-object="div: #fbt07div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ละมุน (Lamoon)<br>★★★★☆ 4<br>bakery"></a-entity>
+                <a-image src="/icon-arpage/bakery_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="fbt08" lla="100.7803227 13.7228773" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #fbt08pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #fbt08div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="สุขใจเตี๋ยวไข่ต้มยำ<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity css-object="div: #fbt08div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="สุขใจเตี๋ยวไข่ต้มยำ<br>★★★★☆ 4.3<br>restaurant"></a-entity>
+                <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="fbt09" lla="100.7801383 13.7228186" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #fbt09pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #fbt09div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="แมวกินปลา@ลาดกระบัง<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity css-object="div: #fbt09div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="แมวกินปลา@ลาดกระบัง<br>★★★★☆ 4.3<br>restaurant"></a-entity>
+                <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="fbt10" lla="100.7804952 13.7220672" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #fbt10pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
-                <a-entity css-object="div: #fbt10div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ไก่เกาหลี อูรี ชิกเก้นท์ 우리 치킨 สาขา ลาดกระบัง<br>Bangkok Thailand<br>It is "></a-entity>
+                <a-entity css-object="div: #fbt10div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ไก่เกาหลี อูรี ชิกเก้นท์ 우리 치킨 สาขา ลาดกระบัง<br>★★★★☆ 3.7<br>restaurant"></a-entity>
+                <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
 

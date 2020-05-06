@@ -126,7 +126,7 @@ window.onload = function initMap() {
                     if (jindaZone[i][3] == 'zone02') {
                         //console.log('zone 2 จินดา');
                         //console(jindaZone[i][4])
-                        console.log(jindaZone[i][0])
+                        //console.log(jindaZone[i][0])
                         zl.innerHTML = '<div id="' + jindaZone[i][4] + 'div" class="label">' + jindaZone[i][0] + '</div>';
                         zp.innerHTML = '<div id="' + jindaZone[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
                         //console.log(zl.innerHTML);
@@ -136,7 +136,7 @@ window.onload = function initMap() {
                             '<a-entity css-object="div: #' + jindaZone[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
                             '<a-entity css-object="div: #' + jindaZone[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + jindaZone[i][0] + 'It is "></a-entity>' +
                             '</a-entity></ar-geopose>';
-                        console.log(zl);
+                        //console.log(zl);
                     }
                 }
             } else if (check_keki == true) {

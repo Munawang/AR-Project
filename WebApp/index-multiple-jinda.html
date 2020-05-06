@@ -26,8 +26,9 @@
 
 <body>
     <div hidden>
+
         <!-- Div ทดสอบพิกัด -->
-        <div id="tabchangdiv" class="label">Tabchang station</div>
+        <div id="tabchangdiv" class="label"></div>
         <div id="jinda01div" class="label"></div>
         <div id="jinda02div" class="label"></div>
         <div id="jinda03div" class="label"></div>
@@ -38,31 +39,15 @@
         <div id="jinda08div" class="label"></div>
         <div id="jinda09div" class="label"></div>
         <div id="jinda10div" class="label"></div>
-        <!-- pin ทดสอบพิกัด -->
-        <div id="tabchangpin" class="pin"></div>
-        <div id="jinda01pin" class="pin"></div>
-        <div id="jinda02pin" class="pin"></div>
-        <div id="jinda03pin" class="pin"></div>
-        <div id="jinda04pin" class="pin"></div>
-        <div id="jinda05pin" class="pin"></div>
-        <div id="jinda06pin" class="pin"></div>
-        <div id="jinda07pin" class="pin"></div>
-        <div id="jinda08pin" class="pin"></div>
-        <div id="jinda09pin" class="pin"></div>
-        <div id="jinda10pin" class="pin"></div>
-
 
     </div>
 
     <ar-scene>
-
-        <div class="showobject"></div>
-
         <!-- ทดสอบใช้พิกัดสถานที่ใกล้เคียง -->
         <ar-geopose id="Tabchang" lla="100.6865316 13.7331092" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #tabchangdiv" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Lamoon (ละมุน)<br>★★★★☆ 4.0<br>CAFE"></a-entity>
-                <a-image src="/icon-arpage/cafe_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
+                <a-entity css-object="div: #tabchangdiv" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Rest Name<br>★★★★☆ 4.0<br>CAFE"></a-entity>
+                <a-image id="cafe" src="/icon-arpage/cafe_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="jinda01" lla="100.7836547 13.7213184" userotation="false">
@@ -73,56 +58,48 @@
         </ar-geopose>
         <ar-geopose id="jinda02" lla="100.7843005 13.7218673" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #jinda02pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
                 <a-entity css-object="div: #jinda02div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Coffee Today คอฟฟี่ทูเดย์<br>★★★★★ 5<br>cafe"></a-entity>
                 <a-image src="/icon-arpage/cafe_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="jinda03" lla="100.7836567 13.7215943" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #jinda03pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
                 <a-entity css-object="div: #jinda03div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ICE FEELING<br>★★★★★ 5<br>food"></a-entity>
                 <a-image src="/icon-arpage/food_icon.png width=" 2.5 " height="2.5 " position="0 0 0 "></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="jinda04 " lla="100.7836731 13.7214214 " userotation="false ">
             <a-entity fixedsize="20 " billboard>
-                <a-entity css-object="div: #jinda04pin " scale="0.05 0.05 0.05 " position="0 0 0 "></a-entity>
                 <a-entity css-object="div: #jinda04div " scale="0.02 0.02 0.02 " position="0 3 0 " showdistance="ครัวฅนเมือง<br>★★★★☆ 3.8<br>restaurant"></a-entity>
             <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="jinda05" lla="100.7835085 13.7218051" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #jinda05pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
                 <a-entity css-object="div: #jinda05div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="เดอะ พิซซ่า คอมปะนี<br>restaurant<br>★★★★☆ 4"></a-entity>
                 <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="jinda06" lla="100.783517 13.71779" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #jinda06pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
                 <a-entity css-object="div: #jinda06div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Pasta Home (พาสต้าโฮม)<br>★★★★★ 4.5<br>restaurant"></a-entity>
                 <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="jinda07" lla="100.7852154 13.7221057" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #jinda07pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
                 <a-entity css-object="div: #jinda07div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="สุกี้ดารา<br>★★★★☆ 4.1<br>restaurant"></a-entity>
                 <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="jinda08" lla="100.783842 13.721437" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #jinda08pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
                 <a-entity css-object="div: #jinda08div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="R-HA (อาฮ่า)<br>★★★★☆ 3.9<br>restaurant"></a-entity>
                 <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="jinda09" lla="100.7842203 13.7212019" userotation="false">
             <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #jinda09pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
                 <a-entity css-object="div: #jinda09div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="เกี๊ยวกุ้งจินดา<br>★★★★★ 4.6<br>restaurant"></a-entity>
                 <a-image src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
