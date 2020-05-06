@@ -28,9 +28,10 @@ a {
 }
 
 .pin {
-    font-size: 100px;
+    opacity: 0.5;
+    font-size: 70px;
     text-align: center;
-    color: indianred;
+    color: rgb(94, 43, 91);
     background: transparent;
     border: 0px;
     margin-bottom: 0px;
