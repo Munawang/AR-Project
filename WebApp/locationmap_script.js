@@ -79,7 +79,7 @@ window.onload = function initMap() {
             new google.maps.LatLng(13.7250487802915, 100.7821217802915) // โคม
         );
 
-        var u_latlng = new google.maps.LatLng(u_latitude, u_longitude); //**user's location
+        var u_latlng = new google.maps.LatLng(13.720278, 100.783761); //**user's location
         // For test: Jinda = 13.720278, 100.783761
         // For test: Keki = 13.727822, 100.769886
         // For test: FBT = 13.722719, 100.780227
@@ -141,7 +141,7 @@ window.onload = function initMap() {
 
         var mapOptions = {
             center: u_latlng,
-            zoom: 17,
+            zoom: 17.5,
             mapTypeId: 'terrain',
             zoomControl: false,
             mapTypeControl: false,
@@ -350,7 +350,7 @@ window.onload = function initMap() {
 
         // show user's marker position
         var u_marker = new google.maps.Marker({
-            position: new google.maps.LatLng(u_latitude, u_longitude), //**user's location
+            position: new google.maps.LatLng(13.720278, 100.783761), //**user's location
             map: maps,
             title: 'ตำแหน่งผู้ใช้',
             icon: 'pic/user_marker.png',
