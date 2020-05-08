@@ -29,7 +29,8 @@ if (zonename == "keki") {
 alert(restId+" "+zoneId)
 
 // //Get information from Firebase
-var getName = document.getElementById("nameRest");
+var getName = document.getElementById("name_restaurant");
+var category_icon = document.getElementById("iconCat");
 var type = document.getElementById("category");
 var phone = document.getElementById("cont_phone");
 var phoneCall = document.getElementById("phone");
@@ -56,6 +57,7 @@ dbshowInfo.on("value", function(snapshot) {
         type.innerHTML = "ไม่พบข้อมูล";
     } else {
         type.innerHTML = typeRes;
+        category_icon.innerHTML = '<img id="icon_cat" src="pic/' + typeRes + '_icon.png" style="width:100px;height:100px;">';
     }
 
     var phoneNumber = snapshot.child("res_phonenumber").val();
