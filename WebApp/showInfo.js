@@ -26,7 +26,6 @@ if (zonename == "keki") {
 }if(zonename == "fbt"){
     var zoneId = "zone03"
 }
-alert(restId+" "+zoneId)
 
 // //Get information from Firebase
 var getName = document.getElementById("name_restaurant");
