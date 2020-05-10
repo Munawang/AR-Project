@@ -55,7 +55,8 @@
                 <a-entity css-object="div: #keki01div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Sumfruit บิงซู ลาดกระบัง<br>★★★★★ 4.7<br>food<br>"></a-entity>
                 <a-image id="imgkeki01" src="/icon-arpage/food_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
-        </ar-geopose>
+            <!--
+</ar-geopose>
         <ar-geopose id="keki02" lla="100.7701097 13.7278467" userotation="false">
             <a-entity fixedsize="20" billboard>
                 <a-entity css-object="div: #keki02div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Daily delivery KMITL<br>★★★★☆ 3.8<br>restaurant<br>"></a-entity>
@@ -72,12 +73,6 @@
             <a-entity fixedsize="20" billboard>
                 <a-entity css-object="div: #keki04div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="STEAK TECHNO สเต็ก เทคโนฯ<br>★★★★★ 4.8<br>restaurant<br>"></a-entity>
                 <a-image id="imgkeki04" src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
-            </a-entity>
-        </ar-geopose>
-        <ar-geopose id="keki05" lla="100.7702708 13.7277267" userotation="false">
-            <a-entity fixedsize="20" billboard>
-                <a-entity css-object="div: #keki05div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Shogun ลาดกระบัง<br>★★★★☆ 4.4<br>restaurant<br>"></a-entity>
-                <a-image id="imgkeki05" src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
         <ar-geopose id="keki06" lla="100.7696328 13.7275384" userotation="false">
@@ -116,16 +111,22 @@
                 <a-image id="imgkeki11" src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
         </ar-geopose>
-
-        <ar-camera>
-            <a-entity id="myCursor" cursor="fuse:true; fuse-timeout: 1000"
-                        position="0 0 -0.1"
-                        geometry="primitive:ring; radiusInner: 0.001; radiusOuter: 0.0015"
-                        material="color: green; opacity:0.8;">          
+        <ar-geopose id="keki05" lla="100.7702708 13.7277267" userotation="false">
+            <a-entity fixedsize="20" billboard>
+                <a-entity css-object="div: #keki05div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Shogun ลาดกระบัง<br>★★★★☆ 4.4<br>restaurant<br>"></a-entity>
+                <a-image id="imgkeki05" src="/icon-arpage/restaurant_icon.png" width="2.5" height="2.5" position="0 0 0"></a-image>
             </a-entity>
-        </ar-camera>
+        </ar-geopose>
+
+        -->
+
+            <ar-camera>
+                <a-entity id="myCursor" cursor="fuse:true; fuse-timeout: 1000" position="0 0 -0.1" geometry="primitive:ring; radiusInner: 0.001; radiusOuter: 0.0015" material="color: green; opacity:0.8;">
+                </a-entity>
+            </ar-camera>
     </ar-scene>
 
 </body>
 <script src="kekiForward.js"></script>
+
 </html>

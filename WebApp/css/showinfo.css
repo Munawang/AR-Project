@@ -1,0 +1,299 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #name_restaurant {
+        margin-left: auto;
+        text-align: center;
+        font-size: 10px;
+    }
+    #t_rating {
+        display: inline-block;
+        width: 70%;
+    }
+    .t_star {
+        display: inline-block;
+        width: 50%;
+        padding-bottom: 8px;
+    }
+    #total_rating {
+        display: inline-block;
+        margin-bottom: 0px;
+        font-size: 32px;
+    }
+}
+
+
+/*header modal part*/
+
+#icon_cat {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#grid_header {
+    margin: auto;
+}
+
+#name_restaurant {
+    margin-left: auto;
+    text-align: center;
+    font-size: 32px;
+}
+
+#header_bt {
+    margin-top: 5px;
+}
+
+#t_rating {
+    display: inline-block;
+    width: 70%;
+}
+
+.t_star {
+    display: inline-block;
+    width: 50%;
+    padding-bottom: 8px;
+}
+
+#total_rating {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 32px;
+}
+
+#status {
+    color: green;
+    font-size: 24px;
+    position: relative;
+    left: 0px;
+    margin-top: 20px;
+}
+
+
+/*tab part*/
+
+#nav-info-tab,
+#nav-review-tab,
+#nav-picture-tab {
+    color: #DC0F6E;
+    display: inline-flex;
+    font-size: x-large;
+    margin-top: 30px;
+}
+
+#nav-info-tab:hover,
+#nav-review-tab:hover,
+#nav-picture-tab:hover {
+    color: black;
+}
+
+#nav-info-tab.active {
+    color: black;
+}
+
+
+/*body modal part*/
+
+.cont_box {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cont_review {
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.card-body {
+    padding: 1rem !important;
+}
+
+
+/*info tab*/
+
+.textinfo {
+    text-align: left;
+}
+
+#notel_btn {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+#tel_btn {
+    font-size: 1rem;
+    padding: 5px;
+    background-color: rgb(149, 52, 98);
+    color: white;
+}
+
+.other_web {
+    margin-top: 10px;
+    background-color: rgb(149, 52, 98);
+    color: white;
+}
+
+#tel_btn:hover,
+.other_web:hover {
+    background-color: rgba(149, 52, 98, 0.9);
+    opacity: 0.9;
+    color: white;
+}
+
+#more_web {
+    text-align: left;
+}
+
+
+/*review tab*/
+
+.review_pic {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.res_pic {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto!important;
+}
+
+.grid_rating {
+    margin-top: 5px;
+}
+
+.u_rating {
+    display: inline-block;
+    width: 30%;
+}
+
+.u_star {
+    display: inline-block;
+    width: 15%;
+    padding-bottom: 8px;
+}
+
+.user_rating {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+}
+
+
+/*picture tab*/
+
+.fade_textbox {
+    position: relative;
+    max-width: 200px;
+    /* Maximum width */
+    margin: 0 auto;
+    /* Center it */
+}
+
+.fade_textbox .cont_img {
+    position: absolute;
+    /* Position the background text */
+    bottom: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    text-align: center;
+    color: #f1f1f1;
+    /* Grey text */
+    width: 100%;
+    /* Full width */
+    font-size: x-small;
+    height: 25px;
+}
+
+
+/* For marker part */
+
+.gm-style-iw,
+.gm-style-iw-c {
+    padding: 10px !important;
+}
+
+.gm-style-iw-d {
+    overflow: hidden !important;
+}
+
+.col-3,
+.col-9,
+.col-sm-6 {
+    padding: 0px !important;
+}
+
+#icon_marker {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 20px;
+}
+
+#name_marker {
+    margin-left: auto;
+    font-size: 16px;
+    display: inline-block;
+}
+
+#grid_marker {
+    margin: auto;
+}
+
+.mk_rating {
+    display: inline-block;
+    width: 80%;
+}
+
+#total_marker {
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+#header_marker {
+    margin-top: 5px;
+}
+
+#mk_rating {
+    display: inline-block;
+    width: 65%;
+}
+
+.mk_star {
+    display: inline-block;
+    width: 15px;
+    padding-bottom: 8px;
+}
+
+#status_marker {
+    color: green;
+    font-size: 14px;
+}
+
+.more_btn {
+    font-size: 14px;
+    background-color: rgb(94, 43, 91);
+    color: white;
+}
+
+.more_btn:hover {
+    opacity: 0.9;
+    color: white;
+    background-color: rgba(94, 43, 91, 0.9);
+}

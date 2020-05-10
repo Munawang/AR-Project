@@ -21,9 +21,11 @@ restId = nameAR.replace("img", "");
 zonename = restId.slice(0, -2);
 if (zonename == "keki") {
     var zoneId = "zone01"
-}if(zonename == "jinda"){
+}
+if (zonename == "jinda") {
     var zoneId = "zone02"
-}if(zonename == "fbt"){
+}
+if (zonename == "fbt") {
     var zoneId = "zone03"
 }
 
@@ -152,34 +154,34 @@ dbshowInfo.on("value", function(snapshot) {
     }
 
     var numReviews = snapshot.child("res_review").numChildren();
-reviews.innerHTML = "";
-var sumRating = 0;
+    reviews.innerHTML = "";
+    var sumRating = 0;
 
-for (let x = 1; x <= numReviews; x++) {
-    var eachReview = snapshot.child("res_review/res_review" + x + "/text").val();
-    var eachRate = snapshot.child("res_review/res_review" + x + "/rating").val();
-    reviews.innerHTML +=
-        '<div class="card cont_box">' +
-        '<div class="card-body">' +
-        '<div class="col-sm-6 grid_rating">' +
-        '<div class="u_rating"></div>' +
-        '<p class="user_rating">' + eachRate + '</p>' +
-        '</div>' +
-        '<p class="cont_review">' + eachReview + '</p>' +
-        '</div></div><br>';
+    for (let x = 1; x <= numReviews; x++) {
+        var eachReview = snapshot.child("res_review/res_review" + x + "/text").val();
+        var eachRate = snapshot.child("res_review/res_review" + x + "/rating").val();
+        reviews.innerHTML +=
+            '<div class="card cont_box">' +
+            '<div class="card-body">' +
+            '<div class="col grid_rating">' +
+            '<div class="u_rating"></div>' +
+            '<p class="user_rating">' + eachRate + '</p>' +
+            '</div>' +
+            '<p class="cont_review">' + eachReview + '</p>' +
+            '</div></div><br>';
 
-    var userStars = document.getElementsByClassName("u_rating")[x - 1];
-    var getPoint = '<img class="u_star" src="pic/get_star.png">';
-    var noPoint = '<img class="u_star" src="pic/nopoint.png">';
-    if (eachRate == 0 || eachRate == "") {
-        userStars.innerHTML += noPoint.repeat(5);
-    } else {
-        userStars.innerHTML = "";
-        userStars.innerHTML += getPoint.repeat(eachRate);
-        userStars.innerHTML += noPoint.repeat(5 - eachRate);
+        var userStars = document.getElementsByClassName("u_rating")[x - 1];
+        var getPoint = '<img class="u_star" src="pic/get_star.png">';
+        var noPoint = '<img class="u_star" src="pic/nopoint.png">';
+        if (eachRate == 0 || eachRate == "") {
+            userStars.innerHTML += noPoint.repeat(5);
+        } else {
+            userStars.innerHTML = "";
+            userStars.innerHTML += getPoint.repeat(eachRate);
+            userStars.innerHTML += noPoint.repeat(5 - eachRate);
+        }
+        sumRating += (eachRate / 5);
     }
-    sumRating += (eachRate / 5);
-}
 
     modal_sumRate.innerHTML = sumRating.toFixed(1);
     var floorStar = Math.floor(sumRating);

@@ -147,14 +147,14 @@ window.onload = function initMap() {
                         console.log(kekiZone[i][0])
                         zl.innerHTML = '<div id="' + kekiZone[i][4] + 'div" class="label">' + kekiZone[i][0] + '</div>';
                         zp.innerHTML = '<div id="' + kekiZone[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
-                        console.log(zl.innerHTML);
-                        console.log(zp.innerHTML);
+                        //console.log(zl.innerHTML);
+                        //console.log(zp.innerHTML);
                         ar.innerHTML = '<ar-geopose id="' + kekiZone[i][4] + '" lla="' + kekiZone[i][2] + ' ' + kekiZone[i][1] + '" userotation="false">' +
                             '<a-entity fixedsize="20" billboard>' +
                             '<a-entity css-object="div: #' + kekiZone[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
                             '<a-entity css-object="div: #' + kekiZone[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + kekiZone[i][0] + 'It is "></a-entity>' +
                             '</a-entity></ar-geopose>';
-                        console.log(ar.innerHTML);
+                        //console.log(ar.innerHTML);
                     }
                 }
             } else if (check_fbt == true) {
@@ -162,17 +162,17 @@ window.onload = function initMap() {
                 for (let i = 0; i < fbtZone.length; i++) {
                     if (fbtZone[i][3] == 'zone03') {
                         //console.log('zone 3 เอฟบีที');
-                        console.log(fbtZone[i][0])
+                        //console.log(fbtZone[i][0])
                         zl.innerHTML = '<div id="' + fbtZone[i][4] + 'div" class="label">' + fbtZone[i][0] + '</div>';
                         zp.innerHTML = '<div id="' + fbtZone[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
-                        console.log(zl.innerHTML);
-                        console.log(zp.innerHTML);
+                        //console.log(zl.innerHTML);
+                        //console.log(zp.innerHTML);
                         ar.innerHTML = '<ar-geopose id="' + fbtZone[i][4] + '" lla="' + fbtZone[i][2] + ' ' + fbtZone[i][1] + '" userotation="false">' +
                             '<a-entity fixedsize="20" billboard>' +
                             '<a-entity css-object="div: #' + fbtZone[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
                             '<a-entity css-object="div: #' + fbtZone[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + fbtZone[i][0] + 'It is "></a-entity>' +
                             '</a-entity></ar-geopose>';
-                        console.log(ar.innerHTML);
+                        //console.log(ar.innerHTML);
                     }
                 }
             } else {
@@ -207,49 +207,10 @@ AFRAME.registerComponent('showdistance', {
         var distance = Math.round(thisPos.distanceTo(cameraPos));
 
         var cssDiv = this.el.getObject3D('div');
-        var msg = this.text;
+        var msg = this.text + 'อีก ' + distance + ' เมตรถึงที่หมาย';
         cssDiv.elements[0].innerHTML = msg;
         cssDiv.elements[1].innerHTML = msg;
 
     }
 
 });
-
-/*/ ทดสอบแบบแมนนวล -0-
-                    zl.innerHTML =
-                        '<div id="keki01div" class="label"></div>' +
-                        '<div id="keki02div" class="label"></div>' +
-                        '<div id="keki03div" class="label"></div>' +
-                        '<div id="keki04div" class="label"></div>' +
-                        '<div id="keki05div" class="label"></div>' +
-                        '<div id="keki06div" class="label"></div>' +
-                        '<div id="keki07div" class="label"></div>' +
-                        '<div id="keki08div" class="label"></div>' +
-                        '<div id="keki09div" class="label"></div>' +
-                        '<div id="keki010div" class="label"></div>' +
-                        '<div id="keki11div" class="label"></div>';
-                    zp.innerHTML =
-                        '<div id="keki01pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>' +
-                        '<div id="keki02pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>' +
-                        '<div id="keki03pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>' +
-                        '<div id="keki04pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>' +
-                        '<div id="keki05pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>' +
-                        '<div id="keki06pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>' +
-                        '<div id="keki07pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>' +
-                        '<div id="keki08pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>' +
-                        '<div id="keki09pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>' +
-                        '<div id="keki10pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>' +
-                        '<div id="keki11pin" class="pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
-                    ar.innerHTML =
-                        '<ar-geopose id="keki01" lla="100.7708011 13.7275256" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki01pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki01div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Sumfruit บิงซู ลาดกระบังIt is "></a-entity></a-entity></ar-geopose>' +
-                        '<ar-geopose id="keki02" lla="100.7701097 13.7278467" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki02pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki02div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Daily delivery KMITLIt is "></a-entity></a-entity></ar-geopose>' +
-                        '<ar-geopose id="keki03" lla="100.7704063 13.7277224" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki03pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki03div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="มานีมีนมลาดกระบังIt is "></a-entity></a-entity></ar-geopose>' +
-                        '<ar-geopose id="keki04" lla="100.769738 13.727815" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki04pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki04div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="STEAK TECHNO สเต็ก เทคโนฯIt is "></a-entity></a-entity></ar-geopose>' +
-                        '<ar-geopose id="keki05" lla="100.7702708 13.7277267" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki05pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki05div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Shogun ลาดกระบังIt is "></a-entity></a-entity></ar-geopose>' +
-                        '<ar-geopose id="keki06" lla="100.7696328 13.7275384" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki06pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki06div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ฅน 8 หน้า SUSHI BAR & RESTAURANTIt is "></a-entity></a-entity></ar-geopose>' +
-                        '<ar-geopose id="keki07" lla="100.769545 13.7273668" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki07pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki07div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ชาชักโกอินIt is "></a-entity></a-entity></ar-geopose>' +
-                        '<ar-geopose id="keki08" lla="100.7694829 13.7273834" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki08pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki08div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="ญาแฝดข้าวมันไก่ ซ.เกกี4It is "></a-entity></a-entity></ar-geopose>' +
-                        '<ar-geopose id="keki09" lla="100.770279 13.7277198" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki09pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki09div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Hand BurgerIt is "></a-entity></a-entity></ar-geopose>' +
-                        '<ar-geopose id="keki10" lla="100.7701018 13.7277895" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki10pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki10div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="วัวล้วนๆ ไม่มีควายผสม สาขา ลาดกะบัง KMITLIt is "></a-entity></a-entity></ar-geopose>' +
-                        '<ar-geopose id="keki11" lla="100.7703543 13.7271134" userotation="false"><a-entity fixedsize="20" billboard><a-entity css-object="div: #keki11pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity><a-entity css-object="div: #keki11div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="เสต็ก อิ่มเอมIt is "></a-entity></a-entity></ar-geopose>';
-                /*/
