@@ -1,6 +1,7 @@
+
 //Keki Zone
-document.getElementById('imgkeki00').addEventListener('click' , function(){
-    forwardFunction(document.getElementById('imgkeki00').id);
+document.getElementById('imgtabchang').addEventListener('click' , function(){
+    forwardFunction(document.getElementById('imgtabchang').id);
 } , false);
 
 document.getElementById('imgkeki01').addEventListener('click' , function(){

@@ -1,6 +1,6 @@
 //FBT Apartment Zone
-document.getElementById('imgfbt00').addEventListener('click' , function(){
-    forwardFunction(document.getElementById('imgfbt00').id);
+document.getElementById('imgtabchang').addEventListener('click' , function(){
+    forwardFunction(document.getElementById('imgtabchang').id);
 } , false);
 
 document.getElementById('imgfbt01').addEventListener('click' , function(){

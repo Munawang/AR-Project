@@ -1,6 +1,6 @@
 //Jinda Zone
-document.getElementById('imgjinda00').addEventListener('click' , function(){
-    forwardFunction(document.getElementById('imgjinda00').id);
+document.getElementById('imgtabchang').addEventListener('click' , function(){
+    forwardFunction(document.getElementById('imgtabchang').id);
 } , false);
 
 document.getElementById('imgjinda01').addEventListener('click' , function(){
