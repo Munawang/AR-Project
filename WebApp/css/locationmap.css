@@ -4,9 +4,12 @@
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
 
+html {
+    height: 100%
+}
+
 #map {
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
 }
 
 
@@ -26,8 +29,7 @@ body {
 
 @media only screen and (max-width: 425px) {
     #map {
-        height: 523px;
-        width: 425px;
+        height: 100%;
     }
     #zone_header,
     #check_header {
@@ -85,8 +87,7 @@ body {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     /*/*for ipad and tablet*/
     #map {
-        height: 1024px;
-        width: 768px;
+        height: 100%;
     }
     #zone_header,
     #check_header {
@@ -144,9 +145,7 @@ body {
 @media only screen and (min-width: 769px) {
     /* For desktop: */
     #map {
-        height: 600px;
-        width: 1600px;
-        text-align: center;
+        height: 100%;
     }
     #zone_header,
     #check_header {
