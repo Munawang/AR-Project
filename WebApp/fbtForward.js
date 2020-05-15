@@ -1,7 +1,4 @@
 //FBT Apartment Zone
-document.getElementById('imgtabchang').addEventListener('click' , function(){
-    forwardFunction(document.getElementById('imgtabchang').id);
-} , false);
 
 document.getElementById('imgfbt01').addEventListener('click' , function(){
     forwardFunction(document.getElementById('imgfbt01').id);
@@ -9,10 +6,6 @@ document.getElementById('imgfbt01').addEventListener('click' , function(){
 
 document.getElementById('imgfbt02').addEventListener('click' , function(){
     forwardFunction(document.getElementById('imgfbt02').id);
-} , false);
-
-document.getElementById('imgfbt03').addEventListener('click' , function(){
-    forwardFunction(document.getElementById('imgfbt03').id);
 } , false);
 
 document.getElementById('imgfbt04').addEventListener('click' , function(){
@@ -27,10 +20,6 @@ document.getElementById('imgfbt06').addEventListener('click' , function(){
     forwardFunction(document.getElementById('imgfbt06').id);
 } , false);
 
-document.getElementById('imgfbt07').addEventListener('click' , function(){
-    forwardFunction(document.getElementById('imgfbt07').id);
-} , false);
-
 document.getElementById('imgfbt08').addEventListener('click' , function(){
     forwardFunction(document.getElementById('imgfbt08').id);
 } , false);
@@ -41,6 +30,14 @@ document.getElementById('imgfbt09').addEventListener('click' , function(){
 
 document.getElementById('imgfbt10').addEventListener('click' , function(){
     forwardFunction(document.getElementById('imgfbt10').id);
+} , false);
+
+document.getElementById('imgfbt07').addEventListener('click' , function(){
+    forwardFunction(document.getElementById('imgfbt07').id);
+} , false);
+
+document.getElementById('imgfbt03').addEventListener('click' , function(){
+    forwardFunction(document.getElementById('imgfbt03').id);
 } , false);
 
 function forwardFunction(val){

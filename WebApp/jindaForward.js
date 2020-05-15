@@ -1,14 +1,10 @@
 //Jinda Zone
-document.getElementById('imgtabchang').addEventListener('click' , function(){
-    forwardFunction(document.getElementById('imgtabchang').id);
-} , false);
-
 document.getElementById('imgjinda01').addEventListener('click' , function(){
     forwardFunction(document.getElementById('imgjinda01').id);
 } , false);
 
-document.getElementById('imgjinda02').addEventListener('click' , function(){
-    forwardFunction(document.getElementById('imgjinda02').id);
+document.getElementById('imgjinda10').addEventListener('click' , function(){
+    forwardFunction(document.getElementById('imgjinda10').id);
 } , false);
 
 document.getElementById('imgjinda03').addEventListener('click' , function(){
@@ -31,16 +27,16 @@ document.getElementById('imgjinda07').addEventListener('click' , function(){
     forwardFunction(document.getElementById('imgjinda07').id);
 } , false);
 
-document.getElementById('imgjinda08').addEventListener('click' , function(){
-    forwardFunction(document.getElementById('imgjinda08').id);
-} , false);
-
 document.getElementById('imgjinda09').addEventListener('click' , function(){
     forwardFunction(document.getElementById('imgjinda09').id);
 } , false);
 
-document.getElementById('imgjinda10').addEventListener('click' , function(){
-    forwardFunction(document.getElementById('imgjinda10').id);
+document.getElementById('imgjinda08').addEventListener('click' , function(){
+    forwardFunction(document.getElementById('imgjinda08').id);
+} , false);
+
+document.getElementById('imgjinda02').addEventListener('click' , function(){
+    forwardFunction(document.getElementById('imgjinda02').id);
 } , false);
 
 function forwardFunction(val){

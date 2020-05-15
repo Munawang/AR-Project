@@ -175,20 +175,20 @@ window.onload = function initMap() {
                             sumRating += (eachRate / 5);
                         }
                         sumRating_marker = sumRating.toFixed(1);
-
+                        
                         var floorStar = Math.floor(sumRating);
-                        if (floorStar == 1) {
+                        if(floorStar == 1){
                             getPoint = '<img class="u_star" src="pic/onepoint.png">';
-                        } else if (floorStar == 2) {
+                        } if(floorStar == 2){
                             getPoint = '<img class="u_star" src="pic/twopoint.png">';
-                        } else if (floorStar == 3) {
+                        } if(floorStar == 3){
                             getPoint = '<img class="u_star" src="pic/threepoint.png">';
-                        } else if (floorStar == 4) {
+                        }if(floorStar == 4){
                             getPoint = '<img class="u_star" src="pic/fourpoint.png">';
-                        } else if (floorStar == 5) {
+                        }if(floorStar == 5){
                             getPoint = '<img class="u_star" src="pic/fullpoint.png">';
-                        } else {
-                            getPoint = '<img class="u_star" src="pic/nopoint.png">';
+                        }else{
+                            getPoint = '<img class="u_star" src="pic/zeropoint.png">';
                         }
 
                         var dateToday = new Date();
@@ -204,7 +204,7 @@ window.onload = function initMap() {
                             nowHours = dateToday.getHours();
                             nowMinutes = dateToday.getMinutes();
                             // parseInt
-
+                
                             if (nowHours >= parseInt(timeOpen[0]) && nowHours <= parseInt(timeClose[0])) {
                                 if (nowHours == parseInt(timeClose[0])) {
                                     if (nowMinutes <= parseInt(timeClose[1])) {
@@ -250,13 +250,13 @@ window.onload = function initMap() {
 
                     grid1 = '<div class="row"><div class="col-3">'
                     grid2 = '<div class="col-9"><div id="grid_marker" class="row"><div class="col-sm-6">'
-                    nameMarker = '<h4 class="modal-title" id="name_marker">' + locations[i][0] + '</h4></div>'
+                    nameMarker = '<h4 class="modal-title" id="name_marker">'+locations[i][0]+'</h4></div>'
                     grid3 = '<div class="col-sm-6" id="header_marker">'
-                    starMarker = '<div id="mk_rating">' + getPoint + '</div>'
-                    rateMarker = '<h6 id="total_marker"></h6>' + sumRating_marker + '</div>'
-                    statusMarker = '</div><h6 id="status_marker" style="color:' + colorStatus + '";>&#8226;' + marker_status + '</h6></div>'
+                    starMarker = '<div id="mk_rating">'+getPoint+'</div>'
+                    rateMarker = '<h6 id="total_marker"></h6>'+sumRating_marker+'</div>'
+                    statusMarker = '</div><h6 id="status_marker" style="color:'+colorStatus+'";>&#8226;'+marker_status+'</h6></div>'
 
-                    info.setContent(grid1 + iconMarker + grid2 + nameMarker + grid3 + starMarker + rateMarker + statusMarker);
+                    info.setContent(grid1+iconMarker+grid2+nameMarker+grid3+starMarker+rateMarker+statusMarker);
                     info.open(maps, marker);
                 }
             })(marker, i));
@@ -288,4 +288,4 @@ window.onload = function initMap() {
         }
 
     } //showposition function
-}; //init function
+}; //init function 
