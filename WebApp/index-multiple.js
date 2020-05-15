@@ -10,24 +10,10 @@ var firebaseConfig = {
     measurementId: "G-ZYVTVS84YW"
 };
 
-
-
 //Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 ref = firebase.database().ref();
-
-var type = document.getElementById("category");
-var cate = ""
-var dbMarker = ref.child("restaurant/zone01/keki01/")
-dbMarker.on("value", function(snapshot) {
-    typeRes = snapshot.child("res_type").val();
-    if (typeRes == "") {
-        cate = "ไม่พบข้อมูล";
-    } else {
-        cate = typeRes;
-    }
-});
 
 // เช็ค
 window.onload = function initMap() {
@@ -38,18 +24,8 @@ window.onload = function initMap() {
             console.log("Geolocation is not supported by this browser.");
         }
 
-        /*/
-        var theSphere = document.querySelector("#mysphere");
-        theSphere.addEventListener("Click", myReportingFunction);
-
-        function myReportingFunction() {
-            console.log("sphere was click on")
-        }
-/*/
 
         function checkZone(position) {
-            console.log('เข้าใช้ function checkzone แล้ว');
-
             var u_latitude = position.coords.latitude;
             var u_longitude = position.coords.longitude;
 
@@ -116,63 +92,25 @@ window.onload = function initMap() {
                 ['ไก่เกาหลี อูรี ชิกเก้นท์ 우리 치킨 สาขา ลาดกระบัง', 13.7220672, 100.7804952, 'zone03', 'fbt10']
             ]; //total = 31 places
 
-            var zl = document.getElementsByClassName('zonelabel');
-            var zp = document.getElementsByClassName('zonepin');
-            var ar = document.getElementsByClassName('showobject');
-
             if (check_jinda == true) {
                 console.log('ตอนนี้คุณอยู่ในโซนจินดา');
                 for (let i = 0; i < jindaZone.length; i++) {
                     if (jindaZone[i][3] == 'zone02') {
-                        //console.log('zone 2 จินดา');
-                        //console(jindaZone[i][4])
                         //console.log(jindaZone[i][0])
-                        zl.innerHTML = '<div id="' + jindaZone[i][4] + 'div" class="label">' + jindaZone[i][0] + '</div>';
-                        zp.innerHTML = '<div id="' + jindaZone[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
-                        //console.log(zl.innerHTML);
-                        //console.log(zp.innerHTML);
-                        ar.innerHTML = '<ar-geopose id="' + jindaZone[i][4] + '" lla="' + jindaZone[i][2] + ' ' + jindaZone[i][1] + '" userotation="false">' +
-                            '<a-entity fixedsize="20" billboard>' +
-                            '<a-entity css-object="div: #' + jindaZone[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
-                            '<a-entity css-object="div: #' + jindaZone[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + jindaZone[i][0] + 'It is "></a-entity>' +
-                            '</a-entity></ar-geopose>';
-                        //console.log(zl);
                     }
                 }
             } else if (check_keki == true) {
                 console.log('ตอนนี้คุณอยู่ในโซนเกกี');
                 for (let i = 0; i < kekiZone.length; i++) {
                     if (kekiZone[i][3] == 'zone01') {
-                        //console.log('zone 1 เกกี');
-                        console.log(kekiZone[i][0])
-                        zl.innerHTML = '<div id="' + kekiZone[i][4] + 'div" class="label">' + kekiZone[i][0] + '</div>';
-                        zp.innerHTML = '<div id="' + kekiZone[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
-                        //console.log(zl.innerHTML);
-                        //console.log(zp.innerHTML);
-                        ar.innerHTML = '<ar-geopose id="' + kekiZone[i][4] + '" lla="' + kekiZone[i][2] + ' ' + kekiZone[i][1] + '" userotation="false">' +
-                            '<a-entity fixedsize="20" billboard>' +
-                            '<a-entity css-object="div: #' + kekiZone[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
-                            '<a-entity css-object="div: #' + kekiZone[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + kekiZone[i][0] + 'It is "></a-entity>' +
-                            '</a-entity></ar-geopose>';
-                        //console.log(ar.innerHTML);
+                        // console.log(kekiZone[i][0])
                     }
                 }
             } else if (check_fbt == true) {
                 console.log('ตอนนี้คุณอยู่ในโซนเอฟบีที');
                 for (let i = 0; i < fbtZone.length; i++) {
                     if (fbtZone[i][3] == 'zone03') {
-                        //console.log('zone 3 เอฟบีที');
                         //console.log(fbtZone[i][0])
-                        zl.innerHTML = '<div id="' + fbtZone[i][4] + 'div" class="label">' + fbtZone[i][0] + '</div>';
-                        zp.innerHTML = '<div id="' + fbtZone[i][4] + 'pin"><i class="fa fa-map-marker" aria-hidden="true"></i></div>';
-                        //console.log(zl.innerHTML);
-                        //console.log(zp.innerHTML);
-                        ar.innerHTML = '<ar-geopose id="' + fbtZone[i][4] + '" lla="' + fbtZone[i][2] + ' ' + fbtZone[i][1] + '" userotation="false">' +
-                            '<a-entity fixedsize="20" billboard>' +
-                            '<a-entity css-object="div: #' + fbtZone[i][4] + 'pin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>' +
-                            '<a-entity css-object="div: #' + fbtZone[i][4] + 'div" scale="0.02 0.02 0.02" position="0 3 0" showdistance="' + fbtZone[i][0] + 'It is "></a-entity>' +
-                            '</a-entity></ar-geopose>';
-                        //console.log(ar.innerHTML);
                     }
                 }
             } else {
@@ -205,12 +143,24 @@ AFRAME.registerComponent('showdistance', {
         var cameraPos = camera.getWorldPosition();
         var thisPos = object3D.getWorldPosition();
         var distance = Math.round(thisPos.distanceTo(cameraPos));
-
+        if (distance >= 1000) {
+            var dt = distance/1000
+            var distanceRest = dt.toFixed(2)
+            var unit =  ' กิโลเมตร'
+        }
+        else{
+            var distanceRest = distance
+            var unit = ' เมตร'
+        }
         var cssDiv = this.el.getObject3D('div');
-        var msg = this.text + 'อีก ' + distance + ' เมตรถึงที่หมาย';
+        var msg = this.text + 'ห่างจากที่หมาย ' + distanceRest + unit;
         cssDiv.elements[0].innerHTML = msg;
         cssDiv.elements[1].innerHTML = msg;
-
+        // if (distance > 5000) {
+        //     this.el.setAttribute('visible', false);
+        //     console.log(this.el)
+        //     console.log("Hi")
+        // }
     }
 
 });
