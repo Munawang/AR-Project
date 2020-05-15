@@ -65,8 +65,7 @@ body {
         font-size: 12px;
         line-height: 1.42857;
     }
-    #c_btn,
-    #t_btn {
+    #c_btn,#t_btn {
         box-shadow: 0px 2px 3px darkgrey;
         background-color: white;
         border-color: white;
@@ -123,8 +122,7 @@ body {
         font-size: 12px;
         line-height: 1.42857;
     }
-    #c_btn,
-    #t_btn {
+    #c_btn,#t_btn {
         box-shadow: 0px 2px 3px darkgrey;
         background-color: white;
         border-color: white;
@@ -132,12 +130,12 @@ body {
     }
     #c_btn {
         position: absolute;
-        top: 520px;
+        top: 1025px;
         right: 35px;
     }
     #t_btn {
         position: absolute;
-        top: 520px;
+        top: 1025px;
         left: 35px;
     }
 }
@@ -190,12 +188,12 @@ body {
     }
     #c_btn {
         position: absolute;
-        top: 520px;
+        top: 1025px;
         right: 35px;
     }
     #t_btn {
         position: absolute;
-        top: 520px;
+        top: 1025px;
         left: 35px;
     }
 }
@@ -343,7 +341,7 @@ body {
 
 .u_star {
     display: inline-block;
-    width: 15%;
+    width: 70%;
     padding-bottom: 8px;
 }
 
