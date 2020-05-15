@@ -179,13 +179,13 @@ window.onload = function initMap() {
                         var floorStar = Math.floor(sumRating);
                         if(floorStar == 1){
                             getPoint = '<img class="u_star" src="pic/onepoint.png">';
-                        } if(floorStar == 2){
+                        }else if(floorStar == 2){
                             getPoint = '<img class="u_star" src="pic/twopoint.png">';
-                        } if(floorStar == 3){
+                        }else if(floorStar == 3){
                             getPoint = '<img class="u_star" src="pic/threepoint.png">';
-                        }if(floorStar == 4){
+                        }else if(floorStar == 4){
                             getPoint = '<img class="u_star" src="pic/fourpoint.png">';
-                        }if(floorStar == 5){
+                        }else if(floorStar == 5){
                             getPoint = '<img class="u_star" src="pic/fullpoint.png">';
                         }else{
                             getPoint = '<img class="u_star" src="pic/zeropoint.png">';
