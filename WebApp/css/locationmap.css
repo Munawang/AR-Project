@@ -81,6 +81,29 @@ body {
         top: 520px;
         left: 35px;
     }
+    #icon_marker {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 20px;
+    }
+    .gm-style-iw,
+    .gm-style-iw-c {
+        max-width: 250px !important;
+        max-height: 350px !important;
+    }
+    #name_marker{
+        font-size: 18px;
+    }
+    #status_marker {
+        font-size: 14px;
+    }
+    #total_marker{
+        font-size: 16px;
+    }
+    .u_star{
+        width: 45%;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -137,6 +160,29 @@ body {
         position: absolute;
         top: 520px;
         left: 35px;
+    }
+    #icon_marker {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 10px;
+    }
+    .gm-style-iw,
+    .gm-style-iw-c {
+        max-width: 500px !important;
+        max-height: 600px !important;
+    }
+    #name_marker{
+        font-size: 20px;
+    }
+    #status_marker {
+        font-size: 18px;
+    }
+    #total_marker{
+        font-size: 20px;
+    }
+    .u_star{
+        width: 40%;
     }
 }
 
@@ -341,8 +387,8 @@ body {
 
 .u_star {
     display: inline-block;
-    width: 70%;
     padding-bottom: 8px;
+    margin-top: 8px;
 }
 
 .user_rating {
@@ -398,16 +444,12 @@ body {
     padding: 0px !important;
 }
 
-#icon_marker {
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: 20px;
+#cont_window{
+    margin-top: 5px;
 }
 
 #name_marker {
     margin-left: auto;
-    font-size: 16px;
     display: inline-block;
 }
 
@@ -415,25 +457,16 @@ body {
     margin: auto;
 }
 
-.mk_rating {
-    display: inline-block;
-    width: 80%;
-}
-
 #total_marker {
     display: inline-block;
     margin-bottom: 0px;
     margin-left: 5px;
-    font-size: 14px;
-}
-
-#header_marker {
-    margin-top: 5px;
 }
 
 #mk_rating {
     display: inline-block;
-    width: 65%;
+    width: 100%;
+    margin-top: 5px;
 }
 
 .mk_star {
@@ -444,7 +477,6 @@ body {
 
 #status_marker {
     color: green;
-    font-size: 14px;
 }
 
 .more_btn {

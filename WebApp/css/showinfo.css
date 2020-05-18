@@ -28,7 +28,12 @@ body {
     #total_rating {
         display: inline-block;
         margin-bottom: 0px;
-        font-size: 32px;
+        font-size: 28px;
+    }
+    #nav-info-tab,
+    #nav-review-tab,
+    #nav-picture-tab {
+        font-size: large;
     }
 }
 
@@ -57,7 +62,7 @@ body {
 
 #t_rating {
     display: inline-block;
-    width: 70%;
+    width: 65%;
 }
 
 .t_star {
@@ -124,6 +129,7 @@ body {
 
 .textinfo {
     text-align: left;
+    font-size: larger;
 }
 
 #notel_btn {
@@ -195,7 +201,7 @@ body {
 
 .fade_textbox {
     position: relative;
-    max-width: 200px;
+    max-width: 400px;
     /* Maximum width */
     margin: 0 auto;
     /* Center it */

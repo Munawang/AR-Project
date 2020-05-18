@@ -15,23 +15,6 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 ref = firebase.database().ref();
 
-var ct1_marker = '<div class="row">' +
-    '<div class="col-3">' +
-    '<div id="iconMarker"></div></div>' +
-    '<div class="col-9">' +
-    '<div id="grid_marker" class="row">' +
-    '<div class="col-sm-6">' +
-    '<h4 class="modal-title" id="name_marker">';
-
-var ct2_marker = '</h4>' +
-    '</div>' +
-    '<div class="col-sm-6" id="header_marker">' +
-    '<div id="mk_rating">' +
-    '</div>' +
-    '<h6 id="total_marker"></h6>' +
-    '</div>' +
-    '</div><h6 id="status_marker"> &#8226;</h6></div>';
-
 window.onload = function initMap() {
     var startPos;
     var geoSuccess = function(position) {
@@ -160,13 +143,18 @@ window.onload = function initMap() {
                 title: locations[i][0]
             });
 
+            var getPoint = "";
+            var sumRating_marker = 0;
+            var colorStatus = "";
+            var marker_status = "";
+            var iconMarker = "";
+
             info = new google.maps.InfoWindow();
             google.maps.event.addListener(marker, 'click', (function(marker, i) {
                 return function() {
                     var dbMarker = ref.child("restaurant/" + locations[i][3] + "/" + locations[i][4] + "/")
                     dbMarker.on("value", function(snapshot) {
                         typeRes = snapshot.child("res_type").val();
-                        iconMarker = '<div id="iconMarker"><img id="icon_marker" src="pic/' + typeRes + '_icon.png"></div></div>'
                         var numReviews = snapshot.child("res_review").numChildren();
 
                         var sumRating = 0;
@@ -177,15 +165,22 @@ window.onload = function initMap() {
                         sumRating_marker = sumRating.toFixed(1);
                         
                         var floorStar = Math.floor(sumRating);
-                        if(floorStar == 1){
+                        var decimalRate = (sumRating_marker - floorStar.toFixed(1)).toFixed(1);
+                        if (decimalRate >= 0.5) {
+                            starRate = floorStar + 1
+                        } else {
+                            starRate = floorStar
+                        }
+                        
+                        if(starRate == 1){
                             getPoint = '<img class="u_star" src="pic/onepoint.png">';
-                        }else if(floorStar == 2){
+                        }else if(starRate == 2){
                             getPoint = '<img class="u_star" src="pic/twopoint.png">';
-                        }else if(floorStar == 3){
+                        }else if(starRate == 3){
                             getPoint = '<img class="u_star" src="pic/threepoint.png">';
-                        }else if(floorStar == 4){
+                        }else if(starRate == 4){
                             getPoint = '<img class="u_star" src="pic/fourpoint.png">';
-                        }else if(floorStar == 5){
+                        }else if(starRate == 5){
                             getPoint = '<img class="u_star" src="pic/fullpoint.png">';
                         }else{
                             getPoint = '<img class="u_star" src="pic/zeropoint.png">';
@@ -248,15 +243,13 @@ window.onload = function initMap() {
                         }
                     });
 
-                    grid1 = '<div class="row"><div class="col-3">'
-                    grid2 = '<div class="col-9"><div id="grid_marker" class="row"><div class="col-sm-6">'
-                    nameMarker = '<h4 class="modal-title" id="name_marker">'+locations[i][0]+'</h4></div>'
-                    grid3 = '<div class="col-sm-6" id="header_marker">'
-                    starMarker = '<div id="mk_rating">'+getPoint+'</div>'
-                    rateMarker = '<h6 id="total_marker"></h6>'+sumRating_marker+'</div>'
-                    statusMarker = '</div><h6 id="status_marker" style="color:'+colorStatus+'";>&#8226;'+marker_status+'</h6></div>'
-
-                    info.setContent(grid1+iconMarker+grid2+nameMarker+grid3+starMarker+rateMarker+statusMarker);
+                    grid1 = '<div id="cont_window" class="row"><div class="col-3" align="center">'
+                    iconMarker = '<img id="icon_marker" src="pic/' + typeRes + '_icon.png"></div>'
+                    grid2 = '<div class="col-9"><div id="grid_marker" class="row"><div id="mk_rating">'
+                    nameMarker = '<h4 class="modal-title" id="name_marker">'+locations[i][0]+'</h4><br>'
+                    rateMarker = '<h6 id="total_marker">'+sumRating_marker+'</h6>'
+                    statusMarker = '<h6 id="status_marker" style="color:'+colorStatus+'";>&#8226;'+marker_status+'</h6></div></div></div></div>'
+                    info.setContent(grid1+iconMarker+grid2+nameMarker+getPoint+rateMarker+statusMarker);
                     info.open(maps, marker);
                 }
             })(marker, i));
