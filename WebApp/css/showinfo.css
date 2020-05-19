@@ -30,10 +30,8 @@ body {
         margin-bottom: 0px;
         font-size: 28px;
     }
-    #nav-info-tab,
-    #nav-review-tab,
-    #nav-picture-tab {
-        font-size: large;
+    .textinfo {
+        font-size: medium !important;
     }
 }
 
@@ -93,7 +91,7 @@ body {
 #nav-picture-tab {
     color: #DC0F6E;
     display: inline-flex;
-    font-size: x-large;
+    font-size: large;
     margin-top: 30px;
 }
 
